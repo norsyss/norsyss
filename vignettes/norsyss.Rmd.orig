@@ -1,5 +1,6 @@
 ---
 title: "Introduction"
+date: "`r lubridate::today()`"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Introduction}
@@ -9,35 +10,33 @@ editor_options:
   chunk_output_type: console
 ---
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
-
-
-```{r, include = FALSE}
+```{r setup, include = FALSE}
 library(data.table)
 library(magrittr)
 library(ggplot2)
 
-db <- RODBC::odbcDriverConnect("driver={ODBC Driver 17 for SQL Server};server=dm-prod;database=SykdomspulsenAnalyse; trusted_connection=yes")
+db <- DBI::dbConnect(
+  odbc::odbc(),
+  driver="ODBC Driver 17 for SQL Server",
+  server="dm-prod",
+  database="SykdomspulsenAnalyse",
+  trusted_connection="yes"
+)
 
-RODBC::sqlQuery(db, "SELECT TOP 1 * FROM Konsultasjon") %>% names()
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>", 
+  out.width = "100%",
+  fig.width = 7,
+  fig.height = 4, dpi = 150, fig.path = "introduction-",
+  message = FALSE, 
+  warning = FALSE,
+  error = FALSE,
+  connection = "db"
+)
 
-RODBC::sqlQuery(db, "SELECT TOP 1 * FROM KonsultasjonDiagnose") %>% names()
-
-RODBC::sqlQuery(db, "SELECT TOP 1 * FROM KonsultasjonTakst") %>% names()
-
-# RODBC::sqlQuery(db, "SELECT DISTINCT (Diagnose) FROM KonsultasjonDiagnose") -> icpc2
-
-# RODBC::sqlQuery(db, "SELECT DISTINCT (Takst) FROM KonsultasjonTakst")
-
-cmd <- "SELECT COUNT ( DISTINCT Id ) FROM Konsultasjon"
-row_number <- RODBC::sqlQuery(db, "SELECT COUNT ( Id ) FROM Konsultasjon WHERE Konsultasjonsdato > '2006-01-02'")
 konsultasjonsdato_min <- as.Date("2006-01-02")
-konsultasjonsdato_max <- RODBC::sqlQuery(db, "SELECT MAX ( Konsultasjonsdato ) FROM Konsultasjon WHERE Konsultasjonsdato > '2006-01-02'")[[1]] |> max()
+konsultasjonsdato_max <- DBI::dbGetQuery(db, "SELECT MAX ( Konsultasjonsdato ) FROM Konsultasjon WHERE Konsultasjonsdato > '2006-01-02'")[[1]] |> max()
 
 dates <- data.table(date = seq(konsultasjonsdato_min, konsultasjonsdato_max, 1))
 dates[, isoyear := cstime::date_to_isoyear_n(date)]
@@ -49,64 +48,45 @@ dates_master <- dates[,.(
 )]
 ```
 
-```{r, echo = FALSE}
+```{r, include = FALSE}
 d_consultations <- copy(dates_master)
 d_consultations[, consultations_n := 0]
 for(i in 1:nrow(dates_master)){
-  row_number <- RODBC::sqlQuery(db, glue::glue("SELECT COUNT ( Id ) FROM Konsultasjon WHERE Konsultasjonsdato >= '{dates$date_min[i]}' AND Konsultasjonsdato <= '{dates$date_max[i]}'"))[[1]]
+  row_number <- DBI::dbGetQuery(db, glue::glue("SELECT COUNT ( Id ) FROM Konsultasjon WHERE Konsultasjonsdato >= '{dates_master$date_min[i]}' AND Konsultasjonsdato <= '{dates_master$date_max[i]}'"))[[1]]
   d_consultations[i, consultations_n := row_number]
 }
-gt::gt(d_consultations)
 ```
+
+As of `r lubridate::today()`, NorSySS holds `r d_consultations$consultations_n |> sum() |> csstyle::format_nor()` consultations with general practitioners and out-of-hours primary care facilities between 2006-01-02 and `r konsultasjonsdato_max`.
 
 ```{r, echo = FALSE}
-
-if(file.exists("vignettes/norsyss-tariff.rds")){
-  d_tariff <- readRDS("vignettes/norsyss-tariff.rds")
-} else {
-  d_tariff <- list()
-}
-# Only update the last 1 year
-start_index_value <- max(1, length(d_tariff)-1)
-for(i in start_index_value:nrow(dates_master)){
-  print(i)
-  retval <- RODBC::sqlQuery(db, glue::glue("SELECT Takst AS tariff_raw, COUNT ( Takst ) consultations_n FROM Konsultasjon JOIN KonsultasjonTakst ON Id=KonsultasjonTakst.KonsultasjonId WHERE Konsultasjonsdato >= '{dates_master$date_min[i]}' AND Konsultasjonsdato <= '{dates_master$date_max[i]}' GROUP BY KonsultasjonTakst.Takst"))
-  setDT(retval)
-  retval[, isoyear := dates_master$isoyear[i]]
-  d_tariff[[i]] <- retval
-}
-saveRDS(d_tariff, "vignettes/norsyss-tariff.rds")
-d_tariff <- rbindlist(d_tariff)
-
-retval <- RODBC::sqlQuery(db, glue::glue("SELECT Takst AS tariff_raw, MIN ( Konsultasjonsdato ) observed_date_min, MAX (Konsultasjonsdato) observed_date_max FROM Konsultasjon JOIN KonsultasjonTakst ON Id=KonsultasjonTakst.KonsultasjonId WHERE Konsultasjonsdato>='2006-01-02' GROUP BY KonsultasjonTakst.Takst")) %>% 
-  setDT()
-retval[, date_range := paste0(observed_date_min, " to ", observed_date_max)]
-
-d_tariff[retval, on="tariff_raw", observed_date_max := observed_date_max]
-d_tariff[retval, on="tariff_raw", date_range := date_range]
-d_tariff[, still_in_use := ifelse(as.numeric(difftime(lubridate::today(), observed_date_max, "days")) > 90 , "Not in use", "In use")]
-d_tariff[, facet := paste0(tariff_raw, " (",date_range, ")")]
-
-labs_1 <- d_tariff[still_in_use=="In use" & isoyear>=(max(isoyear)-2),.(consultations_n = mean(consultations_n)), by=.(facet)] %>% 
-  setorder(-consultations_n) %>% 
-  dplyr::select(facet) %>% 
-  unlist(use.names = F) %>% 
-  as.character()
-labs_2 <- d_tariff[still_in_use!="In use",.(consultations_n = mean(consultations_n)), by=.(facet)] %>% 
-  setorder(-consultations_n) %>% 
-  dplyr::select(facet) %>% 
-  unlist(use.names = F) %>% 
-  as.character()
-labs <- c(labs_1, labs_2)
-d_tariff[, facet := factor(facet, levels = labs)]
-
-q <- ggplot(d_tariff, aes(x=isoyear, y=consultations_n, fill=still_in_use))
-q <- q + geom_col()
-q <- q + scale_y_continuous("Consultations", labels = csstyle::format_nor)
-q <- q + facet_wrap(~facet, scales="free_y")
-q
+gt::gt(d_consultations) %>%
+  gt::tab_header(
+    title = "Consultations in NorSySS",
+    subtitle = glue::glue("2006-01-20 to {konsultasjonsdato_max}")
+  ) %>%
+  gt::tab_spanner(
+    label = "Time",
+    columns = c(isoyear, date_min, date_max)
+  ) %>%
+  gt::tab_spanner(
+    label = "Consultations",
+    columns = c(consultations_n)
+  ) %>%
+  gt::cols_label(
+    isoyear = "Isoyear",
+    date_min = "Min",
+    date_max = "Max",
+    consultations_n = "Number"
+  ) %>%
+  gt::cols_align(
+    align = "center"
+  ) %>%
+  gt::fmt(
+    columns = consultations_n,
+    fns = csstyle::format_nor
+  )
 ```
-
 
 
 

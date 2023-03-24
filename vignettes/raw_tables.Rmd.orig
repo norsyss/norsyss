@@ -1,0 +1,51 @@
+---
+title: "Raw Tables"
+date: "`r lubridate::today()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Raw Tables}
+  %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options:
+  chunk_output_type: console
+---
+
+```{r setup, include = FALSE}
+library(data.table)
+library(magrittr)
+library(ggplot2)
+
+db <- DBI::dbConnect(
+  odbc::odbc(),
+  driver="ODBC Driver 17 for SQL Server",
+  server="dm-prod",
+  database="SykdomspulsenAnalyse",
+  trusted_connection="yes"
+)
+
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  out.width = "100%",
+  fig.width = 7,
+  fig.height = 4, dpi = 150, fig.path = "tariffs-",
+  message = FALSE,
+  warning = FALSE,
+  error = FALSE,
+  connection = "db"
+)
+```
+
+```{sql}
+SELECT * FROM Konsultasjon WHERE 0=1
+```
+
+```{sql}
+SELECT * FROM KonsultasjonDiagnose WHERE 0=1
+```
+
+```{sql}
+SELECT * FROM KonsultasjonTakst WHERE 0=1
+```
+
+

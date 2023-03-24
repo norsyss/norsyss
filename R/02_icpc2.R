@@ -1,3 +1,4 @@
+#' @export
 icpc2 <- rbindlist(list(
   # Single
   data.table("A02", "a02", "Chills", "Symptoms/Complaints", "General and unspecified", "Frysninger", "Symptomer", "Allment og uspesifisert"),
@@ -124,4 +125,16 @@ icpc2 <- rbindlist(list(
   )), "respiratory", "Respiratory infections", "Combination", "Respiratory", "Luftveisinfeksjoner", "Kombinasjon", "Luftveier"),
   data.table(list(c("R991", "R9910000", "R992", "R9920000", "R33")), "covid19", "COVID-19", "Combination", "Respiratory", "Covid-19", "Kombinasjon", "Luftveier")
 ))
-#setnames(icpc2, c("raw_code", "end_code", "description_en", "grouping_en"))
+setnames(
+  icpc2,
+  c(
+    "icpc2raw_code",
+    "icpc2group_code",
+    "icpc2group_description_en",
+    "component_en",
+    "bodysystem_en",
+    "icpc2group_description_nb",
+    "component_nb",
+    "bodysystem_nb"
+  )
+)

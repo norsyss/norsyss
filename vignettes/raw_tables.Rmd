@@ -1,0 +1,54 @@
+---
+title: "Raw Tables"
+date: "2023-03-24"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Raw Tables}
+  %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options:
+  chunk_output_type: console
+---
+
+
+
+
+```sql
+SELECT * FROM Konsultasjon WHERE 0=1
+```
+
+
+
+
+Table: 0 records
+
+| Id|Konsultasjonsdato |Registreringsdato |OpprettetDato |EndretDato |PasientAlder |PasientKjønn |PasientBydel |PasientKommune |Praksis |BehandlerBydel |BehandlerKommune | Behandler_Id|
+|--:|:-----------------|:-----------------|:-------------|:----------|:------------|:------------|:------------|:--------------|:-------|:--------------|:----------------|------------:|
+
+
+```sql
+SELECT * FROM KonsultasjonDiagnose WHERE 0=1
+```
+
+
+
+
+Table: 0 records
+
+| KonsultasjonId| DiagnoseId|Diagnose |DiagnoseBeskrivelse |
+|--------------:|----------:|:--------|:-------------------|
+
+
+```sql
+SELECT * FROM KonsultasjonTakst WHERE 0=1
+```
+
+
+
+
+Table: 0 records
+
+| KonsultasjonId| TakstId|Takst |TakstBeskrivelse |
+|--------------:|-------:|:-----|:----------------|
+
+
