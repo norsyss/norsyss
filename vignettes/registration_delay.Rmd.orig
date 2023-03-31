@@ -11,7 +11,7 @@ editor_options:
 ---
 
 ```{r, include = FALSE}
-if(isFALSE(getOption('knitr.in.progress'))){
+if(!isTRUE(getOption('knitr.in.progress'))){
   base_folder <- "vignettes/"
 } else {
   base_folder <- ""
@@ -88,7 +88,7 @@ dt <- d_delay %>% tidyr::pivot_wider(
 dt %>%
   gt::gt(rowname_col = "isoyear") %>%
   gt::tab_header(
-    title = "Registration delay (days) in NorSySS by isoyear",
+    title = "Registration delay in NorSySS by isoyear",
     subtitle = "Days until x% of the consultations are registered"
   )
 ```

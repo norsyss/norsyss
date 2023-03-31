@@ -1,6 +1,6 @@
 ---
 title: "Registration delay / Registeringsforsinkelse"
-date: "2023-03-24"
+date: "2023-03-30"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Registration delay / Registeringsforsinkelse}
@@ -12,12 +12,12 @@ editor_options:
 
 
 
-<!--html_preserve--><div id="pyqpharxdl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<!--html_preserve--><div id="cimmxytyee" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#pyqpharxdl .gt_table {
+#cimmxytyee .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -42,7 +42,7 @@ editor_options:
   border-left-color: #D3D3D3;
 }
 
-#pyqpharxdl .gt_heading {
+#cimmxytyee .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -54,12 +54,12 @@ editor_options:
   border-right-color: #D3D3D3;
 }
 
-#pyqpharxdl .gt_caption {
+#cimmxytyee .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#pyqpharxdl .gt_title {
+#cimmxytyee .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -71,7 +71,7 @@ editor_options:
   border-bottom-width: 0;
 }
 
-#pyqpharxdl .gt_subtitle {
+#cimmxytyee .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -83,13 +83,13 @@ editor_options:
   border-top-width: 0;
 }
 
-#pyqpharxdl .gt_bottom_border {
+#cimmxytyee .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#pyqpharxdl .gt_col_headings {
+#cimmxytyee .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -104,7 +104,7 @@ editor_options:
   border-right-color: #D3D3D3;
 }
 
-#pyqpharxdl .gt_col_heading {
+#cimmxytyee .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -124,7 +124,7 @@ editor_options:
   overflow-x: hidden;
 }
 
-#pyqpharxdl .gt_column_spanner_outer {
+#cimmxytyee .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -136,15 +136,15 @@ editor_options:
   padding-right: 4px;
 }
 
-#pyqpharxdl .gt_column_spanner_outer:first-child {
+#cimmxytyee .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#pyqpharxdl .gt_column_spanner_outer:last-child {
+#cimmxytyee .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#pyqpharxdl .gt_column_spanner {
+#cimmxytyee .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -156,7 +156,7 @@ editor_options:
   width: 100%;
 }
 
-#pyqpharxdl .gt_group_heading {
+#cimmxytyee .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -182,7 +182,7 @@ editor_options:
   text-align: left;
 }
 
-#pyqpharxdl .gt_empty_group_heading {
+#cimmxytyee .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -197,15 +197,15 @@ editor_options:
   vertical-align: middle;
 }
 
-#pyqpharxdl .gt_from_md > :first-child {
+#cimmxytyee .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#pyqpharxdl .gt_from_md > :last-child {
+#cimmxytyee .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#pyqpharxdl .gt_row {
+#cimmxytyee .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -224,7 +224,7 @@ editor_options:
   overflow-x: hidden;
 }
 
-#pyqpharxdl .gt_stub {
+#cimmxytyee .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -237,7 +237,7 @@ editor_options:
   padding-right: 5px;
 }
 
-#pyqpharxdl .gt_stub_row_group {
+#cimmxytyee .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -251,11 +251,11 @@ editor_options:
   vertical-align: top;
 }
 
-#pyqpharxdl .gt_row_group_first td {
+#cimmxytyee .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#pyqpharxdl .gt_summary_row {
+#cimmxytyee .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -265,16 +265,16 @@ editor_options:
   padding-right: 5px;
 }
 
-#pyqpharxdl .gt_first_summary_row {
+#cimmxytyee .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#pyqpharxdl .gt_first_summary_row.thick {
+#cimmxytyee .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#pyqpharxdl .gt_last_summary_row {
+#cimmxytyee .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -284,7 +284,7 @@ editor_options:
   border-bottom-color: #D3D3D3;
 }
 
-#pyqpharxdl .gt_grand_summary_row {
+#cimmxytyee .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -294,7 +294,7 @@ editor_options:
   padding-right: 5px;
 }
 
-#pyqpharxdl .gt_first_grand_summary_row {
+#cimmxytyee .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -304,11 +304,11 @@ editor_options:
   border-top-color: #D3D3D3;
 }
 
-#pyqpharxdl .gt_striped {
+#cimmxytyee .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#pyqpharxdl .gt_table_body {
+#cimmxytyee .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -317,7 +317,7 @@ editor_options:
   border-bottom-color: #D3D3D3;
 }
 
-#pyqpharxdl .gt_footnotes {
+#cimmxytyee .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -331,7 +331,7 @@ editor_options:
   border-right-color: #D3D3D3;
 }
 
-#pyqpharxdl .gt_footnote {
+#cimmxytyee .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -340,7 +340,7 @@ editor_options:
   padding-right: 5px;
 }
 
-#pyqpharxdl .gt_sourcenotes {
+#cimmxytyee .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -354,7 +354,7 @@ editor_options:
   border-right-color: #D3D3D3;
 }
 
-#pyqpharxdl .gt_sourcenote {
+#cimmxytyee .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -362,71 +362,71 @@ editor_options:
   padding-right: 5px;
 }
 
-#pyqpharxdl .gt_left {
+#cimmxytyee .gt_left {
   text-align: left;
 }
 
-#pyqpharxdl .gt_center {
+#cimmxytyee .gt_center {
   text-align: center;
 }
 
-#pyqpharxdl .gt_right {
+#cimmxytyee .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#pyqpharxdl .gt_font_normal {
+#cimmxytyee .gt_font_normal {
   font-weight: normal;
 }
 
-#pyqpharxdl .gt_font_bold {
+#cimmxytyee .gt_font_bold {
   font-weight: bold;
 }
 
-#pyqpharxdl .gt_font_italic {
+#cimmxytyee .gt_font_italic {
   font-style: italic;
 }
 
-#pyqpharxdl .gt_super {
+#cimmxytyee .gt_super {
   font-size: 65%;
 }
 
-#pyqpharxdl .gt_footnote_marks {
+#cimmxytyee .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#pyqpharxdl .gt_asterisk {
+#cimmxytyee .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#pyqpharxdl .gt_indent_1 {
+#cimmxytyee .gt_indent_1 {
   text-indent: 5px;
 }
 
-#pyqpharxdl .gt_indent_2 {
+#cimmxytyee .gt_indent_2 {
   text-indent: 10px;
 }
 
-#pyqpharxdl .gt_indent_3 {
+#cimmxytyee .gt_indent_3 {
   text-indent: 15px;
 }
 
-#pyqpharxdl .gt_indent_4 {
+#cimmxytyee .gt_indent_4 {
   text-indent: 20px;
 }
 
-#pyqpharxdl .gt_indent_5 {
+#cimmxytyee .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
 <table class="gt_table">
   <thead class="gt_header">
     <tr>
-      <td colspan="7" class="gt_heading gt_title gt_font_normal" style>Registration delay (days) in NorSySS by isoyear</td>
+      <td colspan="7" class="gt_heading gt_title gt_font_normal" style>Registration delay in NorSySS by isoyear</td>
     </tr>
     <tr>
       <td colspan="7" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style>Days until x% of the consultations are registered</td>
@@ -569,7 +569,7 @@ editor_options:
 <td headers="stub_1_18 75%" class="gt_row gt_right">13</td>
 <td headers="stub_1_18 90%" class="gt_row gt_right">20</td>
 <td headers="stub_1_18 95%" class="gt_row gt_right">27</td>
-<td headers="stub_1_18 99%" class="gt_row gt_right">44</td></tr>
+<td headers="stub_1_18 99%" class="gt_row gt_right">45</td></tr>
   </tbody>
   
   

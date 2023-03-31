@@ -39,7 +39,7 @@ icpc2 <- rbindlist(list(
   data.table("H71", "h71", "Acute otitis media/myringitis", "Infections", "Ear", "Mellomørebetennelse akutt", "Symptomer", "Øre"),
   data.table("H77", "h77", "Perforation ear drum", "Injuries", "Ear", "Perforert trommehinne IKA", "Skader", "Øre"),
   data.table("R01", "r01", "Pain respiratory system", "Symptoms/Complaints", "Respiratory", "Smerte luftveier", "Symptomer", "Luftveier"),
-  data.table("R02", "r02", "Shortness of breat/dyspnea", "Symptoms/Complaints", "Respiratory", "Kortpustethet/dyspné", "Symptomer", "Luftveier"),
+  data.table("R02", "r02", "Shortness of breath/dyspnea", "Symptoms/Complaints", "Respiratory", "Kortpustethet/dyspné", "Symptomer", "Luftveier"),
   data.table("R03", "r03", "Wheezing", "Symptoms/Complaints", "Respiratory", "Piping i brystet", "Symptomer", "Luftveier"),
   data.table("R04", "r04", "Breathing problem, other", "Symptoms/Complaints", "Respiratory", "Pusteproblem IKA", "Symptomer", "Luftveier"),
   data.table("R05", "r05", "Cough", "Symptoms/Complaints", "Respiratory", "Hoste", "Symptomer", "Luftveier"),
@@ -122,14 +122,14 @@ icpc2 <- rbindlist(list(
     "R9910000",
     "R992",
     "R9920000"
-  )), "respiratory", "Respiratory infections", "Combination", "Respiratory", "Luftveisinfeksjoner", "Kombinasjon", "Luftveier"),
+  )), "respiratory_infections", "Respiratory infections", "Combination", "Respiratory", "Luftveisinfeksjoner", "Kombinasjon", "Luftveier"),
   data.table(list(c("R991", "R9910000", "R992", "R9920000", "R33")), "covid19", "COVID-19", "Combination", "Respiratory", "Covid-19", "Kombinasjon", "Luftveier")
 ))
 setnames(
   icpc2,
   c(
-    "icpc2raw_code",
-    "icpc2group_code",
+    "icpc2raw_tag",
+    "icpc2group_tag",
     "icpc2group_description_en",
     "component_en",
     "bodysystem_en",

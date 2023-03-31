@@ -64,7 +64,7 @@ dt <- norsyss::icpc2[,.(
 )]
 dt %>%
   dplyr::group_by(bodysystem_nb) %>%
-  gt::gt(rowname_col = "icpc2group_code") %>%
+  gt::gt() %>%
   gt::tab_header(
     title = "ICPC-2-koder i NorSySS",
     subtitle = "Norsk bokmål"
@@ -74,6 +74,9 @@ dt %>%
     icpc2raw_code = "ICPC-2-koder",
     icpc2group_description_nb = "Beskrivelser",
     component_nb = "Komponent"
+  ) %>%
+  gt::cols_align(
+    align = "center"
   )
 
 ```
@@ -88,7 +91,7 @@ dt <- norsyss::icpc2[,.(
 )]
 dt %>%
   dplyr::group_by(bodysystem_en) %>%
-  gt::gt(rowname_col = "icpc2group_code") %>%
+  gt::gt() %>%
   gt::tab_header(
     title = "ICPC-2 codes in NorSySS",
     subtitle = "English"
@@ -98,5 +101,8 @@ dt %>%
     icpc2raw_code = "ICPC-2 codes",
     icpc2group_description_en = "Description",
     component_en = "Component"
+  ) %>%
+  gt::cols_align(
+    align = "center"
   )
 ```

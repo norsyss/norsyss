@@ -3,13 +3,13 @@
 #' @export
 tariff <- list()
 tariff$raw <- rbindlist(list(
-  data.table("11ad", "p", "Home visit by a general practitioner (day).", "Sykebesøk ved allmennpraktiserende lege (dag)."),
-  data.table("11ak", "p", "Home visit by a general practitioner (night).", "Sykebesøk ved allmennpraktiserende lege (kveld)."),
+  data.table("11ad", "f", "Home visit by a general practitioner (day).", "Sykebesøk ved allmennpraktiserende lege (dag)."),
+  data.table("11ak", "f", "Home visit by a general practitioner (night).", "Sykebesøk ved allmennpraktiserende lege (kveld)."),
 
-  data.table("2ad", "p", "Consultation with a general practitioner (day).", "Konsultasjon hos allmennpraktiserende lege (dag)."),
-  data.table("2ak", "p", "Consultation with a general practitioner (night).", "Konsultasjon hos allmennpraktiserende lege (kveld)."),
+  data.table("2ad", "f", "Consultation with a general practitioner (day).", "Konsultasjon hos allmennpraktiserende lege (dag)."),
+  data.table("2ak", "f", "Consultation with a general practitioner (night).", "Konsultasjon hos allmennpraktiserende lege (kveld)."),
 
-  data.table("2fk", "p", "Consultation and supplement for being called to the office for immediate help during the emergency room when an ambulance has been used, for the first patient. Travel allowances and transport allowances can also be calculated. The tariff cannot be used for on-call duty.", "Konsultasjon og tillegg for utrykning til kontor ved øyeblikkelig hjelp under legevakt når skyssmiddel er benyttet, for første pasient. Det kan i tillegg beregnes reisetillegg og skyssgodtgjørelse. Taksten kan ikke benyttes ved tilstedevakt."),
+  data.table("2fk", "f", "Consultation and supplement for being called to the office for immediate help during the emergency room when an ambulance has been used, for the first patient. Travel allowances and transport allowances can also be calculated. The tariff cannot be used for on-call duty.", "Konsultasjon og tillegg for utrykning til kontor ved øyeblikkelig hjelp under legevakt når skyssmiddel er benyttet, for første pasient. Det kan i tillegg beregnes reisetillegg og skyssgodtgjørelse. Taksten kan ikke benyttes ved tilstedevakt."),
 
   data.table("2ae", "e", "E-consultation with a GP and at the emergency room (day).", "E-konsultasjon hos fastlege og på legevakt (dag)."),
   data.table("2aek", "e", "E-consultation with a GP and at the emergency room (night).", "E-konsultasjon hos fastlege og på legevakt (kveld)."),
@@ -23,15 +23,16 @@ tariff$raw <- rbindlist(list(
   data.table("1be", "s", "Simple patient contact through electronic communication. The rate has expired on 1 July 2022, and included in rate 1bd.", "Enkel pasientkontakt ved elektronisk kommunikasjon. Taksten er utgått 1. juli 2022, og inkludert i takst 1bd."),
 
   data.table("1g", "s", "Easy patient contact, enquiries, counseling by telephone between 23 and 08. The rate can only be used during emergency care in an on-call district without an on-call presence.", "Enkel pasientkontakt, forespørsel, rådgivning per telefon mellom kl. 23 og 08. Taksten kan bare benyttes under legevakt i vaktdistrikt uten tilstedevakt."),
-  data.table("1h", "s", "Sick leave and referral without patient present.", "Sykemelding og henvisning uten pasient tilstede.")
+  data.table("1h", "s", "Sick leave and referral without patient present.", "Sykemelding og henvisning uten pasient tilstede."),
+  data.table("1i", "s", "??????", "?????")
 ))
-setnames(tariff$raw, c("tariffraw_code", "tariffgroup_code", "tariffraw_description_en", "tariffraw_description_nb"))
+setnames(tariff$raw, c("tariffraw_tag", "tariffgroup_tag", "tariffraw_description_en", "tariffraw_description_nb"))
 tariff$group <- rbindlist(list(
-  data.table("p", "Consultation/visit (in person)", "Konsultasjon/sykebesøk (tilstede)"),
+  data.table("f", "Consultation/visit (face-to-face)", "Konsultasjon/sykebesøk (tilstede)"),
   data.table("e", "E-Consultation", "E-konsultasjon"),
   data.table("s", "Simple contact", "Enkelt kontakt")
 ))
-setnames(tariff$group, c("tariffgroup_code", "tariffgroup_description_en", "tariffgroup_description_nb"))
+setnames(tariff$group, c("tariffgroup_tag", "tariffgroup_description_en", "tariffgroup_description_nb"))
 
 # NAV Kommune nummer til FREG
 # Some municip numbers received by KUHR do not match the expected
