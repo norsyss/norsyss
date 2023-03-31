@@ -101,15 +101,15 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
 
   d_fe <- d[tariffgroup_tag %in% c("f", "e")]
   d_fe[, tariffgroup_tag := "fe"]
-  d_fs <- d[tariffgroup_tag %in% c("f", "s")]
-  d_fs[, tariffgroup_tag := "fs"]
-  d_es <- d[tariffgroup_tag %in% c("e", "s")]
-  d_es[, tariffgroup_tag := "es"]
+  # d_fs <- d[tariffgroup_tag %in% c("f", "s")]
+  # d_fs[, tariffgroup_tag := "fs"]
+  # d_es <- d[tariffgroup_tag %in% c("e", "s")]
+  # d_es[, tariffgroup_tag := "es"]
 
   d[, tariffgroup_tag := "fes"]
 
-  d <- rbind(d, d_f, d_e, d_s, d_fe, d_fs, d_es)
-  rm("d_f", "d_e", "d_s", "d_fe", "d_fs", "d_es")
+  d <- rbind(d, d_f, d_e, d_s, d_fe) #, d_fs, d_es)
+  rm("d_f", "d_e", "d_s", "d_fe")
   gc()
 
   d[, sex := fcase(
@@ -183,7 +183,7 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
     age = c("total", "000-004", "005-014", "015-019", "020-029", "030-039", "040-049", "050-059", "060-064", "065-069", "070-079", "080p"),
     sex = c("total", "male", "female"),
     # practice_tag = c("k", "v", "kv"),
-    tariffgroup_tag = c("f", "e", "s", "fe", "fs", "es", "fes"),
+    tariffgroup_tag = c("f", "e", "s", "fe", "fes"),
     date = seq.Date(as.Date(date_from), as.Date(date_to), 1)
   ) %>%
     setDT()
