@@ -42,24 +42,25 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
   time_from_isoyearweek[, calyearmonth := NA_character_]
   time_from_isoyearweek[, date := cstime::isoyearweek_to_last_date(isoyearweek)]
 
-  d[, practice_tag := fcase(
-    Praksis %in% c(
-      "Fastl\u00F8nnet",
-      "Fastlege"
-    ), "v",
-    Praksis %in% c(
-      "kommunal legevakt",
-      "Legevakt"
-    ), "k",
-    default = "other"
-  )]
-  d[, Praksis := NULL]
-  d_v <- d[practice_tag=="v"]
-  d_k <- d[practice_tag=="k"]
-  d[, practice_tag := "kv"]
-  d <- rbind(d, d_v, d_k)
-  rm("d_v", "d_k")
-  gc()
+  # dont need practice_tag
+  # d[, practice_tag := fcase(
+  #   Praksis %in% c(
+  #     "Fastl\u00F8nnet",
+  #     "Fastlege"
+  #   ), "v",
+  #   Praksis %in% c(
+  #     "kommunal legevakt",
+  #     "Legevakt"
+  #   ), "k",
+  #   default = "other"
+  # )]
+  # d[, Praksis := NULL]
+  # d_v <- d[practice_tag=="v"]
+  # d_k <- d[practice_tag=="k"]
+  # d[, practice_tag := "kv"]
+  # d <- rbind(d, d_v, d_k)
+  # rm("d_v", "d_k")
+  # gc()
 
   d[, age := fcase(
     PasientAlder == "0-4",   "000-004",
@@ -140,7 +141,7 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
            age,
            sex,
            date,
-           practice_tag,
+           # practice_tag,
            tariffgroup_tag
          ),
          .SDcols = icpc2$icpc2group_tag
@@ -155,7 +156,7 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
            age,
            sex,
            date,
-           practice_tag,
+           # practice_tag,
            tariffgroup_tag
          ),
          .SDcols = c(icpc2$icpc2group_tag, "consultations_all_n")
@@ -168,7 +169,7 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
            age,
            sex,
            isoyearweek,
-           practice_tag,
+           # practice_tag,
            tariffgroup_tag
          ),
          .SDcols = c(icpc2$icpc2group_tag, "consultations_all_n")
@@ -181,7 +182,7 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
   s_nation <- expand.grid(
     age = c("total", "000-004", "005-014", "015-019", "020-029", "030-039", "040-049", "050-059", "060-064", "065-069", "070-079", "080p"),
     sex = c("total", "male", "female"),
-    practice_tag = c("k", "v", "kv"),
+    # practice_tag = c("k", "v", "kv"),
     tariffgroup_tag = c("f", "e", "s", "fe", "fs", "es", "fes"),
     date = seq.Date(as.Date(date_from), as.Date(date_to), 1)
   ) %>%
@@ -208,7 +209,7 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
     by = c(
       "age",
       "sex",
-      "practice_tag",
+      # "practice_tag",
       "tariffgroup_tag",
       "date",
       "location_code_original"
@@ -228,7 +229,7 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
       sex,
       age,
       isoyearweek,
-      practice_tag,
+      # practice_tag,
       tariffgroup_tag,
       location_code_current
     ),
@@ -252,7 +253,7 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
       sex,
       age,
       isoyearweek,
-      practice_tag,
+      # practice_tag,
       tariffgroup_tag,
       to_code
     ),
@@ -267,7 +268,7 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
     by = c(
       "age",
       "sex",
-      "practice_tag",
+      # "practice_tag",
       "tariffgroup_tag",
       "isoyearweek"
     ),
@@ -292,7 +293,7 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
       "location_code",
       "age",
       "sex",
-      "practice_tag",
+      # "practice_tag",
       "tariffgroup_tag",
       "isoyearweek",
       "consultations_all_n",
@@ -368,7 +369,7 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
       "calmonth",
       "calyearmonth",
       "date",
-      "practice_tag",
+      # "practice_tag",
       "tariffgroup_tag",
       "consultations_icpc2group_n",
       "consultations_icpc2group_vs_all_pr100",
