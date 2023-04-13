@@ -56,8 +56,8 @@ dates_master <- dates[,.(
 
 ```{r, echo = FALSE}
 dt <- norsyss::icpc2[,.(
-  icpc2group_code,
-  icpc2raw_code,
+  icpc2group_tag,
+  icpc2raw_tag,
   icpc2group_description_nb,
   component_nb,
   bodysystem_nb
@@ -70,8 +70,8 @@ dt %>%
     subtitle = "Norsk bokmål"
   ) %>%
   gt::cols_label(
-    icpc2group_code = "NorSySS-gruppering",
-    icpc2raw_code = "ICPC-2-koder",
+    icpc2group_tag = "NorSySS-gruppering",
+    icpc2raw_tag = "ICPC-2-koder",
     icpc2group_description_nb = "Beskrivelser",
     component_nb = "Komponent"
   ) %>%
@@ -83,8 +83,8 @@ dt %>%
 
 ```{r, echo = FALSE}
 dt <- norsyss::icpc2[,.(
-  icpc2group_code,
-  icpc2raw_code,
+  icpc2group_tag,
+  icpc2raw_tag,
   icpc2group_description_en,
   component_en,
   bodysystem_en
@@ -97,8 +97,8 @@ dt %>%
     subtitle = "English"
   ) %>%
   gt::cols_label(
-    icpc2group_code = "NorSySS grouping",
-    icpc2raw_code = "ICPC-2 codes",
+    icpc2group_tag = "NorSySS grouping",
+    icpc2raw_tag = "ICPC-2 codes",
     icpc2group_description_en = "Description",
     component_en = "Component"
   ) %>%

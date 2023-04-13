@@ -3,6 +3,7 @@ icpc2 <- rbindlist(list(
   # Single
   data.table("A02", "a02", "Chills", "Symptoms/Complaints", "General and unspecified", "Frysninger", "Symptomer", "Allment og uspesifisert"),
   data.table("A03", "a03", "Fever", "Symptoms/Complaints", "General and unspecified", "Feber", "Symptomer", "Allment og uspesifisert"),
+  data.table("A04", "a04", "Weakness/tiredness general", "Symptoms/Complaints", "General and unspecified", "Slapphet/tretthet", "Symptomer", "Allment og uspesifisert"),
   data.table("A05", "a05", "Feeling ill", "Symptoms/Complaints", "General and unspecified", "Sykdomsfølelse", "Symptomer", "Allment og uspesifisert"),
   data.table("A71", "a71", "Measles", "Infections", "General and unspecified", "Meslinger", "Infeksjoner", "Allment og uspesifisert"),
   data.table("A72", "a72", "Chickenpox", "Infections", "General and unspecified", "Vannkopper", "Infeksjoner", "Allment og uspesifisert"),

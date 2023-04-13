@@ -1,6 +1,6 @@
 ---
 title: "ICPC-2 codes / ICPC-2-koder"
-date: "2023-03-30"
+date: "2023-04-13"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{ICPC-2 codes / ICPC-2-koder}
@@ -12,12 +12,12 @@ editor_options:
 
 
 
-<!--html_preserve--><div id="jvsqiyjgls" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<!--html_preserve--><div id="wtapdstork" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#jvsqiyjgls .gt_table {
+#wtapdstork .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -42,7 +42,7 @@ editor_options:
   border-left-color: #D3D3D3;
 }
 
-#jvsqiyjgls .gt_heading {
+#wtapdstork .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -54,12 +54,12 @@ editor_options:
   border-right-color: #D3D3D3;
 }
 
-#jvsqiyjgls .gt_caption {
+#wtapdstork .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#jvsqiyjgls .gt_title {
+#wtapdstork .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -71,7 +71,7 @@ editor_options:
   border-bottom-width: 0;
 }
 
-#jvsqiyjgls .gt_subtitle {
+#wtapdstork .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -83,13 +83,13 @@ editor_options:
   border-top-width: 0;
 }
 
-#jvsqiyjgls .gt_bottom_border {
+#wtapdstork .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jvsqiyjgls .gt_col_headings {
+#wtapdstork .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -104,7 +104,7 @@ editor_options:
   border-right-color: #D3D3D3;
 }
 
-#jvsqiyjgls .gt_col_heading {
+#wtapdstork .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -124,7 +124,7 @@ editor_options:
   overflow-x: hidden;
 }
 
-#jvsqiyjgls .gt_column_spanner_outer {
+#wtapdstork .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -136,15 +136,15 @@ editor_options:
   padding-right: 4px;
 }
 
-#jvsqiyjgls .gt_column_spanner_outer:first-child {
+#wtapdstork .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jvsqiyjgls .gt_column_spanner_outer:last-child {
+#wtapdstork .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jvsqiyjgls .gt_column_spanner {
+#wtapdstork .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -156,7 +156,7 @@ editor_options:
   width: 100%;
 }
 
-#jvsqiyjgls .gt_group_heading {
+#wtapdstork .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -182,7 +182,7 @@ editor_options:
   text-align: left;
 }
 
-#jvsqiyjgls .gt_empty_group_heading {
+#wtapdstork .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -197,15 +197,15 @@ editor_options:
   vertical-align: middle;
 }
 
-#jvsqiyjgls .gt_from_md > :first-child {
+#wtapdstork .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jvsqiyjgls .gt_from_md > :last-child {
+#wtapdstork .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jvsqiyjgls .gt_row {
+#wtapdstork .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -224,7 +224,7 @@ editor_options:
   overflow-x: hidden;
 }
 
-#jvsqiyjgls .gt_stub {
+#wtapdstork .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -237,7 +237,7 @@ editor_options:
   padding-right: 5px;
 }
 
-#jvsqiyjgls .gt_stub_row_group {
+#wtapdstork .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -251,11 +251,11 @@ editor_options:
   vertical-align: top;
 }
 
-#jvsqiyjgls .gt_row_group_first td {
+#wtapdstork .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jvsqiyjgls .gt_summary_row {
+#wtapdstork .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -265,16 +265,16 @@ editor_options:
   padding-right: 5px;
 }
 
-#jvsqiyjgls .gt_first_summary_row {
+#wtapdstork .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#jvsqiyjgls .gt_first_summary_row.thick {
+#wtapdstork .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jvsqiyjgls .gt_last_summary_row {
+#wtapdstork .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -284,7 +284,7 @@ editor_options:
   border-bottom-color: #D3D3D3;
 }
 
-#jvsqiyjgls .gt_grand_summary_row {
+#wtapdstork .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -294,7 +294,7 @@ editor_options:
   padding-right: 5px;
 }
 
-#jvsqiyjgls .gt_first_grand_summary_row {
+#wtapdstork .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -304,11 +304,11 @@ editor_options:
   border-top-color: #D3D3D3;
 }
 
-#jvsqiyjgls .gt_striped {
+#wtapdstork .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jvsqiyjgls .gt_table_body {
+#wtapdstork .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -317,7 +317,7 @@ editor_options:
   border-bottom-color: #D3D3D3;
 }
 
-#jvsqiyjgls .gt_footnotes {
+#wtapdstork .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -331,7 +331,7 @@ editor_options:
   border-right-color: #D3D3D3;
 }
 
-#jvsqiyjgls .gt_footnote {
+#wtapdstork .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -340,7 +340,7 @@ editor_options:
   padding-right: 5px;
 }
 
-#jvsqiyjgls .gt_sourcenotes {
+#wtapdstork .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -354,7 +354,7 @@ editor_options:
   border-right-color: #D3D3D3;
 }
 
-#jvsqiyjgls .gt_sourcenote {
+#wtapdstork .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -362,64 +362,64 @@ editor_options:
   padding-right: 5px;
 }
 
-#jvsqiyjgls .gt_left {
+#wtapdstork .gt_left {
   text-align: left;
 }
 
-#jvsqiyjgls .gt_center {
+#wtapdstork .gt_center {
   text-align: center;
 }
 
-#jvsqiyjgls .gt_right {
+#wtapdstork .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jvsqiyjgls .gt_font_normal {
+#wtapdstork .gt_font_normal {
   font-weight: normal;
 }
 
-#jvsqiyjgls .gt_font_bold {
+#wtapdstork .gt_font_bold {
   font-weight: bold;
 }
 
-#jvsqiyjgls .gt_font_italic {
+#wtapdstork .gt_font_italic {
   font-style: italic;
 }
 
-#jvsqiyjgls .gt_super {
+#wtapdstork .gt_super {
   font-size: 65%;
 }
 
-#jvsqiyjgls .gt_footnote_marks {
+#wtapdstork .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#jvsqiyjgls .gt_asterisk {
+#wtapdstork .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jvsqiyjgls .gt_indent_1 {
+#wtapdstork .gt_indent_1 {
   text-indent: 5px;
 }
 
-#jvsqiyjgls .gt_indent_2 {
+#wtapdstork .gt_indent_2 {
   text-indent: 10px;
 }
 
-#jvsqiyjgls .gt_indent_3 {
+#wtapdstork .gt_indent_3 {
   text-indent: 15px;
 }
 
-#jvsqiyjgls .gt_indent_4 {
+#wtapdstork .gt_indent_4 {
   text-indent: 20px;
 }
 
-#jvsqiyjgls .gt_indent_5 {
+#wtapdstork .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -444,366 +444,370 @@ editor_options:
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Allment og uspesifisert">Allment og uspesifisert</th>
     </tr>
-    <tr class="gt_row_group_first"><td headers="Allment og uspesifisert  icpc2group_code" class="gt_row gt_center">a02</td>
-<td headers="Allment og uspesifisert  icpc2raw_code" class="gt_row gt_center">A02</td>
+    <tr class="gt_row_group_first"><td headers="Allment og uspesifisert  icpc2group_tag" class="gt_row gt_center">a02</td>
+<td headers="Allment og uspesifisert  icpc2raw_tag" class="gt_row gt_center">A02</td>
 <td headers="Allment og uspesifisert  icpc2group_description_nb" class="gt_row gt_center">Frysninger</td>
 <td headers="Allment og uspesifisert  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Allment og uspesifisert  icpc2group_code" class="gt_row gt_center">a03</td>
-<td headers="Allment og uspesifisert  icpc2raw_code" class="gt_row gt_center">A03</td>
+    <tr><td headers="Allment og uspesifisert  icpc2group_tag" class="gt_row gt_center">a03</td>
+<td headers="Allment og uspesifisert  icpc2raw_tag" class="gt_row gt_center">A03</td>
 <td headers="Allment og uspesifisert  icpc2group_description_nb" class="gt_row gt_center">Feber</td>
 <td headers="Allment og uspesifisert  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Allment og uspesifisert  icpc2group_code" class="gt_row gt_center">a05</td>
-<td headers="Allment og uspesifisert  icpc2raw_code" class="gt_row gt_center">A05</td>
+    <tr><td headers="Allment og uspesifisert  icpc2group_tag" class="gt_row gt_center">a04</td>
+<td headers="Allment og uspesifisert  icpc2raw_tag" class="gt_row gt_center">A04</td>
+<td headers="Allment og uspesifisert  icpc2group_description_nb" class="gt_row gt_center">Slapphet/tretthet</td>
+<td headers="Allment og uspesifisert  component_nb" class="gt_row gt_center">Symptomer</td></tr>
+    <tr><td headers="Allment og uspesifisert  icpc2group_tag" class="gt_row gt_center">a05</td>
+<td headers="Allment og uspesifisert  icpc2raw_tag" class="gt_row gt_center">A05</td>
 <td headers="Allment og uspesifisert  icpc2group_description_nb" class="gt_row gt_center">Sykdomsfølelse</td>
 <td headers="Allment og uspesifisert  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Allment og uspesifisert  icpc2group_code" class="gt_row gt_center">a71</td>
-<td headers="Allment og uspesifisert  icpc2raw_code" class="gt_row gt_center">A71</td>
+    <tr><td headers="Allment og uspesifisert  icpc2group_tag" class="gt_row gt_center">a71</td>
+<td headers="Allment og uspesifisert  icpc2raw_tag" class="gt_row gt_center">A71</td>
 <td headers="Allment og uspesifisert  icpc2group_description_nb" class="gt_row gt_center">Meslinger</td>
 <td headers="Allment og uspesifisert  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Allment og uspesifisert  icpc2group_code" class="gt_row gt_center">a72</td>
-<td headers="Allment og uspesifisert  icpc2raw_code" class="gt_row gt_center">A72</td>
+    <tr><td headers="Allment og uspesifisert  icpc2group_tag" class="gt_row gt_center">a72</td>
+<td headers="Allment og uspesifisert  icpc2raw_tag" class="gt_row gt_center">A72</td>
 <td headers="Allment og uspesifisert  icpc2group_description_nb" class="gt_row gt_center">Vannkopper</td>
 <td headers="Allment og uspesifisert  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Allment og uspesifisert  icpc2group_code" class="gt_row gt_center">a73</td>
-<td headers="Allment og uspesifisert  icpc2raw_code" class="gt_row gt_center">A73</td>
+    <tr><td headers="Allment og uspesifisert  icpc2group_tag" class="gt_row gt_center">a73</td>
+<td headers="Allment og uspesifisert  icpc2raw_tag" class="gt_row gt_center">A73</td>
 <td headers="Allment og uspesifisert  icpc2group_description_nb" class="gt_row gt_center">Malaria</td>
 <td headers="Allment og uspesifisert  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Allment og uspesifisert  icpc2group_code" class="gt_row gt_center">a74</td>
-<td headers="Allment og uspesifisert  icpc2raw_code" class="gt_row gt_center">A74</td>
+    <tr><td headers="Allment og uspesifisert  icpc2group_tag" class="gt_row gt_center">a74</td>
+<td headers="Allment og uspesifisert  icpc2raw_tag" class="gt_row gt_center">A74</td>
 <td headers="Allment og uspesifisert  icpc2group_description_nb" class="gt_row gt_center">Røde hunder</td>
 <td headers="Allment og uspesifisert  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Allment og uspesifisert  icpc2group_code" class="gt_row gt_center">a75</td>
-<td headers="Allment og uspesifisert  icpc2raw_code" class="gt_row gt_center">A75</td>
+    <tr><td headers="Allment og uspesifisert  icpc2group_tag" class="gt_row gt_center">a75</td>
+<td headers="Allment og uspesifisert  icpc2raw_tag" class="gt_row gt_center">A75</td>
 <td headers="Allment og uspesifisert  icpc2group_description_nb" class="gt_row gt_center">Mononukleose</td>
 <td headers="Allment og uspesifisert  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Allment og uspesifisert  icpc2group_code" class="gt_row gt_center">a76</td>
-<td headers="Allment og uspesifisert  icpc2raw_code" class="gt_row gt_center">A76</td>
+    <tr><td headers="Allment og uspesifisert  icpc2group_tag" class="gt_row gt_center">a76</td>
+<td headers="Allment og uspesifisert  icpc2raw_tag" class="gt_row gt_center">A76</td>
 <td headers="Allment og uspesifisert  icpc2group_description_nb" class="gt_row gt_center">Virussykdom med utslett IKA</td>
 <td headers="Allment og uspesifisert  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Allment og uspesifisert  icpc2group_code" class="gt_row gt_center">a77</td>
-<td headers="Allment og uspesifisert  icpc2raw_code" class="gt_row gt_center">A77</td>
+    <tr><td headers="Allment og uspesifisert  icpc2group_tag" class="gt_row gt_center">a77</td>
+<td headers="Allment og uspesifisert  icpc2raw_tag" class="gt_row gt_center">A77</td>
 <td headers="Allment og uspesifisert  icpc2group_description_nb" class="gt_row gt_center">Virussykdom IKA</td>
 <td headers="Allment og uspesifisert  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Allment og uspesifisert  icpc2group_code" class="gt_row gt_center">a78</td>
-<td headers="Allment og uspesifisert  icpc2raw_code" class="gt_row gt_center">A78</td>
+    <tr><td headers="Allment og uspesifisert  icpc2group_tag" class="gt_row gt_center">a78</td>
+<td headers="Allment og uspesifisert  icpc2raw_tag" class="gt_row gt_center">A78</td>
 <td headers="Allment og uspesifisert  icpc2group_description_nb" class="gt_row gt_center">Infeksjonssykdom IKA</td>
 <td headers="Allment og uspesifisert  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Blod, bloddannende organer og immunsystemet">Blod, bloddannende organer og immunsystemet</th>
     </tr>
-    <tr class="gt_row_group_first"><td headers="Blod, bloddannende organer og immunsystemet  icpc2group_code" class="gt_row gt_center">b02</td>
-<td headers="Blod, bloddannende organer og immunsystemet  icpc2raw_code" class="gt_row gt_center">B02</td>
+    <tr class="gt_row_group_first"><td headers="Blod, bloddannende organer og immunsystemet  icpc2group_tag" class="gt_row gt_center">b02</td>
+<td headers="Blod, bloddannende organer og immunsystemet  icpc2raw_tag" class="gt_row gt_center">B02</td>
 <td headers="Blod, bloddannende organer og immunsystemet  icpc2group_description_nb" class="gt_row gt_center">Lymfeknuter forstørrede/smertefulle</td>
 <td headers="Blod, bloddannende organer og immunsystemet  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Blod, bloddannende organer og immunsystemet  icpc2group_code" class="gt_row gt_center">b70</td>
-<td headers="Blod, bloddannende organer og immunsystemet  icpc2raw_code" class="gt_row gt_center">B70</td>
+    <tr><td headers="Blod, bloddannende organer og immunsystemet  icpc2group_tag" class="gt_row gt_center">b70</td>
+<td headers="Blod, bloddannende organer og immunsystemet  icpc2raw_tag" class="gt_row gt_center">B70</td>
 <td headers="Blod, bloddannende organer og immunsystemet  icpc2group_description_nb" class="gt_row gt_center">Lymfadenitt akutt</td>
 <td headers="Blod, bloddannende organer og immunsystemet  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Blod, bloddannende organer og immunsystemet  icpc2group_code" class="gt_row gt_center">b71</td>
-<td headers="Blod, bloddannende organer og immunsystemet  icpc2raw_code" class="gt_row gt_center">B71</td>
+    <tr><td headers="Blod, bloddannende organer og immunsystemet  icpc2group_tag" class="gt_row gt_center">b71</td>
+<td headers="Blod, bloddannende organer og immunsystemet  icpc2raw_tag" class="gt_row gt_center">B71</td>
 <td headers="Blod, bloddannende organer og immunsystemet  icpc2group_description_nb" class="gt_row gt_center">Lymfadenitt kronisk/uspesifikk</td>
 <td headers="Blod, bloddannende organer og immunsystemet  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Fordøyelsessystemet">Fordøyelsessystemet</th>
     </tr>
-    <tr class="gt_row_group_first"><td headers="Fordøyelsessystemet  icpc2group_code" class="gt_row gt_center">d01</td>
-<td headers="Fordøyelsessystemet  icpc2raw_code" class="gt_row gt_center">D01</td>
+    <tr class="gt_row_group_first"><td headers="Fordøyelsessystemet  icpc2group_tag" class="gt_row gt_center">d01</td>
+<td headers="Fordøyelsessystemet  icpc2raw_tag" class="gt_row gt_center">D01</td>
 <td headers="Fordøyelsessystemet  icpc2group_description_nb" class="gt_row gt_center">Abdominalsmerte/krampe generell</td>
 <td headers="Fordøyelsessystemet  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Fordøyelsessystemet  icpc2group_code" class="gt_row gt_center">d02</td>
-<td headers="Fordøyelsessystemet  icpc2raw_code" class="gt_row gt_center">D02</td>
+    <tr><td headers="Fordøyelsessystemet  icpc2group_tag" class="gt_row gt_center">d02</td>
+<td headers="Fordøyelsessystemet  icpc2raw_tag" class="gt_row gt_center">D02</td>
 <td headers="Fordøyelsessystemet  icpc2group_description_nb" class="gt_row gt_center">Abdominalsmerte epigastriet</td>
 <td headers="Fordøyelsessystemet  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Fordøyelsessystemet  icpc2group_code" class="gt_row gt_center">d06</td>
-<td headers="Fordøyelsessystemet  icpc2raw_code" class="gt_row gt_center">D06</td>
+    <tr><td headers="Fordøyelsessystemet  icpc2group_tag" class="gt_row gt_center">d06</td>
+<td headers="Fordøyelsessystemet  icpc2raw_tag" class="gt_row gt_center">D06</td>
 <td headers="Fordøyelsessystemet  icpc2group_description_nb" class="gt_row gt_center">Abdonimalsmerte lokalisert IKA</td>
 <td headers="Fordøyelsessystemet  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Fordøyelsessystemet  icpc2group_code" class="gt_row gt_center">d08</td>
-<td headers="Fordøyelsessystemet  icpc2raw_code" class="gt_row gt_center">D08</td>
+    <tr><td headers="Fordøyelsessystemet  icpc2group_tag" class="gt_row gt_center">d08</td>
+<td headers="Fordøyelsessystemet  icpc2raw_tag" class="gt_row gt_center">D08</td>
 <td headers="Fordøyelsessystemet  icpc2group_description_nb" class="gt_row gt_center">Flatulens/oppblåsthet/raping</td>
 <td headers="Fordøyelsessystemet  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Fordøyelsessystemet  icpc2group_code" class="gt_row gt_center">d09</td>
-<td headers="Fordøyelsessystemet  icpc2raw_code" class="gt_row gt_center">D09</td>
+    <tr><td headers="Fordøyelsessystemet  icpc2group_tag" class="gt_row gt_center">d09</td>
+<td headers="Fordøyelsessystemet  icpc2raw_tag" class="gt_row gt_center">D09</td>
 <td headers="Fordøyelsessystemet  icpc2group_description_nb" class="gt_row gt_center">Kvalme</td>
 <td headers="Fordøyelsessystemet  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Fordøyelsessystemet  icpc2group_code" class="gt_row gt_center">d10</td>
-<td headers="Fordøyelsessystemet  icpc2raw_code" class="gt_row gt_center">D10</td>
+    <tr><td headers="Fordøyelsessystemet  icpc2group_tag" class="gt_row gt_center">d10</td>
+<td headers="Fordøyelsessystemet  icpc2raw_tag" class="gt_row gt_center">D10</td>
 <td headers="Fordøyelsessystemet  icpc2group_description_nb" class="gt_row gt_center">Oppkast/brekninger</td>
 <td headers="Fordøyelsessystemet  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Fordøyelsessystemet  icpc2group_code" class="gt_row gt_center">d11</td>
-<td headers="Fordøyelsessystemet  icpc2raw_code" class="gt_row gt_center">D11</td>
+    <tr><td headers="Fordøyelsessystemet  icpc2group_tag" class="gt_row gt_center">d11</td>
+<td headers="Fordøyelsessystemet  icpc2raw_tag" class="gt_row gt_center">D11</td>
 <td headers="Fordøyelsessystemet  icpc2group_description_nb" class="gt_row gt_center">Diaré</td>
 <td headers="Fordøyelsessystemet  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Fordøyelsessystemet  icpc2group_code" class="gt_row gt_center">d14</td>
-<td headers="Fordøyelsessystemet  icpc2raw_code" class="gt_row gt_center">D14</td>
+    <tr><td headers="Fordøyelsessystemet  icpc2group_tag" class="gt_row gt_center">d14</td>
+<td headers="Fordøyelsessystemet  icpc2raw_tag" class="gt_row gt_center">D14</td>
 <td headers="Fordøyelsessystemet  icpc2group_description_nb" class="gt_row gt_center">Oppkast med blod/hematemese</td>
 <td headers="Fordøyelsessystemet  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Fordøyelsessystemet  icpc2group_code" class="gt_row gt_center">d18</td>
-<td headers="Fordøyelsessystemet  icpc2raw_code" class="gt_row gt_center">D18</td>
+    <tr><td headers="Fordøyelsessystemet  icpc2group_tag" class="gt_row gt_center">d18</td>
+<td headers="Fordøyelsessystemet  icpc2raw_tag" class="gt_row gt_center">D18</td>
 <td headers="Fordøyelsessystemet  icpc2group_description_nb" class="gt_row gt_center">Endring i avføring/avføringsvane</td>
 <td headers="Fordøyelsessystemet  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Fordøyelsessystemet  icpc2group_code" class="gt_row gt_center">d25</td>
-<td headers="Fordøyelsessystemet  icpc2raw_code" class="gt_row gt_center">D25</td>
+    <tr><td headers="Fordøyelsessystemet  icpc2group_tag" class="gt_row gt_center">d25</td>
+<td headers="Fordøyelsessystemet  icpc2raw_tag" class="gt_row gt_center">D25</td>
 <td headers="Fordøyelsessystemet  icpc2group_description_nb" class="gt_row gt_center">Utspilt abdomen</td>
 <td headers="Fordøyelsessystemet  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Fordøyelsessystemet  icpc2group_code" class="gt_row gt_center">d29</td>
-<td headers="Fordøyelsessystemet  icpc2raw_code" class="gt_row gt_center">D29</td>
+    <tr><td headers="Fordøyelsessystemet  icpc2group_tag" class="gt_row gt_center">d29</td>
+<td headers="Fordøyelsessystemet  icpc2raw_tag" class="gt_row gt_center">D29</td>
 <td headers="Fordøyelsessystemet  icpc2group_description_nb" class="gt_row gt_center">Fordøyelsesyst symptomer/plager IKA</td>
 <td headers="Fordøyelsessystemet  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Fordøyelsessystemet  icpc2group_code" class="gt_row gt_center">d70</td>
-<td headers="Fordøyelsessystemet  icpc2raw_code" class="gt_row gt_center">D70</td>
+    <tr><td headers="Fordøyelsessystemet  icpc2group_tag" class="gt_row gt_center">d70</td>
+<td headers="Fordøyelsessystemet  icpc2raw_tag" class="gt_row gt_center">D70</td>
 <td headers="Fordøyelsessystemet  icpc2group_description_nb" class="gt_row gt_center">Tarminfeksjon</td>
 <td headers="Fordøyelsessystemet  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Fordøyelsessystemet  icpc2group_code" class="gt_row gt_center">d73</td>
-<td headers="Fordøyelsessystemet  icpc2raw_code" class="gt_row gt_center">D73</td>
+    <tr><td headers="Fordøyelsessystemet  icpc2group_tag" class="gt_row gt_center">d73</td>
+<td headers="Fordøyelsessystemet  icpc2raw_tag" class="gt_row gt_center">D73</td>
 <td headers="Fordøyelsessystemet  icpc2group_description_nb" class="gt_row gt_center">Gastroenteritt antatt infeksiøs</td>
 <td headers="Fordøyelsessystemet  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Fordøyelsessystemet  icpc2group_code" class="gt_row gt_center">d87</td>
-<td headers="Fordøyelsessystemet  icpc2raw_code" class="gt_row gt_center">D87</td>
+    <tr><td headers="Fordøyelsessystemet  icpc2group_tag" class="gt_row gt_center">d87</td>
+<td headers="Fordøyelsessystemet  icpc2raw_tag" class="gt_row gt_center">D87</td>
 <td headers="Fordøyelsessystemet  icpc2group_description_nb" class="gt_row gt_center">Funksjonelle plager magesekk</td>
 <td headers="Fordøyelsessystemet  component_nb" class="gt_row gt_center">Annet</td></tr>
-    <tr><td headers="Fordøyelsessystemet  icpc2group_code" class="gt_row gt_center">d99</td>
-<td headers="Fordøyelsessystemet  icpc2raw_code" class="gt_row gt_center">D99</td>
+    <tr><td headers="Fordøyelsessystemet  icpc2group_tag" class="gt_row gt_center">d99</td>
+<td headers="Fordøyelsessystemet  icpc2raw_tag" class="gt_row gt_center">D99</td>
 <td headers="Fordøyelsessystemet  icpc2group_description_nb" class="gt_row gt_center">Sykdom i fordøyelsessystemet IKA</td>
 <td headers="Fordøyelsessystemet  component_nb" class="gt_row gt_center">Annet</td></tr>
-    <tr><td headers="Fordøyelsessystemet  icpc2group_code" class="gt_row gt_center">gastroenteritis</td>
-<td headers="Fordøyelsessystemet  icpc2raw_code" class="gt_row gt_center">D11, D70, D73</td>
+    <tr><td headers="Fordøyelsessystemet  icpc2group_tag" class="gt_row gt_center">gastroenteritis</td>
+<td headers="Fordøyelsessystemet  icpc2raw_tag" class="gt_row gt_center">D11, D70, D73</td>
 <td headers="Fordøyelsessystemet  icpc2group_description_nb" class="gt_row gt_center">Mage-tarminfeksjoner</td>
 <td headers="Fordøyelsessystemet  component_nb" class="gt_row gt_center">Kombinasjon</td></tr>
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Øye">Øye</th>
     </tr>
-    <tr class="gt_row_group_first"><td headers="Øye  icpc2group_code" class="gt_row gt_center">f70</td>
-<td headers="Øye  icpc2raw_code" class="gt_row gt_center">F70</td>
+    <tr class="gt_row_group_first"><td headers="Øye  icpc2group_tag" class="gt_row gt_center">f70</td>
+<td headers="Øye  icpc2raw_tag" class="gt_row gt_center">F70</td>
 <td headers="Øye  icpc2group_description_nb" class="gt_row gt_center">Infeksiøs konjunktivitt</td>
 <td headers="Øye  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Øye  icpc2group_code" class="gt_row gt_center">f73</td>
-<td headers="Øye  icpc2raw_code" class="gt_row gt_center">F73</td>
+    <tr><td headers="Øye  icpc2group_tag" class="gt_row gt_center">f73</td>
+<td headers="Øye  icpc2raw_tag" class="gt_row gt_center">F73</td>
 <td headers="Øye  icpc2group_description_nb" class="gt_row gt_center">Øye infeksjon/betennelse IKA</td>
 <td headers="Øye  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Øre">Øre</th>
     </tr>
-    <tr class="gt_row_group_first"><td headers="Øre  icpc2group_code" class="gt_row gt_center">h01</td>
-<td headers="Øre  icpc2raw_code" class="gt_row gt_center">H01</td>
+    <tr class="gt_row_group_first"><td headers="Øre  icpc2group_tag" class="gt_row gt_center">h01</td>
+<td headers="Øre  icpc2raw_tag" class="gt_row gt_center">H01</td>
 <td headers="Øre  icpc2group_description_nb" class="gt_row gt_center">Øresmerte/øreverk</td>
 <td headers="Øre  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Øre  icpc2group_code" class="gt_row gt_center">h04</td>
-<td headers="Øre  icpc2raw_code" class="gt_row gt_center">H04</td>
+    <tr><td headers="Øre  icpc2group_tag" class="gt_row gt_center">h04</td>
+<td headers="Øre  icpc2raw_tag" class="gt_row gt_center">H04</td>
 <td headers="Øre  icpc2group_description_nb" class="gt_row gt_center">Øreflod/sekresjon</td>
 <td headers="Øre  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Øre  icpc2group_code" class="gt_row gt_center">h13</td>
-<td headers="Øre  icpc2raw_code" class="gt_row gt_center">H13</td>
+    <tr><td headers="Øre  icpc2group_tag" class="gt_row gt_center">h13</td>
+<td headers="Øre  icpc2raw_tag" class="gt_row gt_center">H13</td>
 <td headers="Øre  icpc2group_description_nb" class="gt_row gt_center">Øreplugg/øretetthet</td>
 <td headers="Øre  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Øre  icpc2group_code" class="gt_row gt_center">h29</td>
-<td headers="Øre  icpc2raw_code" class="gt_row gt_center">H29</td>
+    <tr><td headers="Øre  icpc2group_tag" class="gt_row gt_center">h29</td>
+<td headers="Øre  icpc2raw_tag" class="gt_row gt_center">H29</td>
 <td headers="Øre  icpc2group_description_nb" class="gt_row gt_center">Øre symptomer/plager IKA</td>
 <td headers="Øre  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Øre  icpc2group_code" class="gt_row gt_center">h71</td>
-<td headers="Øre  icpc2raw_code" class="gt_row gt_center">H71</td>
+    <tr><td headers="Øre  icpc2group_tag" class="gt_row gt_center">h71</td>
+<td headers="Øre  icpc2raw_tag" class="gt_row gt_center">H71</td>
 <td headers="Øre  icpc2group_description_nb" class="gt_row gt_center">Mellomørebetennelse akutt</td>
 <td headers="Øre  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Øre  icpc2group_code" class="gt_row gt_center">h77</td>
-<td headers="Øre  icpc2raw_code" class="gt_row gt_center">H77</td>
+    <tr><td headers="Øre  icpc2group_tag" class="gt_row gt_center">h77</td>
+<td headers="Øre  icpc2raw_tag" class="gt_row gt_center">H77</td>
 <td headers="Øre  icpc2group_description_nb" class="gt_row gt_center">Perforert trommehinne IKA</td>
 <td headers="Øre  component_nb" class="gt_row gt_center">Skader</td></tr>
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Luftveier">Luftveier</th>
     </tr>
-    <tr class="gt_row_group_first"><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r01</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R01</td>
+    <tr class="gt_row_group_first"><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r01</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R01</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Smerte luftveier</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r02</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R02</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r02</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R02</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Kortpustethet/dyspné</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r03</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R03</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r03</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R03</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Piping i brystet</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r04</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R04</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r04</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R04</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Pusteproblem IKA</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r05</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R05</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r05</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R05</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Hoste</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r06</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R06</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r06</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R06</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Neseblødning</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r07</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R07</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r07</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R07</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Nysing/tetthet i nese</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r08</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R08</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r08</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R08</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Nese symptomer/plager IKA</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r09</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R09</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r09</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R09</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Bihule symptomer/plager IKA</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r21</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R21</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r21</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R21</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Hals symptomer/plager</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r24</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R24</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r24</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R24</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Blodig oppspytt/hemoptyse</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r25</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R25</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r25</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R25</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Unormalt oppspytt/ekspektorat</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r27</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R27, R270000</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r27</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R27, R270000</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Engstelig for sykdom luftveier IKA</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r29</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R29</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r29</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R29</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Luftveier symptomer/plager IKA</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r33</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R33</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r33</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R33</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Luftveier mikrobiologisk/immunologisk prøve</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Prosesskoder</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r71</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R71</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r71</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R71</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Kikhoste</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r72</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R72</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r72</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R72</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Streptokokkhals</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r74</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R74</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r74</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R74</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Akutt øvre luftveisinfeksjon</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r75</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R75</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r75</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R75</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Bihulebetennelse</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r76</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R76</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r76</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R76</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Akutt tonsillitt</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r77</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R77</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r77</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R77</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Akutt laryngitt/trakeitt</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r78</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R78</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r78</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R78</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Akutt bronkitt/bronkiolitt</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r79</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R79</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r79</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R79</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Kronisk bronkitt</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r80</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R80</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r80</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R80</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Influensa</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r81</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R81</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r81</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R81</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Lungebetennelse</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r82</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R82</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r82</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R82</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Pleuritt IKA</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r83</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R83</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r83</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R83</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Luftveisinfeksjon IKA</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r95</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R95</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r95</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R95</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Kronisk obstruktiv lungesykdom</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Annet</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r96</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R96</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r96</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R96</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Astma</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Annet</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r99</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R99</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r99</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R99</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Luftveissykdom IKA</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Annet</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r991</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R991, R9910000</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r991</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R991, R9910000</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Covid-19 (sannsynlig/mistenkt)</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">r992</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R992, R9920000</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r992</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R992, R9920000</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Covid-19 (bekreftet)</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">respiratory</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R01, R02, R03, R04, R05, R07, R08, R09, R21, R24, R25, R27, R270000, R29, R33, R71, R72, R74, R75, R76, R77, R78, R79, R80, R81, R82, R83, R99, R991, R9910000, R992, R9920000</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">respiratory_infections</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R01, R02, R03, R04, R05, R07, R08, R09, R21, R24, R25, R27, R270000, R29, R33, R71, R72, R74, R75, R76, R77, R78, R79, R80, R81, R82, R83, R99, R991, R9910000, R992, R9920000</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Luftveisinfeksjoner</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Kombinasjon</td></tr>
-    <tr><td headers="Luftveier  icpc2group_code" class="gt_row gt_center">covid19</td>
-<td headers="Luftveier  icpc2raw_code" class="gt_row gt_center">R991, R9910000, R992, R9920000, R33</td>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">covid19</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R991, R9910000, R992, R9920000, R33</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Covid-19</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Kombinasjon</td></tr>
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Hud">Hud</th>
     </tr>
-    <tr class="gt_row_group_first"><td headers="Hud  icpc2group_code" class="gt_row gt_center">s06</td>
-<td headers="Hud  icpc2raw_code" class="gt_row gt_center">S06</td>
+    <tr class="gt_row_group_first"><td headers="Hud  icpc2group_tag" class="gt_row gt_center">s06</td>
+<td headers="Hud  icpc2raw_tag" class="gt_row gt_center">S06</td>
 <td headers="Hud  icpc2group_description_nb" class="gt_row gt_center">Lokalisert utslett hud</td>
 <td headers="Hud  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Hud  icpc2group_code" class="gt_row gt_center">s07</td>
-<td headers="Hud  icpc2raw_code" class="gt_row gt_center">S07</td>
+    <tr><td headers="Hud  icpc2group_tag" class="gt_row gt_center">s07</td>
+<td headers="Hud  icpc2raw_tag" class="gt_row gt_center">S07</td>
 <td headers="Hud  icpc2group_description_nb" class="gt_row gt_center">Utbredte utslett hud</td>
 <td headers="Hud  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Hud  icpc2group_code" class="gt_row gt_center">s10</td>
-<td headers="Hud  icpc2raw_code" class="gt_row gt_center">S10</td>
+    <tr><td headers="Hud  icpc2group_tag" class="gt_row gt_center">s10</td>
+<td headers="Hud  icpc2raw_tag" class="gt_row gt_center">S10</td>
 <td headers="Hud  icpc2group_description_nb" class="gt_row gt_center">Abscess/furunkel</td>
 <td headers="Hud  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Hud  icpc2group_code" class="gt_row gt_center">s12</td>
-<td headers="Hud  icpc2raw_code" class="gt_row gt_center">S12</td>
+    <tr><td headers="Hud  icpc2group_tag" class="gt_row gt_center">s12</td>
+<td headers="Hud  icpc2raw_tag" class="gt_row gt_center">S12</td>
 <td headers="Hud  icpc2group_description_nb" class="gt_row gt_center">Insektstikk/bitt</td>
 <td headers="Hud  component_nb" class="gt_row gt_center">Skader</td></tr>
-    <tr><td headers="Hud  icpc2group_code" class="gt_row gt_center">s17</td>
-<td headers="Hud  icpc2raw_code" class="gt_row gt_center">S17</td>
+    <tr><td headers="Hud  icpc2group_tag" class="gt_row gt_center">s17</td>
+<td headers="Hud  icpc2raw_tag" class="gt_row gt_center">S17</td>
 <td headers="Hud  icpc2group_description_nb" class="gt_row gt_center">Skrubbsår/blemmer</td>
 <td headers="Hud  component_nb" class="gt_row gt_center">Skader</td></tr>
-    <tr><td headers="Hud  icpc2group_code" class="gt_row gt_center">s29</td>
-<td headers="Hud  icpc2raw_code" class="gt_row gt_center">S29</td>
+    <tr><td headers="Hud  icpc2group_tag" class="gt_row gt_center">s29</td>
+<td headers="Hud  icpc2raw_tag" class="gt_row gt_center">S29</td>
 <td headers="Hud  icpc2group_description_nb" class="gt_row gt_center">Hud symptomer/plager IKA</td>
 <td headers="Hud  component_nb" class="gt_row gt_center">Symptomer</td></tr>
-    <tr><td headers="Hud  icpc2group_code" class="gt_row gt_center">s70</td>
-<td headers="Hud  icpc2raw_code" class="gt_row gt_center">S70</td>
+    <tr><td headers="Hud  icpc2group_tag" class="gt_row gt_center">s70</td>
+<td headers="Hud  icpc2raw_tag" class="gt_row gt_center">S70</td>
 <td headers="Hud  icpc2group_description_nb" class="gt_row gt_center">Herpes zoster</td>
 <td headers="Hud  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Hud  icpc2group_code" class="gt_row gt_center">s71</td>
-<td headers="Hud  icpc2raw_code" class="gt_row gt_center">S71</td>
+    <tr><td headers="Hud  icpc2group_tag" class="gt_row gt_center">s71</td>
+<td headers="Hud  icpc2raw_tag" class="gt_row gt_center">S71</td>
 <td headers="Hud  icpc2group_description_nb" class="gt_row gt_center">Herpes simplex IKA</td>
 <td headers="Hud  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Hud  icpc2group_code" class="gt_row gt_center">s72</td>
-<td headers="Hud  icpc2raw_code" class="gt_row gt_center">S72</td>
+    <tr><td headers="Hud  icpc2group_tag" class="gt_row gt_center">s72</td>
+<td headers="Hud  icpc2raw_tag" class="gt_row gt_center">S72</td>
 <td headers="Hud  icpc2group_description_nb" class="gt_row gt_center">Skabb/infestasjon midd</td>
 <td headers="Hud  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Hud  icpc2group_code" class="gt_row gt_center">s73</td>
-<td headers="Hud  icpc2raw_code" class="gt_row gt_center">S73</td>
+    <tr><td headers="Hud  icpc2group_tag" class="gt_row gt_center">s73</td>
+<td headers="Hud  icpc2raw_tag" class="gt_row gt_center">S73</td>
 <td headers="Hud  icpc2group_description_nb" class="gt_row gt_center">Infestasjon parasitt IKA</td>
 <td headers="Hud  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Hud  icpc2group_code" class="gt_row gt_center">s76</td>
-<td headers="Hud  icpc2raw_code" class="gt_row gt_center">S76</td>
+    <tr><td headers="Hud  icpc2group_tag" class="gt_row gt_center">s76</td>
+<td headers="Hud  icpc2raw_tag" class="gt_row gt_center">S76</td>
 <td headers="Hud  icpc2group_description_nb" class="gt_row gt_center">Hudinfeksjon IKA</td>
 <td headers="Hud  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Hud  icpc2group_code" class="gt_row gt_center">s84</td>
-<td headers="Hud  icpc2raw_code" class="gt_row gt_center">S84</td>
+    <tr><td headers="Hud  icpc2group_tag" class="gt_row gt_center">s84</td>
+<td headers="Hud  icpc2raw_tag" class="gt_row gt_center">S84</td>
 <td headers="Hud  icpc2group_description_nb" class="gt_row gt_center">Brennkopper</td>
 <td headers="Hud  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Hud  icpc2group_code" class="gt_row gt_center">s95</td>
-<td headers="Hud  icpc2raw_code" class="gt_row gt_center">S95</td>
+    <tr><td headers="Hud  icpc2group_tag" class="gt_row gt_center">s95</td>
+<td headers="Hud  icpc2raw_tag" class="gt_row gt_center">S95</td>
 <td headers="Hud  icpc2group_description_nb" class="gt_row gt_center">Molluscum contagiosum</td>
 <td headers="Hud  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Hud  icpc2group_code" class="gt_row gt_center">s99</td>
-<td headers="Hud  icpc2raw_code" class="gt_row gt_center">S99</td>
+    <tr><td headers="Hud  icpc2group_tag" class="gt_row gt_center">s99</td>
+<td headers="Hud  icpc2raw_tag" class="gt_row gt_center">S99</td>
 <td headers="Hud  icpc2group_description_nb" class="gt_row gt_center">Hud/underhud sykdom IKA</td>
 <td headers="Hud  component_nb" class="gt_row gt_center">Annet</td></tr>
   </tbody>
@@ -812,12 +816,12 @@ editor_options:
 </table>
 </div><!--/html_preserve-->
 
-<!--html_preserve--><div id="hnbzqslmca" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<!--html_preserve--><div id="cxtdtlnzfc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#hnbzqslmca .gt_table {
+#cxtdtlnzfc .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -842,7 +846,7 @@ editor_options:
   border-left-color: #D3D3D3;
 }
 
-#hnbzqslmca .gt_heading {
+#cxtdtlnzfc .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -854,12 +858,12 @@ editor_options:
   border-right-color: #D3D3D3;
 }
 
-#hnbzqslmca .gt_caption {
+#cxtdtlnzfc .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#hnbzqslmca .gt_title {
+#cxtdtlnzfc .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -871,7 +875,7 @@ editor_options:
   border-bottom-width: 0;
 }
 
-#hnbzqslmca .gt_subtitle {
+#cxtdtlnzfc .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -883,13 +887,13 @@ editor_options:
   border-top-width: 0;
 }
 
-#hnbzqslmca .gt_bottom_border {
+#cxtdtlnzfc .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#hnbzqslmca .gt_col_headings {
+#cxtdtlnzfc .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -904,7 +908,7 @@ editor_options:
   border-right-color: #D3D3D3;
 }
 
-#hnbzqslmca .gt_col_heading {
+#cxtdtlnzfc .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -924,7 +928,7 @@ editor_options:
   overflow-x: hidden;
 }
 
-#hnbzqslmca .gt_column_spanner_outer {
+#cxtdtlnzfc .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -936,15 +940,15 @@ editor_options:
   padding-right: 4px;
 }
 
-#hnbzqslmca .gt_column_spanner_outer:first-child {
+#cxtdtlnzfc .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#hnbzqslmca .gt_column_spanner_outer:last-child {
+#cxtdtlnzfc .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#hnbzqslmca .gt_column_spanner {
+#cxtdtlnzfc .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -956,7 +960,7 @@ editor_options:
   width: 100%;
 }
 
-#hnbzqslmca .gt_group_heading {
+#cxtdtlnzfc .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -982,7 +986,7 @@ editor_options:
   text-align: left;
 }
 
-#hnbzqslmca .gt_empty_group_heading {
+#cxtdtlnzfc .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -997,15 +1001,15 @@ editor_options:
   vertical-align: middle;
 }
 
-#hnbzqslmca .gt_from_md > :first-child {
+#cxtdtlnzfc .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#hnbzqslmca .gt_from_md > :last-child {
+#cxtdtlnzfc .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#hnbzqslmca .gt_row {
+#cxtdtlnzfc .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1024,7 +1028,7 @@ editor_options:
   overflow-x: hidden;
 }
 
-#hnbzqslmca .gt_stub {
+#cxtdtlnzfc .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1037,7 +1041,7 @@ editor_options:
   padding-right: 5px;
 }
 
-#hnbzqslmca .gt_stub_row_group {
+#cxtdtlnzfc .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1051,11 +1055,11 @@ editor_options:
   vertical-align: top;
 }
 
-#hnbzqslmca .gt_row_group_first td {
+#cxtdtlnzfc .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#hnbzqslmca .gt_summary_row {
+#cxtdtlnzfc .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1065,16 +1069,16 @@ editor_options:
   padding-right: 5px;
 }
 
-#hnbzqslmca .gt_first_summary_row {
+#cxtdtlnzfc .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#hnbzqslmca .gt_first_summary_row.thick {
+#cxtdtlnzfc .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#hnbzqslmca .gt_last_summary_row {
+#cxtdtlnzfc .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1084,7 +1088,7 @@ editor_options:
   border-bottom-color: #D3D3D3;
 }
 
-#hnbzqslmca .gt_grand_summary_row {
+#cxtdtlnzfc .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1094,7 +1098,7 @@ editor_options:
   padding-right: 5px;
 }
 
-#hnbzqslmca .gt_first_grand_summary_row {
+#cxtdtlnzfc .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1104,11 +1108,11 @@ editor_options:
   border-top-color: #D3D3D3;
 }
 
-#hnbzqslmca .gt_striped {
+#cxtdtlnzfc .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#hnbzqslmca .gt_table_body {
+#cxtdtlnzfc .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1117,7 +1121,7 @@ editor_options:
   border-bottom-color: #D3D3D3;
 }
 
-#hnbzqslmca .gt_footnotes {
+#cxtdtlnzfc .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1131,7 +1135,7 @@ editor_options:
   border-right-color: #D3D3D3;
 }
 
-#hnbzqslmca .gt_footnote {
+#cxtdtlnzfc .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -1140,7 +1144,7 @@ editor_options:
   padding-right: 5px;
 }
 
-#hnbzqslmca .gt_sourcenotes {
+#cxtdtlnzfc .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1154,7 +1158,7 @@ editor_options:
   border-right-color: #D3D3D3;
 }
 
-#hnbzqslmca .gt_sourcenote {
+#cxtdtlnzfc .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1162,64 +1166,64 @@ editor_options:
   padding-right: 5px;
 }
 
-#hnbzqslmca .gt_left {
+#cxtdtlnzfc .gt_left {
   text-align: left;
 }
 
-#hnbzqslmca .gt_center {
+#cxtdtlnzfc .gt_center {
   text-align: center;
 }
 
-#hnbzqslmca .gt_right {
+#cxtdtlnzfc .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#hnbzqslmca .gt_font_normal {
+#cxtdtlnzfc .gt_font_normal {
   font-weight: normal;
 }
 
-#hnbzqslmca .gt_font_bold {
+#cxtdtlnzfc .gt_font_bold {
   font-weight: bold;
 }
 
-#hnbzqslmca .gt_font_italic {
+#cxtdtlnzfc .gt_font_italic {
   font-style: italic;
 }
 
-#hnbzqslmca .gt_super {
+#cxtdtlnzfc .gt_super {
   font-size: 65%;
 }
 
-#hnbzqslmca .gt_footnote_marks {
+#cxtdtlnzfc .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#hnbzqslmca .gt_asterisk {
+#cxtdtlnzfc .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#hnbzqslmca .gt_indent_1 {
+#cxtdtlnzfc .gt_indent_1 {
   text-indent: 5px;
 }
 
-#hnbzqslmca .gt_indent_2 {
+#cxtdtlnzfc .gt_indent_2 {
   text-indent: 10px;
 }
 
-#hnbzqslmca .gt_indent_3 {
+#cxtdtlnzfc .gt_indent_3 {
   text-indent: 15px;
 }
 
-#hnbzqslmca .gt_indent_4 {
+#cxtdtlnzfc .gt_indent_4 {
   text-indent: 20px;
 }
 
-#hnbzqslmca .gt_indent_5 {
+#cxtdtlnzfc .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1244,369 +1248,373 @@ editor_options:
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="General and unspecified">General and unspecified</th>
     </tr>
-    <tr class="gt_row_group_first"><td headers="General and unspecified  icpc2group_code" class="gt_row gt_center">a02</td>
-<td headers="General and unspecified  icpc2raw_code" class="gt_row gt_center">A02</td>
+    <tr class="gt_row_group_first"><td headers="General and unspecified  icpc2group_tag" class="gt_row gt_center">a02</td>
+<td headers="General and unspecified  icpc2raw_tag" class="gt_row gt_center">A02</td>
 <td headers="General and unspecified  icpc2group_description_en" class="gt_row gt_center">Chills</td>
 <td headers="General and unspecified  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="General and unspecified  icpc2group_code" class="gt_row gt_center">a03</td>
-<td headers="General and unspecified  icpc2raw_code" class="gt_row gt_center">A03</td>
+    <tr><td headers="General and unspecified  icpc2group_tag" class="gt_row gt_center">a03</td>
+<td headers="General and unspecified  icpc2raw_tag" class="gt_row gt_center">A03</td>
 <td headers="General and unspecified  icpc2group_description_en" class="gt_row gt_center">Fever</td>
 <td headers="General and unspecified  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="General and unspecified  icpc2group_code" class="gt_row gt_center">a05</td>
-<td headers="General and unspecified  icpc2raw_code" class="gt_row gt_center">A05</td>
+    <tr><td headers="General and unspecified  icpc2group_tag" class="gt_row gt_center">a04</td>
+<td headers="General and unspecified  icpc2raw_tag" class="gt_row gt_center">A04</td>
+<td headers="General and unspecified  icpc2group_description_en" class="gt_row gt_center">Weakness/tiredness general</td>
+<td headers="General and unspecified  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
+    <tr><td headers="General and unspecified  icpc2group_tag" class="gt_row gt_center">a05</td>
+<td headers="General and unspecified  icpc2raw_tag" class="gt_row gt_center">A05</td>
 <td headers="General and unspecified  icpc2group_description_en" class="gt_row gt_center">Feeling ill</td>
 <td headers="General and unspecified  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="General and unspecified  icpc2group_code" class="gt_row gt_center">a71</td>
-<td headers="General and unspecified  icpc2raw_code" class="gt_row gt_center">A71</td>
+    <tr><td headers="General and unspecified  icpc2group_tag" class="gt_row gt_center">a71</td>
+<td headers="General and unspecified  icpc2raw_tag" class="gt_row gt_center">A71</td>
 <td headers="General and unspecified  icpc2group_description_en" class="gt_row gt_center">Measles</td>
 <td headers="General and unspecified  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="General and unspecified  icpc2group_code" class="gt_row gt_center">a72</td>
-<td headers="General and unspecified  icpc2raw_code" class="gt_row gt_center">A72</td>
+    <tr><td headers="General and unspecified  icpc2group_tag" class="gt_row gt_center">a72</td>
+<td headers="General and unspecified  icpc2raw_tag" class="gt_row gt_center">A72</td>
 <td headers="General and unspecified  icpc2group_description_en" class="gt_row gt_center">Chickenpox</td>
 <td headers="General and unspecified  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="General and unspecified  icpc2group_code" class="gt_row gt_center">a73</td>
-<td headers="General and unspecified  icpc2raw_code" class="gt_row gt_center">A73</td>
+    <tr><td headers="General and unspecified  icpc2group_tag" class="gt_row gt_center">a73</td>
+<td headers="General and unspecified  icpc2raw_tag" class="gt_row gt_center">A73</td>
 <td headers="General and unspecified  icpc2group_description_en" class="gt_row gt_center">Malaria</td>
 <td headers="General and unspecified  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="General and unspecified  icpc2group_code" class="gt_row gt_center">a74</td>
-<td headers="General and unspecified  icpc2raw_code" class="gt_row gt_center">A74</td>
+    <tr><td headers="General and unspecified  icpc2group_tag" class="gt_row gt_center">a74</td>
+<td headers="General and unspecified  icpc2raw_tag" class="gt_row gt_center">A74</td>
 <td headers="General and unspecified  icpc2group_description_en" class="gt_row gt_center">Rubella</td>
 <td headers="General and unspecified  component_en" class="gt_row gt_center">Infections</td></tr>
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Infections">Infections</th>
     </tr>
-    <tr class="gt_row_group_first"><td headers="Infections  icpc2group_code" class="gt_row gt_center">a75</td>
-<td headers="Infections  icpc2raw_code" class="gt_row gt_center">A75</td>
+    <tr class="gt_row_group_first"><td headers="Infections  icpc2group_tag" class="gt_row gt_center">a75</td>
+<td headers="Infections  icpc2raw_tag" class="gt_row gt_center">A75</td>
 <td headers="Infections  icpc2group_description_en" class="gt_row gt_center">Infectious mononucleosis</td>
 <td headers="Infections  component_en" class="gt_row gt_center">General and unspecified</td></tr>
-    <tr><td headers="Infections  icpc2group_code" class="gt_row gt_center">a76</td>
-<td headers="Infections  icpc2raw_code" class="gt_row gt_center">A76</td>
+    <tr><td headers="Infections  icpc2group_tag" class="gt_row gt_center">a76</td>
+<td headers="Infections  icpc2raw_tag" class="gt_row gt_center">A76</td>
 <td headers="Infections  icpc2group_description_en" class="gt_row gt_center">Viral exanthem other</td>
 <td headers="Infections  component_en" class="gt_row gt_center">General and unspecified</td></tr>
-    <tr><td headers="Infections  icpc2group_code" class="gt_row gt_center">a77</td>
-<td headers="Infections  icpc2raw_code" class="gt_row gt_center">A77</td>
+    <tr><td headers="Infections  icpc2group_tag" class="gt_row gt_center">a77</td>
+<td headers="Infections  icpc2raw_tag" class="gt_row gt_center">A77</td>
 <td headers="Infections  icpc2group_description_en" class="gt_row gt_center">Viral disease other/NOS</td>
 <td headers="Infections  component_en" class="gt_row gt_center">General and unspecified</td></tr>
-    <tr><td headers="Infections  icpc2group_code" class="gt_row gt_center">a78</td>
-<td headers="Infections  icpc2raw_code" class="gt_row gt_center">A78</td>
+    <tr><td headers="Infections  icpc2group_tag" class="gt_row gt_center">a78</td>
+<td headers="Infections  icpc2raw_tag" class="gt_row gt_center">A78</td>
 <td headers="Infections  icpc2group_description_en" class="gt_row gt_center">Infectious disease other/NOS</td>
 <td headers="Infections  component_en" class="gt_row gt_center">General and unspecified</td></tr>
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Blood, blood forming organs, and immune mechanism">Blood, blood forming organs, and immune mechanism</th>
     </tr>
-    <tr class="gt_row_group_first"><td headers="Blood, blood forming organs, and immune mechanism  icpc2group_code" class="gt_row gt_center">b02</td>
-<td headers="Blood, blood forming organs, and immune mechanism  icpc2raw_code" class="gt_row gt_center">B02</td>
+    <tr class="gt_row_group_first"><td headers="Blood, blood forming organs, and immune mechanism  icpc2group_tag" class="gt_row gt_center">b02</td>
+<td headers="Blood, blood forming organs, and immune mechanism  icpc2raw_tag" class="gt_row gt_center">B02</td>
 <td headers="Blood, blood forming organs, and immune mechanism  icpc2group_description_en" class="gt_row gt_center">Lymph gland(s) enlarged/painful</td>
 <td headers="Blood, blood forming organs, and immune mechanism  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Blood, blood forming organs, and immune mechanism  icpc2group_code" class="gt_row gt_center">b70</td>
-<td headers="Blood, blood forming organs, and immune mechanism  icpc2raw_code" class="gt_row gt_center">B70</td>
+    <tr><td headers="Blood, blood forming organs, and immune mechanism  icpc2group_tag" class="gt_row gt_center">b70</td>
+<td headers="Blood, blood forming organs, and immune mechanism  icpc2raw_tag" class="gt_row gt_center">B70</td>
 <td headers="Blood, blood forming organs, and immune mechanism  icpc2group_description_en" class="gt_row gt_center">Lymphadenitis acute</td>
 <td headers="Blood, blood forming organs, and immune mechanism  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Blood, blood forming organs, and immune mechanism  icpc2group_code" class="gt_row gt_center">b71</td>
-<td headers="Blood, blood forming organs, and immune mechanism  icpc2raw_code" class="gt_row gt_center">B71</td>
+    <tr><td headers="Blood, blood forming organs, and immune mechanism  icpc2group_tag" class="gt_row gt_center">b71</td>
+<td headers="Blood, blood forming organs, and immune mechanism  icpc2raw_tag" class="gt_row gt_center">B71</td>
 <td headers="Blood, blood forming organs, and immune mechanism  icpc2group_description_en" class="gt_row gt_center">lymphadenitis non-specific</td>
 <td headers="Blood, blood forming organs, and immune mechanism  component_en" class="gt_row gt_center">Infections</td></tr>
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Digestive">Digestive</th>
     </tr>
-    <tr class="gt_row_group_first"><td headers="Digestive  icpc2group_code" class="gt_row gt_center">d01</td>
-<td headers="Digestive  icpc2raw_code" class="gt_row gt_center">D01</td>
+    <tr class="gt_row_group_first"><td headers="Digestive  icpc2group_tag" class="gt_row gt_center">d01</td>
+<td headers="Digestive  icpc2raw_tag" class="gt_row gt_center">D01</td>
 <td headers="Digestive  icpc2group_description_en" class="gt_row gt_center">Abdominal pain/cramps general</td>
 <td headers="Digestive  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Digestive  icpc2group_code" class="gt_row gt_center">d02</td>
-<td headers="Digestive  icpc2raw_code" class="gt_row gt_center">D02</td>
+    <tr><td headers="Digestive  icpc2group_tag" class="gt_row gt_center">d02</td>
+<td headers="Digestive  icpc2raw_tag" class="gt_row gt_center">D02</td>
 <td headers="Digestive  icpc2group_description_en" class="gt_row gt_center">Abdominal pain epigastric</td>
 <td headers="Digestive  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Digestive  icpc2group_code" class="gt_row gt_center">d06</td>
-<td headers="Digestive  icpc2raw_code" class="gt_row gt_center">D06</td>
+    <tr><td headers="Digestive  icpc2group_tag" class="gt_row gt_center">d06</td>
+<td headers="Digestive  icpc2raw_tag" class="gt_row gt_center">D06</td>
 <td headers="Digestive  icpc2group_description_en" class="gt_row gt_center">Abdominal pain localized other</td>
 <td headers="Digestive  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Digestive  icpc2group_code" class="gt_row gt_center">d08</td>
-<td headers="Digestive  icpc2raw_code" class="gt_row gt_center">D08</td>
+    <tr><td headers="Digestive  icpc2group_tag" class="gt_row gt_center">d08</td>
+<td headers="Digestive  icpc2raw_tag" class="gt_row gt_center">D08</td>
 <td headers="Digestive  icpc2group_description_en" class="gt_row gt_center">Flatulence/gas/belching</td>
 <td headers="Digestive  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Digestive  icpc2group_code" class="gt_row gt_center">d09</td>
-<td headers="Digestive  icpc2raw_code" class="gt_row gt_center">D09</td>
+    <tr><td headers="Digestive  icpc2group_tag" class="gt_row gt_center">d09</td>
+<td headers="Digestive  icpc2raw_tag" class="gt_row gt_center">D09</td>
 <td headers="Digestive  icpc2group_description_en" class="gt_row gt_center">Nausea</td>
 <td headers="Digestive  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Digestive  icpc2group_code" class="gt_row gt_center">d10</td>
-<td headers="Digestive  icpc2raw_code" class="gt_row gt_center">D10</td>
+    <tr><td headers="Digestive  icpc2group_tag" class="gt_row gt_center">d10</td>
+<td headers="Digestive  icpc2raw_tag" class="gt_row gt_center">D10</td>
 <td headers="Digestive  icpc2group_description_en" class="gt_row gt_center">Vomiting</td>
 <td headers="Digestive  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Digestive  icpc2group_code" class="gt_row gt_center">d11</td>
-<td headers="Digestive  icpc2raw_code" class="gt_row gt_center">D11</td>
+    <tr><td headers="Digestive  icpc2group_tag" class="gt_row gt_center">d11</td>
+<td headers="Digestive  icpc2raw_tag" class="gt_row gt_center">D11</td>
 <td headers="Digestive  icpc2group_description_en" class="gt_row gt_center">Diarrhea</td>
 <td headers="Digestive  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Digestive  icpc2group_code" class="gt_row gt_center">d14</td>
-<td headers="Digestive  icpc2raw_code" class="gt_row gt_center">D14</td>
+    <tr><td headers="Digestive  icpc2group_tag" class="gt_row gt_center">d14</td>
+<td headers="Digestive  icpc2raw_tag" class="gt_row gt_center">D14</td>
 <td headers="Digestive  icpc2group_description_en" class="gt_row gt_center">Hematemesis/vomiting blood</td>
 <td headers="Digestive  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Digestive  icpc2group_code" class="gt_row gt_center">d18</td>
-<td headers="Digestive  icpc2raw_code" class="gt_row gt_center">D18</td>
+    <tr><td headers="Digestive  icpc2group_tag" class="gt_row gt_center">d18</td>
+<td headers="Digestive  icpc2raw_tag" class="gt_row gt_center">D18</td>
 <td headers="Digestive  icpc2group_description_en" class="gt_row gt_center">Change feces/bowel movements</td>
 <td headers="Digestive  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Digestive  icpc2group_code" class="gt_row gt_center">d25</td>
-<td headers="Digestive  icpc2raw_code" class="gt_row gt_center">D25</td>
+    <tr><td headers="Digestive  icpc2group_tag" class="gt_row gt_center">d25</td>
+<td headers="Digestive  icpc2raw_tag" class="gt_row gt_center">D25</td>
 <td headers="Digestive  icpc2group_description_en" class="gt_row gt_center">Abdominal distension</td>
 <td headers="Digestive  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Digestive  icpc2group_code" class="gt_row gt_center">d29</td>
-<td headers="Digestive  icpc2raw_code" class="gt_row gt_center">D29</td>
+    <tr><td headers="Digestive  icpc2group_tag" class="gt_row gt_center">d29</td>
+<td headers="Digestive  icpc2raw_tag" class="gt_row gt_center">D29</td>
 <td headers="Digestive  icpc2group_description_en" class="gt_row gt_center">Digestive symptom/complaint other</td>
 <td headers="Digestive  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Digestive  icpc2group_code" class="gt_row gt_center">d70</td>
-<td headers="Digestive  icpc2raw_code" class="gt_row gt_center">D70</td>
+    <tr><td headers="Digestive  icpc2group_tag" class="gt_row gt_center">d70</td>
+<td headers="Digestive  icpc2raw_tag" class="gt_row gt_center">D70</td>
 <td headers="Digestive  icpc2group_description_en" class="gt_row gt_center">Gastrointestinal infection</td>
 <td headers="Digestive  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Digestive  icpc2group_code" class="gt_row gt_center">d73</td>
-<td headers="Digestive  icpc2raw_code" class="gt_row gt_center">D73</td>
+    <tr><td headers="Digestive  icpc2group_tag" class="gt_row gt_center">d73</td>
+<td headers="Digestive  icpc2raw_tag" class="gt_row gt_center">D73</td>
 <td headers="Digestive  icpc2group_description_en" class="gt_row gt_center">Gastroenteritis presumed infection</td>
 <td headers="Digestive  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Digestive  icpc2group_code" class="gt_row gt_center">d87</td>
-<td headers="Digestive  icpc2raw_code" class="gt_row gt_center">D87</td>
+    <tr><td headers="Digestive  icpc2group_tag" class="gt_row gt_center">d87</td>
+<td headers="Digestive  icpc2raw_tag" class="gt_row gt_center">D87</td>
 <td headers="Digestive  icpc2group_description_en" class="gt_row gt_center">Stomach function disorder</td>
 <td headers="Digestive  component_en" class="gt_row gt_center">Other diagnoses</td></tr>
-    <tr><td headers="Digestive  icpc2group_code" class="gt_row gt_center">d99</td>
-<td headers="Digestive  icpc2raw_code" class="gt_row gt_center">D99</td>
+    <tr><td headers="Digestive  icpc2group_tag" class="gt_row gt_center">d99</td>
+<td headers="Digestive  icpc2raw_tag" class="gt_row gt_center">D99</td>
 <td headers="Digestive  icpc2group_description_en" class="gt_row gt_center">Disease digestive system, other</td>
 <td headers="Digestive  component_en" class="gt_row gt_center">Other diagnoses</td></tr>
-    <tr><td headers="Digestive  icpc2group_code" class="gt_row gt_center">gastroenteritis</td>
-<td headers="Digestive  icpc2raw_code" class="gt_row gt_center">D11, D70, D73</td>
+    <tr><td headers="Digestive  icpc2group_tag" class="gt_row gt_center">gastroenteritis</td>
+<td headers="Digestive  icpc2raw_tag" class="gt_row gt_center">D11, D70, D73</td>
 <td headers="Digestive  icpc2group_description_en" class="gt_row gt_center">Gastroenteritis</td>
 <td headers="Digestive  component_en" class="gt_row gt_center">Combination</td></tr>
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Eye">Eye</th>
     </tr>
-    <tr class="gt_row_group_first"><td headers="Eye  icpc2group_code" class="gt_row gt_center">f70</td>
-<td headers="Eye  icpc2raw_code" class="gt_row gt_center">F70</td>
+    <tr class="gt_row_group_first"><td headers="Eye  icpc2group_tag" class="gt_row gt_center">f70</td>
+<td headers="Eye  icpc2raw_tag" class="gt_row gt_center">F70</td>
 <td headers="Eye  icpc2group_description_en" class="gt_row gt_center">Conjunctivitis infectious</td>
 <td headers="Eye  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Eye  icpc2group_code" class="gt_row gt_center">f73</td>
-<td headers="Eye  icpc2raw_code" class="gt_row gt_center">F73</td>
+    <tr><td headers="Eye  icpc2group_tag" class="gt_row gt_center">f73</td>
+<td headers="Eye  icpc2raw_tag" class="gt_row gt_center">F73</td>
 <td headers="Eye  icpc2group_description_en" class="gt_row gt_center">Eye infection/inflammation other</td>
 <td headers="Eye  component_en" class="gt_row gt_center">Infections</td></tr>
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Ear">Ear</th>
     </tr>
-    <tr class="gt_row_group_first"><td headers="Ear  icpc2group_code" class="gt_row gt_center">h01</td>
-<td headers="Ear  icpc2raw_code" class="gt_row gt_center">H01</td>
+    <tr class="gt_row_group_first"><td headers="Ear  icpc2group_tag" class="gt_row gt_center">h01</td>
+<td headers="Ear  icpc2raw_tag" class="gt_row gt_center">H01</td>
 <td headers="Ear  icpc2group_description_en" class="gt_row gt_center">Ear pain/earache</td>
 <td headers="Ear  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Ear  icpc2group_code" class="gt_row gt_center">h04</td>
-<td headers="Ear  icpc2raw_code" class="gt_row gt_center">H04</td>
+    <tr><td headers="Ear  icpc2group_tag" class="gt_row gt_center">h04</td>
+<td headers="Ear  icpc2raw_tag" class="gt_row gt_center">H04</td>
 <td headers="Ear  icpc2group_description_en" class="gt_row gt_center">Ear discharge</td>
 <td headers="Ear  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Ear  icpc2group_code" class="gt_row gt_center">h13</td>
-<td headers="Ear  icpc2raw_code" class="gt_row gt_center">H13</td>
+    <tr><td headers="Ear  icpc2group_tag" class="gt_row gt_center">h13</td>
+<td headers="Ear  icpc2raw_tag" class="gt_row gt_center">H13</td>
 <td headers="Ear  icpc2group_description_en" class="gt_row gt_center">Plugged feeling ear</td>
 <td headers="Ear  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Ear  icpc2group_code" class="gt_row gt_center">h29</td>
-<td headers="Ear  icpc2raw_code" class="gt_row gt_center">H29</td>
+    <tr><td headers="Ear  icpc2group_tag" class="gt_row gt_center">h29</td>
+<td headers="Ear  icpc2raw_tag" class="gt_row gt_center">H29</td>
 <td headers="Ear  icpc2group_description_en" class="gt_row gt_center">Ear symptom/complaint other</td>
 <td headers="Ear  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Ear  icpc2group_code" class="gt_row gt_center">h71</td>
-<td headers="Ear  icpc2raw_code" class="gt_row gt_center">H71</td>
+    <tr><td headers="Ear  icpc2group_tag" class="gt_row gt_center">h71</td>
+<td headers="Ear  icpc2raw_tag" class="gt_row gt_center">H71</td>
 <td headers="Ear  icpc2group_description_en" class="gt_row gt_center">Acute otitis media/myringitis</td>
 <td headers="Ear  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Ear  icpc2group_code" class="gt_row gt_center">h77</td>
-<td headers="Ear  icpc2raw_code" class="gt_row gt_center">H77</td>
+    <tr><td headers="Ear  icpc2group_tag" class="gt_row gt_center">h77</td>
+<td headers="Ear  icpc2raw_tag" class="gt_row gt_center">H77</td>
 <td headers="Ear  icpc2group_description_en" class="gt_row gt_center">Perforation ear drum</td>
 <td headers="Ear  component_en" class="gt_row gt_center">Injuries</td></tr>
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Respiratory">Respiratory</th>
     </tr>
-    <tr class="gt_row_group_first"><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r01</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R01</td>
+    <tr class="gt_row_group_first"><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r01</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R01</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Pain respiratory system</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r02</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R02</td>
-<td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Shortness of breat/dyspnea</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r02</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R02</td>
+<td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Shortness of breath/dyspnea</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r03</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R03</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r03</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R03</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Wheezing</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r04</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R04</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r04</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R04</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Breathing problem, other</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r05</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R05</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r05</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R05</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Cough</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r06</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R06</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r06</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R06</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Nose bleed/epistaxis</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r07</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R07</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r07</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R07</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Sneezing/nasal congestion</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r08</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R08</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r08</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R08</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Nose symptom/complaint other</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r09</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R09</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r09</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R09</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Sinus symptom/complaint</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r21</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R21</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r21</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R21</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Throat symptom/complaint</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r24</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R24</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r24</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R24</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Hemoptysis</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r25</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R25</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r25</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R25</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Sputum/phlegm abnormal</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r27</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R27, R270000</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r27</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R27, R270000</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Fear of respiratory disease, other</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r29</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R29</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r29</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R29</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Respiratory symptom/complaint other</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r33</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R33</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r33</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R33</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Respiratory microbiological/immunological test</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Process codes</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r71</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R71</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r71</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R71</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Whooping cough</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r72</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R72</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r72</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R72</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Strep throat</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r74</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R74</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r74</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R74</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Upper respiratory infection acute</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r75</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R75</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r75</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R75</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Sinusitis acute/chronic</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r76</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R76</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r76</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R76</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Tonsillitis acute</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r77</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R77</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r77</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R77</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Laryngitis/tracheitis acute</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r78</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R78</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r78</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R78</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Acute bronchitis/bronchiolitis</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r79</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R79</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r79</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R79</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Chronic bronchitis</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r80</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R80</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r80</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R80</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Influenza</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r81</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R81</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r81</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R81</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Pneumonia</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r82</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R82</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r82</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R82</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Pleurisy/pleural effusion</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r83</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R83</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r83</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R83</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Respiratory infection other</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r95</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R95</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r95</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R95</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Chronic obstructive pulmonary disorder</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Other diagnoses</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r96</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R96</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r96</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R96</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Asthma</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Other diagnoses</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r99</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R99</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r99</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R99</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Respiratory disease other</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Other diagnoses</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r991</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R991, R9910000</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r991</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R991, R9910000</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">COVID-19 (Probable/Suspected)</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">r992</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R992, R9920000</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r992</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R992, R9920000</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">COVID-19 (Confirmed)</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">respiratory</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R01, R02, R03, R04, R05, R07, R08, R09, R21, R24, R25, R27, R270000, R29, R33, R71, R72, R74, R75, R76, R77, R78, R79, R80, R81, R82, R83, R99, R991, R9910000, R992, R9920000</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">respiratory_infections</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R01, R02, R03, R04, R05, R07, R08, R09, R21, R24, R25, R27, R270000, R29, R33, R71, R72, R74, R75, R76, R77, R78, R79, R80, R81, R82, R83, R99, R991, R9910000, R992, R9920000</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Respiratory infections</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Combination</td></tr>
-    <tr><td headers="Respiratory  icpc2group_code" class="gt_row gt_center">covid19</td>
-<td headers="Respiratory  icpc2raw_code" class="gt_row gt_center">R991, R9910000, R992, R9920000, R33</td>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">covid19</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R991, R9910000, R992, R9920000, R33</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">COVID-19</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Combination</td></tr>
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Skin">Skin</th>
     </tr>
-    <tr class="gt_row_group_first"><td headers="Skin  icpc2group_code" class="gt_row gt_center">s06</td>
-<td headers="Skin  icpc2raw_code" class="gt_row gt_center">S06</td>
+    <tr class="gt_row_group_first"><td headers="Skin  icpc2group_tag" class="gt_row gt_center">s06</td>
+<td headers="Skin  icpc2raw_tag" class="gt_row gt_center">S06</td>
 <td headers="Skin  icpc2group_description_en" class="gt_row gt_center">Rash localized</td>
 <td headers="Skin  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Skin  icpc2group_code" class="gt_row gt_center">s07</td>
-<td headers="Skin  icpc2raw_code" class="gt_row gt_center">S07</td>
+    <tr><td headers="Skin  icpc2group_tag" class="gt_row gt_center">s07</td>
+<td headers="Skin  icpc2raw_tag" class="gt_row gt_center">S07</td>
 <td headers="Skin  icpc2group_description_en" class="gt_row gt_center">Rash generalized</td>
 <td headers="Skin  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Skin  icpc2group_code" class="gt_row gt_center">s10</td>
-<td headers="Skin  icpc2raw_code" class="gt_row gt_center">S10</td>
+    <tr><td headers="Skin  icpc2group_tag" class="gt_row gt_center">s10</td>
+<td headers="Skin  icpc2raw_tag" class="gt_row gt_center">S10</td>
 <td headers="Skin  icpc2group_description_en" class="gt_row gt_center">Boil/carbuncle</td>
 <td headers="Skin  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Skin  icpc2group_code" class="gt_row gt_center">s12</td>
-<td headers="Skin  icpc2raw_code" class="gt_row gt_center">S12</td>
+    <tr><td headers="Skin  icpc2group_tag" class="gt_row gt_center">s12</td>
+<td headers="Skin  icpc2raw_tag" class="gt_row gt_center">S12</td>
 <td headers="Skin  icpc2group_description_en" class="gt_row gt_center">Insect bite/sting</td>
 <td headers="Skin  component_en" class="gt_row gt_center">Injuries</td></tr>
-    <tr><td headers="Skin  icpc2group_code" class="gt_row gt_center">s17</td>
-<td headers="Skin  icpc2raw_code" class="gt_row gt_center">S17</td>
+    <tr><td headers="Skin  icpc2group_tag" class="gt_row gt_center">s17</td>
+<td headers="Skin  icpc2raw_tag" class="gt_row gt_center">S17</td>
 <td headers="Skin  icpc2group_description_en" class="gt_row gt_center">Abrasion/scratch/blister</td>
 <td headers="Skin  component_en" class="gt_row gt_center">Injuries</td></tr>
-    <tr><td headers="Skin  icpc2group_code" class="gt_row gt_center">s29</td>
-<td headers="Skin  icpc2raw_code" class="gt_row gt_center">S29</td>
+    <tr><td headers="Skin  icpc2group_tag" class="gt_row gt_center">s29</td>
+<td headers="Skin  icpc2raw_tag" class="gt_row gt_center">S29</td>
 <td headers="Skin  icpc2group_description_en" class="gt_row gt_center">Skin symptom/complaint other</td>
 <td headers="Skin  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
-    <tr><td headers="Skin  icpc2group_code" class="gt_row gt_center">s70</td>
-<td headers="Skin  icpc2raw_code" class="gt_row gt_center">S70</td>
+    <tr><td headers="Skin  icpc2group_tag" class="gt_row gt_center">s70</td>
+<td headers="Skin  icpc2raw_tag" class="gt_row gt_center">S70</td>
 <td headers="Skin  icpc2group_description_en" class="gt_row gt_center">Herpes zoster</td>
 <td headers="Skin  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Skin  icpc2group_code" class="gt_row gt_center">s71</td>
-<td headers="Skin  icpc2raw_code" class="gt_row gt_center">S71</td>
+    <tr><td headers="Skin  icpc2group_tag" class="gt_row gt_center">s71</td>
+<td headers="Skin  icpc2raw_tag" class="gt_row gt_center">S71</td>
 <td headers="Skin  icpc2group_description_en" class="gt_row gt_center">Herpes simplex</td>
 <td headers="Skin  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Skin  icpc2group_code" class="gt_row gt_center">s72</td>
-<td headers="Skin  icpc2raw_code" class="gt_row gt_center">S72</td>
+    <tr><td headers="Skin  icpc2group_tag" class="gt_row gt_center">s72</td>
+<td headers="Skin  icpc2raw_tag" class="gt_row gt_center">S72</td>
 <td headers="Skin  icpc2group_description_en" class="gt_row gt_center">Scabies/other acariasis</td>
 <td headers="Skin  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Skin  icpc2group_code" class="gt_row gt_center">s73</td>
-<td headers="Skin  icpc2raw_code" class="gt_row gt_center">S73</td>
+    <tr><td headers="Skin  icpc2group_tag" class="gt_row gt_center">s73</td>
+<td headers="Skin  icpc2raw_tag" class="gt_row gt_center">S73</td>
 <td headers="Skin  icpc2group_description_en" class="gt_row gt_center">Pediculosis/skin infestation other</td>
 <td headers="Skin  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Skin  icpc2group_code" class="gt_row gt_center">s76</td>
-<td headers="Skin  icpc2raw_code" class="gt_row gt_center">S76</td>
+    <tr><td headers="Skin  icpc2group_tag" class="gt_row gt_center">s76</td>
+<td headers="Skin  icpc2raw_tag" class="gt_row gt_center">S76</td>
 <td headers="Skin  icpc2group_description_en" class="gt_row gt_center">Skin infection other</td>
 <td headers="Skin  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Skin  icpc2group_code" class="gt_row gt_center">s84</td>
-<td headers="Skin  icpc2raw_code" class="gt_row gt_center">S84</td>
+    <tr><td headers="Skin  icpc2group_tag" class="gt_row gt_center">s84</td>
+<td headers="Skin  icpc2raw_tag" class="gt_row gt_center">S84</td>
 <td headers="Skin  icpc2group_description_en" class="gt_row gt_center">Impetigo</td>
 <td headers="Skin  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Skin  icpc2group_code" class="gt_row gt_center">s95</td>
-<td headers="Skin  icpc2raw_code" class="gt_row gt_center">S95</td>
+    <tr><td headers="Skin  icpc2group_tag" class="gt_row gt_center">s95</td>
+<td headers="Skin  icpc2raw_tag" class="gt_row gt_center">S95</td>
 <td headers="Skin  icpc2group_description_en" class="gt_row gt_center">Molluscum contagiosum</td>
 <td headers="Skin  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Skin  icpc2group_code" class="gt_row gt_center">s99</td>
-<td headers="Skin  icpc2raw_code" class="gt_row gt_center">S99</td>
+    <tr><td headers="Skin  icpc2group_tag" class="gt_row gt_center">s99</td>
+<td headers="Skin  icpc2raw_tag" class="gt_row gt_center">S99</td>
 <td headers="Skin  icpc2group_description_en" class="gt_row gt_center">Skin disease, other</td>
 <td headers="Skin  component_en" class="gt_row gt_center">Other diagnoses</td></tr>
   </tbody>

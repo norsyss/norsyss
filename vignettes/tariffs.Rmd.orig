@@ -60,15 +60,15 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
 
 ```{r, echo = FALSE}
 dt <- copy(norsyss::tariff$raw)
-dt[, tariffgroup_code := factor(
-  tariffgroup_code,
-  levels = norsyss::tariff$group$tariffgroup_code,
-  labels = paste0(norsyss::tariff$group$tariffgroup_description_nb, " (\"", norsyss::tariff$group$tariffgroup_code, "\")")
+dt[, tariffgroup_tag := factor(
+  tariffgroup_tag,
+  levels = norsyss::tariff$group$tariffgroup_tag,
+  labels = paste0(norsyss::tariff$group$tariffgroup_description_nb, " (\"", norsyss::tariff$group$tariffgroup_tag, "\")")
 )]
 dt %>%
-  dplyr::group_by(tariffgroup_code) %>%
-  gt::gt(rowname_col = "tariffraw_code") %>%
-  gt::cols_hide(columns = c(tariffgroup_code, tariffraw_description_en)) %>%
+  dplyr::group_by(tariffgroup_tag) %>%
+  gt::gt(rowname_col = "tariffraw_tag") %>%
+  gt::cols_hide(columns = c(tariffgroup_tag, tariffraw_description_en)) %>%
   gt::tab_header(
     title = "Tariff codes in NorSySS",
     subtitle = "Norwegian bokmål"
@@ -78,15 +78,15 @@ dt %>%
 
 ```{r, echo = FALSE}
 dt <- copy(norsyss::tariff$raw)
-dt[, tariffgroup_code := factor(
-  tariffgroup_code,
-  levels = norsyss::tariff$group$tariffgroup_code,
-  labels = paste0(norsyss::tariff$group$tariffgroup_description_en, " (\"", norsyss::tariff$group$tariffgroup_code, "\")")
+dt[, tariffgroup_tag := factor(
+  tariffgroup_tag,
+  levels = norsyss::tariff$group$tariffgroup_tag,
+  labels = paste0(norsyss::tariff$group$tariffgroup_description_en, " (\"", norsyss::tariff$group$tariffgroup_tag, "\")")
 )]
 dt %>%
-  dplyr::group_by(tariffgroup_code) %>%
-  gt::gt(rowname_col = "tariffraw_code") %>%
-  gt::cols_hide(columns = c(tariffgroup_code, tariffraw_description_nb)) %>%
+  dplyr::group_by(tariffgroup_tag) %>%
+  gt::gt(rowname_col = "tariffraw_tag") %>%
+  gt::cols_hide(columns = c(tariffgroup_tag, tariffraw_description_nb)) %>%
   gt::tab_header(
     title = "Tariff codes in NorSySS",
     subtitle = "English"
