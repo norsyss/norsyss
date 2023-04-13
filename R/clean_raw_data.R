@@ -83,6 +83,23 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
     default = "missing"
   )]
   d[, PasientAlder := NULL]
+
+  # recode into the ages that we will use
+  d[, age := fcase(
+    age == "000-004",   "000-004",
+    age == "005-014",   "005-014",
+    age == "015-019",   "015-019",
+    age == "020-029",   "020-029",
+    age == "030-039",   "030-064",
+    age == "040-049",   "030-064",
+    age == "050-059",   "030-064",
+    age == "060-064",   "030-064",
+    age == "065-069",   "065-069",
+    age == "070-079",   "070-079",
+    age == "080p",   "080p",
+    default = "missing"
+  )]
+
   d_age <- copy(d)
   d_age[, age := "total"]
   d <- rbind(d, d_age)
@@ -112,18 +129,7 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
   rm("d_f", "d_e", "d_s", "d_fe")
   gc()
 
-  d[, sex := fcase(
-    PasientKjonn == "Mann", "male",
-    PasientKjonn == "Kvinne", "female",
-    default = "missing"
-  )]
-  d[, PasientKjonn := NULL]
-
-  d_male <- d[sex=="male"]
-  d_female <- d[sex=="female"]
   d[, sex := "total"]
-  d <- rbind(d, d_male, d_female)
-  rm("d_male", "d_female")
   gc()
 
   for (i in seq_along(icpc2$icpc2raw_tag)) {
@@ -180,8 +186,8 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
 
   # skeletons ----
   s_nation <- expand.grid(
-    age = c("total", "000-004", "005-014", "015-019", "020-029", "030-039", "040-049", "050-059", "060-064", "065-069", "070-079", "080p"),
-    sex = c("total", "male", "female"),
+    age = c("total", "000-004", "005-014", "015-019", "020-029", "030-064", "065-069", "070-079", "080p"),
+    sex = c("total"),
     # practice_tag = c("k", "v", "kv"),
     tariffgroup_tag = c("f", "e", "s", "fe", "fes"),
     date = seq.Date(as.Date(date_from), as.Date(date_to), 1)
