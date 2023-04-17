@@ -20,8 +20,8 @@ get_raw_data <- function(date_from, date_to){
 
 #' @export
 get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_to = isoyearweek_from){
-  # isoyearweek_from <- "2021-02"
-  # isoyearweek_to <- "2021-02"
+  # isoyearweek_from <- "2022-52"
+  # isoyearweek_to <- "2022-52"
   date_from <- cstime::dates_by_isoyearweek[isoyearweek>=isoyearweek_from & isoyearweek<=isoyearweek_to]$mon %>% min()
   date_to <- cstime::dates_by_isoyearweek[isoyearweek>=isoyearweek_from & isoyearweek<=isoyearweek_to]$sun %>% max()
   #date_to <- date_from
@@ -205,6 +205,7 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
 
   # remove the dates from s_nation ()
   s_nation[, date := NULL]
+  s_nation[, calyear := NULL]
   s_nation <- unique(s_nation)
 
   # introducing data to skeletons ----
@@ -284,7 +285,6 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
   gc()
   for (i in c(icpc2$icpc2group_tag, "consultations_all_n")) s_nation[is.na(get(i)), (i) := 0]
   s_nation[, location_code := "nation_nor"]
-  s_nation[, calyear := NULL]
 
   # together
   d_agg <- rbindlist(list(s_nation,s_county, s_municip), use.names = TRUE)
