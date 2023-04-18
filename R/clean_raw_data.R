@@ -351,9 +351,9 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
   gc()
 
   # pr100
-  d_agg[, consultations_icpc2group_vs_all_pr100 := round(100*consultations_icpc2group_n/consultations_all_n, 1)]
+  d_agg[, consultations_icpc2group_vs_all_pr100 := round(100*consultations_icpc2group_n/consultations_all_n, 2)]
   d_agg[is.nan(consultations_icpc2group_vs_all_pr100), consultations_icpc2group_vs_all_pr100 := 0]
-  d_agg[, consultations_icpc2group_vs_without_influenza_covid19_pr100 := round(100*consultations_icpc2group_n/consultations_without_influenza_covid19_n, 1)]
+  d_agg[, consultations_icpc2group_vs_without_influenza_covid19_pr100 := round(100*consultations_icpc2group_n/consultations_without_influenza_covid19_n, 2)]
   d_agg[is.nan(consultations_icpc2group_vs_without_influenza_covid19_pr100), consultations_icpc2group_vs_without_influenza_covid19_pr100 := 0]
 
   setcolorder(
