@@ -63,22 +63,22 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
   # gc()
 
   d[, age := fcase(
-    PasientAlder == "0-4",   "000-004",
+    PasientAlder == "0-4",   "000_004",
 
-    PasientAlder == "5-9",   "005-014",
-    PasientAlder == "0-9",   "005-014", # for kommune with <500 people
-    PasientAlder == "10-14", "005-014",
+    PasientAlder == "5-9",   "005_014",
+    PasientAlder == "0-9",   "005_014", # for kommune with <500 people
+    PasientAlder == "10-14", "005_014",
 
-    PasientAlder == "10-19", "015-019", # for kommune with <500 people
-    PasientAlder == "15-19", "015-019",
+    PasientAlder == "10-19", "015_019", # for kommune with <500 people
+    PasientAlder == "15-19", "015_019",
 
-    PasientAlder == "20-29", "020-029",
-    PasientAlder == "30-39", "030-039",
-    PasientAlder == "40-49", "040-049",
-    PasientAlder == "50-59", "050-059",
-    PasientAlder == "60-64", "060-064",
-    PasientAlder == "65-69", "065-069",
-    PasientAlder == "70-79", "070-079",
+    PasientAlder == "20-29", "020_029",
+    PasientAlder == "30-39", "030_039",
+    PasientAlder == "40-49", "040_049",
+    PasientAlder == "50-59", "050_059",
+    PasientAlder == "60-64", "060_064",
+    PasientAlder == "65-69", "065_069",
+    PasientAlder == "70-79", "070_079",
     PasientAlder == "80+", "080p",
     default = "missing"
   )]
@@ -86,16 +86,16 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
 
   # recode into the ages that we will use
   d[, age := fcase(
-    age == "000-004",   "000-004",
-    age == "005-014",   "005-014",
-    age == "015-019",   "015-019",
-    age == "020-029",   "020-029",
-    age == "030-039",   "030-064",
-    age == "040-049",   "030-064",
-    age == "050-059",   "030-064",
-    age == "060-064",   "030-064",
-    age == "065-069",   "065-069",
-    age == "070-079",   "070-079",
+    age == "000_004",   "000_004",
+    age == "005_014",   "005_014",
+    age == "015_019",   "015_019",
+    age == "020_029",   "020_029",
+    age == "030_039",   "030_064",
+    age == "040_049",   "030_064",
+    age == "050_059",   "030_064",
+    age == "060_064",   "030_064",
+    age == "065_069",   "065_069",
+    age == "070_079",   "070_079",
     age == "080p",   "080p",
     default = "missing"
   )]
