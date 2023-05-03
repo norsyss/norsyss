@@ -311,7 +311,7 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
   )
   gc()
 
-  d_agg[, granularity_time := "isoweek"]
+  d_agg[, granularity_time := "isoyearweek"]
   d_agg[, border := 2020]
 
 
