@@ -132,7 +132,13 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02"){
   #gc()
 
   # consultations_all_n will be = 1 for the first observation per Id
-  d[, consultations_all_n := as.integer(1:.N==1), by=Id]
+  d[, consultations_all_n := as.integer(1:.N==1), by=.(
+    Id,
+    BehandlerKommune,
+    age,
+    date,
+    tariffgroup_tag
+  )]
   # # Collapsing it down to 1 row per consultation
   # d <- d[,
   #        lapply(.SD, sum),
