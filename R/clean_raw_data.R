@@ -8,7 +8,7 @@ get_raw_data <- function(date_from, date_to){
   )
 
   command <- glue::glue(
-    "select Id,Diagnose,PasientAlder,PasientKj\u00F8nn as PasientKjonn,BehandlerKommune,Konsultasjonsdato as date,Takst,Praksis from Konsultasjon join KonsultasjonDiagnose on Id=KonsultasjonId join KonsultasjonTakst on Id=KonsultasjonTakst.KonsultasjonId where Konsultasjonsdato >='{date_from}' AND Konsultasjonsdato<='{date_to}'"
+    "select Id,Diagnose,PasientAlder,BehandlerKommune,Konsultasjonsdato as date,Takst from Konsultasjon join KonsultasjonDiagnose on Id=KonsultasjonId join KonsultasjonTakst on Id=KonsultasjonTakst.KonsultasjonId where Konsultasjonsdato >='{date_from}' AND Konsultasjonsdato<='{date_to}'"
   )
   d <- DBI::dbGetQuery(db, command)
 
@@ -19,11 +19,11 @@ get_raw_data <- function(date_from, date_to){
 }
 
 #' @export
-get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_to = isoyearweek_from){
+get_and_process_raw_data <- function(x_isoyearweek = "2021-02"){
   # isoyearweek_from <- "2022-52"
   # isoyearweek_to <- "2022-52"
-  date_from <- cstime::dates_by_isoyearweek[isoyearweek>=isoyearweek_from & isoyearweek<=isoyearweek_to]$mon %>% min()
-  date_to <- cstime::dates_by_isoyearweek[isoyearweek>=isoyearweek_from & isoyearweek<=isoyearweek_to]$sun %>% max()
+  date_from <- cstime::dates_by_isoyearweek[isoyearweek==x_isoyearweek]$mon %>% min()
+  date_to <- cstime::dates_by_isoyearweek[isoyearweek==x_isoyearweek]$sun %>% max()
   #date_to <- date_from
   d <- get_raw_data(date_from, date_to)
   setDT(d)
@@ -32,15 +32,15 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
   time_from_date[, calyear := cstime::date_to_calyear_n(date)]
   time_from_date[, isoyearweek := cstime::date_to_isoyearweek_c(date)]
 
-  time_from_isoyearweek <- unique(time_from_date[,.(isoyearweek)])
-  time_from_isoyearweek[, isoyear := cstime::isoyearweek_to_isoyear_n(isoyearweek)]
-  time_from_isoyearweek[, isoweek := cstime::isoyearweek_to_isoweek_n(isoyearweek)]
-  time_from_isoyearweek[, season := cstime::isoyearweek_to_season_c(isoyearweek)]
-  time_from_isoyearweek[, seasonweek := cstime::isoyearweek_to_seasonweek_n(isoyearweek)]
-  time_from_isoyearweek[, calyear := NA_integer_]
-  time_from_isoyearweek[, calmonth := NA_integer_]
-  time_from_isoyearweek[, calyearmonth := NA_character_]
-  time_from_isoyearweek[, date := cstime::isoyearweek_to_last_date(isoyearweek)]
+  # time_from_isoyearweek <- unique(time_from_date[,.(isoyearweek)])
+  # time_from_isoyearweek[, isoyear := cstime::isoyearweek_to_isoyear_n(isoyearweek)]
+  # time_from_isoyearweek[, isoweek := cstime::isoyearweek_to_isoweek_n(isoyearweek)]
+  # time_from_isoyearweek[, season := cstime::isoyearweek_to_season_c(isoyearweek)]
+  # time_from_isoyearweek[, seasonweek := cstime::isoyearweek_to_seasonweek_n(isoyearweek)]
+  # time_from_isoyearweek[, calyear := NA_integer_]
+  # time_from_isoyearweek[, calmonth := NA_integer_]
+  # time_from_isoyearweek[, calyearmonth := NA_character_]
+  # time_from_isoyearweek[, date := cstime::isoyearweek_to_last_date(isoyearweek)]
 
   # dont need practice_tag
   # d[, practice_tag := fcase(
@@ -60,7 +60,7 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
   # d[, practice_tag := "kv"]
   # d <- rbind(d, d_v, d_k)
   # rm("d_v", "d_k")
-  # gc()
+  # #gc()
 
   d[, age := fcase(
     PasientAlder == "0-4",   "000_004",
@@ -102,9 +102,9 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
 
   d_age <- copy(d)
   d_age[, age := "total"]
-  d <- rbind(d, d_age)
+  d <- rbindlist(list(d, d_age))
   rm("d_age")
-  gc()
+  #gc()
 
   d[, tariffgroup_tag := fcase(
     Takst %in% tariff$raw[tariffgroup_tag=="f"]$tariffraw_tag, "f",
@@ -112,89 +112,75 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
     Takst %in% tariff$raw[tariffgroup_tag=="s"]$tariffraw_tag, "s"
   )]
   d[, Takst := NULL]
-  d_f <- d[tariffgroup_tag=="f"]
-  d_e <- d[tariffgroup_tag=="e"]
-  d_s <- d[tariffgroup_tag=="s"]
+
+  d_fes <- copy(d)
+  d_fes[, tariffgroup_tag := "fes"]
 
   d_fe <- d[tariffgroup_tag %in% c("f", "e")]
   d_fe[, tariffgroup_tag := "fe"]
-  # d_fs <- d[tariffgroup_tag %in% c("f", "s")]
-  # d_fs[, tariffgroup_tag := "fs"]
-  # d_es <- d[tariffgroup_tag %in% c("e", "s")]
-  # d_es[, tariffgroup_tag := "es"]
 
-  d[, tariffgroup_tag := "fes"]
+  d <- rbindlist(list(d_fes, d_fe, d)) #, d_fs, d_es)
+  rm("d_fes", "d_fe")
+  #gc()
 
-  d <- rbind(d, d_f, d_e, d_s, d_fe) #, d_fs, d_es)
-  rm("d_f", "d_e", "d_s", "d_fe")
-  gc()
-
-  d[, sex := "total"]
-  gc()
-
+  setkey(d, Diagnose)
   for (i in seq_along(icpc2$icpc2raw_tag)) {
-    d[, (icpc2$icpc2group_tag[i]) := 0]
-    d[Diagnose %in% icpc2$icpc2raw_tag[[i]], (icpc2$icpc2group_tag[i]) := 1]
+    d[, (icpc2$icpc2group_tag[i]) := as.integer(Diagnose %in% icpc2$icpc2raw_tag[[i]])]
+    # d[, (icpc2$icpc2group_tag[i]) := 0]
+    # d[Diagnose %in% icpc2$icpc2raw_tag[[i]], (icpc2$icpc2group_tag[i]) := 1]
   }
-  gc()
+  #gc()
 
-  # Collapsing it down to 1 row per consultation
-  d <- d[,
-         lapply(.SD, sum),
-         by = .(
-           Id,
-           BehandlerKommune,
-           age,
-           sex,
-           date,
-           # practice_tag,
-           tariffgroup_tag
-         ),
-         .SDcols = icpc2$icpc2group_tag
-  ]
-  d[, consultations_all_n := 1]
-  gc()
+  # consultations_all_n will be = 1 for the first observation per Id
+  d[, consultations_all_n := as.integer(1:.N==1), by=Id]
+  # # Collapsing it down to 1 row per consultation
+  # d <- d[,
+  #        lapply(.SD, sum),
+  #        keyby = .(
+  #          Id,
+  #          BehandlerKommune,
+  #          age,
+  #          date,
+  #          # practice_tag,
+  #          tariffgroup_tag
+  #        ),
+  #        .SDcols = icpc2$icpc2group_tag
+  # ]
+  # d[, consultations_all_n := 1]
+  # #gc()
 
   # Collapsing it down to 1 row per kommune/age/sex/day/tariff <- BEA
   d <- d[, lapply(.SD, sum), ,
          by = .(
            BehandlerKommune,
            age,
-           sex,
            date,
-           # practice_tag,
            tariffgroup_tag
          ),
          .SDcols = c(icpc2$icpc2group_tag, "consultations_all_n")
   ]
-  d[time_from_date, on = "date", isoyearweek := isoyearweek]
-  gc()
+  # d[time_from_date, on = "date", isoyearweek := isoyearweek]
+  #gc()
 
   d_nation <- d[, lapply(.SD, sum), ,
          by = .(
            age,
-           sex,
-           isoyearweek,
-           # practice_tag,
            tariffgroup_tag
          ),
          .SDcols = c(icpc2$icpc2group_tag, "consultations_all_n")
   ]
 
-  d[, isoyearweek := NULL]
   d[, location_code_original := paste0("municip_nor",BehandlerKommune)]
 
   # skeletons ----
   s_nation <- expand.grid(
     age = c("total", "000-004", "005-014", "015-019", "020-029", "030-064", "065-069", "070-079", "080p"),
-    sex = c("total"),
-    # practice_tag = c("k", "v", "kv"),
     tariffgroup_tag = c("f", "e", "s", "fe", "fes"),
     date = seq.Date(as.Date(date_from), as.Date(date_to), 1)
   ) %>%
     setDT()
 
-  s_nation[time_from_date, on = "date", c("calyear", "isoyearweek") := .(calyear, isoyearweek)]
+  s_nation[time_from_date, on = "date", c("calyear") := .(calyear)]
 
   s_municip <- merge(
     s_nation,
@@ -215,8 +201,6 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
     d,
     by = c(
       "age",
-      "sex",
-      # "practice_tag",
       "tariffgroup_tag",
       "date",
       "location_code_original"
@@ -224,26 +208,25 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
     all.x = T
   )
   rm("d")
-  gc()
+  #gc()
+
   for (i in c(icpc2$icpc2group_tag, "consultations_all_n")) s_municip[, (i) := fcase(
     !is.na(get(i)), get(i) * weighting,
     default = 0
-    )]
+  )]
   s_municip <- s_municip[
     ,
     lapply(.SD, function(x) round(sum(x))),
-    by = .(
-      sex,
+    keyby = .(
       age,
-      isoyearweek,
-      # practice_tag,
       tariffgroup_tag,
       location_code_current
     ),
     .SDcols = c(icpc2$icpc2group_tag, "consultations_all_n")
   ]
-  gc()
+  #gc()
   setnames(s_municip, "location_code_current", "location_code")
+  s_municip[, granularity_geo := "municip"]
 
   # fylke ----
   s_county <- merge(
@@ -257,16 +240,14 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
     ,
     lapply(.SD, sum),
     by = .(
-      sex,
       age,
-      isoyearweek,
-      # practice_tag,
       tariffgroup_tag,
       to_code
     ),
     .SDcols = c(icpc2$icpc2group_tag, "consultations_all_n")
   ]
   setnames(s_county, "to_code", "location_code")
+  s_county[, granularity_geo := "county"]
 
   # nation ----
   s_nation <- merge(
@@ -274,34 +255,30 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
     d_nation,
     by = c(
       "age",
-      "sex",
-      # "practice_tag",
-      "tariffgroup_tag",
-      "isoyearweek"
+      "tariffgroup_tag"
     ),
     all.x = T
   )
   rm("d_nation")
-  gc()
+  #gc()
   for (i in c(icpc2$icpc2group_tag, "consultations_all_n")) s_nation[is.na(get(i)), (i) := 0]
   s_nation[, location_code := "nation_nor"]
+  s_nation[, granularity_geo := "nation"]
 
   # together
   d_agg <- rbindlist(list(s_nation,s_county, s_municip), use.names = TRUE)
   rm("s_nation", "s_county", "s_municip")
-  gc()
+  #gc()
 
   d_agg[, consultations_without_influenza_covid19_n := consultations_all_n - r80 - covid19]
 
   d_agg <- melt.data.table(
     d_agg,
     id.vars = c(
+      "granularity_geo",
       "location_code",
       "age",
-      "sex",
-      # "practice_tag",
       "tariffgroup_tag",
-      "isoyearweek",
       "consultations_all_n",
       "consultations_without_influenza_covid19_n"
     ),
@@ -309,46 +286,49 @@ get_and_process_raw_data <- function(isoyearweek_from = "2021-02", isoyearweek_t
     value.name = "consultations_icpc2group_n",
     variable.factor = FALSE
   )
-  gc()
+  #gc()
 
+  d_agg[, isoyearweek := x_isoyearweek]
   d_agg[, granularity_time := "isoyearweek"]
   d_agg[, border := 2020]
+  d_agg[, country_iso3 := "nor"]
+  d_agg[, sex := "total"]
 
+  # s_locations <- data.table(location_code = unique(d_agg$location_code), country_iso3 = "nor")
+  # csdata::add_granularity_geo_to_data_set(s_locations)
+  #
+  # d_agg[
+  #   s_locations,
+  #   on="location_code",
+  #   c("granularity_geo", "country_iso3") := .(granularity_geo, country_iso3)
+  # ]
 
-  s_locations <- data.table(location_code = unique(d_agg$location_code), country_iso3 = "nor")
-  csdata::add_granularity_geo_to_data_set(s_locations)
+  # d_agg[
+  #   time_from_isoyearweek,
+  #   on="isoyearweek",
+  #   c(
+  #     "isoyear",
+  #     "isoweek",
+  #     "season",
+  #     "seasonweek",
+  #     "calyear",
+  #     "calmonth",
+  #     "calyearmonth",
+  #     "date"
+  #   ) := .(
+  #     isoyear,
+  #     isoweek,
+  #     season,
+  #     seasonweek,
+  #     calyear,
+  #     calmonth,
+  #     calyearmonth,
+  #     date
+  #   )
+  # ]
+  cstidy::set_csfmt_rts_data_v1(d_agg)
 
-  d_agg[
-    s_locations,
-    on="location_code",
-    c("granularity_geo", "country_iso3") := .(granularity_geo, country_iso3)
-  ]
-
-  d_agg[
-    time_from_isoyearweek,
-    on="isoyearweek",
-    c(
-      "isoyear",
-      "isoweek",
-      "season",
-      "seasonweek",
-      "calyear",
-      "calmonth",
-      "calyearmonth",
-      "date"
-    ) := .(
-      isoyear,
-      isoweek,
-      season,
-      seasonweek,
-      calyear,
-      calmonth,
-      calyearmonth,
-      date
-    )
-  ]
-
-  gc()
+  #gc()
 
   # pr100
   d_agg[, consultations_icpc2group_vs_all_pr100 := round(100*consultations_icpc2group_n/consultations_all_n, 3)]
