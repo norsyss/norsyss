@@ -95,8 +95,8 @@ dt %>%
 ```
 
 ```{r per-year, fig.height = 10, echo = FALSE}
-if(file.exists(paste0(base_folder,"tariffs.rds"))){
-  d_tariff <- readRDS(paste0(base_folder,"tariffs.rds"))
+if(file.exists(paste0(base_folder,"tariffs.RDS"))){
+  d_tariff <- readRDS(paste0(base_folder,"tariffs.RDS"))
 } else {
   d_tariff <- list()
   print("OK")
@@ -117,7 +117,7 @@ for(i in start_index_value:nrow(dates_master)){
   retval[, isoyear := dates_master$isoyear[i]]
   d_tariff[[i]] <- retval
   gc(verbose = FALSE)
-  saveRDS(d_tariff, paste0(base_folder,"tariffs.rds"))
+  saveRDS(d_tariff, paste0(base_folder,"tariffs.RDS"))
 }
 
 d_tariff <- rbindlist(d_tariff)
@@ -143,7 +143,7 @@ d_tariff[, facet := factor(facet, levels = labs)]
 
 q <- ggplot(d_tariff, aes(x=isoyear, y=consultations_n, fill=still_in_use))
 q <- q + geom_col()
-q <- q + scale_y_continuous("Consultations", labels = csstyle::format_nor)
+q <- q + scale_y_continuous("Consultations", labels = csstyle::format_num_as_nor_num_0)
 q <- q + scale_x_continuous("Isoyear", limits = c(2005, max(d_tariff$isoyear)+1))
 q <- q + facet_wrap(~facet, scales="free", ncol = 2)
 q <- q + scale_fill_brewer(NULL, palette = "Set1", direction = -1)

@@ -25,11 +25,11 @@ db <- DBI::dbConnect(
 
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>", 
+  comment = "#>",
   out.width = "100%",
   fig.width = 7,
   fig.height = 4, dpi = 150, fig.path = "introduction-",
-  message = FALSE, 
+  message = FALSE,
   warning = FALSE,
   error = FALSE,
   connection = "db"
@@ -57,7 +57,7 @@ for(i in 1:nrow(dates_master)){
 }
 ```
 
-As of `r lubridate::today()`, NorSySS holds `r d_consultations$consultations_n |> sum() |> csstyle::format_nor()` consultations with general practitioners and out-of-hours primary care facilities between 2006-01-02 and `r konsultasjonsdato_max`.
+As of `r lubridate::today()`, NorSySS holds `r d_consultations$consultations_n |> sum() |> csstyle::format_num_as_nor_num_0()` consultations with general practitioners and out-of-hours primary care facilities between 2006-01-02 and `r konsultasjonsdato_max`.
 
 ```{r, echo = FALSE}
 gt::gt(d_consultations) %>%
@@ -84,7 +84,7 @@ gt::gt(d_consultations) %>%
   ) %>%
   gt::fmt(
     columns = consultations_n,
-    fns = csstyle::format_nor
+    fns = csstyle::format_num_as_nor_num_0
   )
 ```
 
