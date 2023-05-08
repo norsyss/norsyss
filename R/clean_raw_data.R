@@ -180,7 +180,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02"){
 
   # skeletons ----
   s_nation <- expand.grid(
-    age = c("total", "000-004", "005-014", "015-019", "020-029", "030-064", "065-069", "070-079", "080p"),
+    age = c("total", "000_004", "005_014", "015_019", "020_029", "030_064", "065_069", "070_079", "080p"),
     tariffgroup_tag = c("f", "e", "s", "fe", "fes"),
     date = seq.Date(as.Date(date_from), as.Date(date_to), 1)
   ) %>%
