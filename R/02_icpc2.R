@@ -211,7 +211,7 @@ reports$descriptions <- rbindlist(list(
     report_name_file_nb_ascii = "luftveier",
     report_name_nn = "Luftvegar",
     report_name_file_nn_utf = "luftvegar",
-    report_name_file_nn_ascii = "luftvegar",
+    report_name_file_nn_ascii = "luftvegar"
   ),
   data.table(
     report_tag = "skin",
