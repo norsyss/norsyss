@@ -140,3 +140,4 @@ setnames(
 )
 
 icpc2[, includes_influenza_covid19 := icpc2group_tag %in% c("r80", "r991", "r992", "covid19", "respiratory_infections")]
+icpc2[, prioritized := icpc2group_tag %in% c("r80", "covid19", "respiratory_infections", "gastroenteritis", "r72")]
