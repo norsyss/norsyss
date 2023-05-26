@@ -138,9 +138,9 @@ setnames(
     "bodysystem_nb"
   )
 )
-
 icpc2[, includes_influenza_covid19 := icpc2group_tag %in% c("r80", "r991", "r992", "covid19", "respiratory_infections")]
 
+#' @export
 reports <- list()
 reports$descriptions <- rbindlist(list(
   data.table(

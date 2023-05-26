@@ -3,6 +3,7 @@
 export("%>%")
 export(get_and_process_raw_data)
 export(icpc2)
+export(reports)
 export(tariff)
 import(data.table)
 importFrom(magrittr,"%>%")
