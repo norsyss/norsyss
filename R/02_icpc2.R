@@ -145,66 +145,93 @@ reports <- list()
 reports$descriptions <- rbindlist(list(
   data.table(
     report_tag = "prioritized",
-    report_name_en = "Priority",
-    report_name_nb = "Prioritert",
-    report_name_file_nb_utf = "Prioritert",
-    report_name_file_nb_ascii = "Prioritert"
+    report_name_en = "Prioritized diseases",
+    report_name_nb = "Prioriterte sykdommer",
+    report_name_file_nb_utf = "prioriterte_sykdommer",
+    report_name_file_nb_ascii = "prioriterte_sykdommer",
+    report_name_nn = "Prioriterte sjukdommar",
+    report_name_file_nn_utf = "prioriterte_sjukdommar",
+    report_name_file_nn_ascii = "prioriterte_sjukdommar"
   ),
   data.table(
     report_tag = "general_and_unspecified",
     report_name_en = "General and unspecified",
     report_name_nb = "Allment og uspesifisert",
-    report_name_file_nb_utf = "Allment_og_uspesifisert",
-    report_name_file_nb_ascii = "Allment_og_uspesifisert"
+    report_name_file_nb_utf = "allment_og_uspesifisert",
+    report_name_file_nb_ascii = "allment_og_uspesifisert",
+    report_name_nn = "Allment og uspesifisert",
+    report_name_file_nn_utf = "allment_og_uspesifisert",
+    report_name_file_nn_ascii = "allment_og_uspesifisert"
   ),
   data.table(
     report_tag = "blood_and_immune",
     report_name_en = "Blood, blood forming organs, and immune mechanism",
     report_name_nb = "Blod, bloddannende organer og immunsystemet",
-    report_name_file_nb_utf = "Blod_bloddannende_organer_og_immunsystemet",
-    report_name_file_nb_ascii = "Blod_bloddannende_organer_og_immunsystemet"
+    report_name_file_nb_utf = "blod_bloddannende_organer_og_immunsystemet",
+    report_name_file_nb_ascii = "blod_bloddannende_organer_og_immunsystemet",
+    report_name_nn = "Blod, bloddannande organ og immunsystemet",
+    report_name_file_nn_utf = "blod_bloddannande_organer_og_immunsystemet",
+    report_name_file_nn_ascii = "blod_bloddannande_organer_og_immunsystemet"
   ),
   data.table(
     report_tag = "digestive",
     report_name_en = "Digestive",
     report_name_nb = "Fordøyelsessystemet",
-    report_name_file_nb_utf = "Fordøyelsessystemet",
-    report_name_file_nb_ascii = "Fordoyelsessystemet"
+    report_name_file_nb_utf = "fordøyelsessystemet",
+    report_name_file_nb_ascii = "fordoyelsessystemet",
+    report_name_nn = "Fordøyingssystemet",
+    report_name_file_nn_utf = "fordøyingssystemet",
+    report_name_file_nn_ascii = "fordøyingssystemet"
   ),
   data.table(
     report_tag = "eye",
     report_name_en = "Eye",
     report_name_nb = "Øye",
-    report_name_file_nb_utf = "Øye",
-    report_name_file_nb_ascii = "Oye"
+    report_name_file_nb_utf = "øye",
+    report_name_file_nb_ascii = "oye",
+    report_name_nn = "Øye",
+    report_name_file_nn_utf = "øye",
+    report_name_file_nn_ascii = "oye"
   ),
   data.table(
     report_tag = "ear",
     report_name_en = "Ear",
     report_name_nb = "Øre",
-    report_name_file_nb_utf = "Øre",
-    report_name_file_nb_ascii = "Ore"
+    report_name_file_nb_utf = "øre",
+    report_name_file_nb_ascii = "ore",
+    report_name_nn = "Øre",
+    report_name_file_nn_utf = "øre",
+    report_name_file_nn_ascii = "ore"
   ),
   data.table(
     report_tag = "respiratory",
     report_name_en = "Respiratory",
     report_name_nb = "Luftveier",
-    report_name_file_nb_utf = "Luftveier",
-    report_name_file_nb_ascii = "Luftveier"
+    report_name_file_nb_utf = "luftveier",
+    report_name_file_nb_ascii = "luftveier",
+    report_name_nn = "Luftvegar",
+    report_name_file_nn_utf = "luftvegar",
+    report_name_file_nn_ascii = "luftvegar",
   ),
   data.table(
     report_tag = "skin",
     report_name_en = "Skin",
     report_name_nb = "Hud",
-    report_name_file_nb_utf = "Hud",
-    report_name_file_nb_ascii = "Hud"
+    report_name_file_nb_utf = "hud",
+    report_name_file_nb_ascii = "hud",
+    report_name_nn = "Hud",
+    report_name_file_nn_utf = "hud",
+    report_name_file_nn_ascii = "hud"
   ),
   data.table(
     report_tag = "all",
     report_name_en = "All",
     report_name_nb = "Alle",
-    report_name_file_nb_utf = "Alle",
-    report_name_file_nb_ascii = "Alle"
+    report_name_file_nb_utf = "alle",
+    report_name_file_nb_ascii = "alle",
+    report_name_nn = "Alle",
+    report_name_file_nn_utf = "alle",
+    report_name_file_nn_ascii = "alle"
   )
 ))
 reports$icpc2 <- list()
