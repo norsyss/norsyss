@@ -9,10 +9,10 @@ icpc2 <- rbindlist(list(
   data.table("A72", "a72", "Chickenpox", "Infections", "General and unspecified", "Vannkopper", "Infeksjoner", "Allment og uspesifisert"),
   data.table("A73", "a73", "Malaria", "Infections", "General and unspecified", "Malaria", "Infeksjoner", "Allment og uspesifisert"),
   data.table("A74", "a74", "Rubella", "Infections", "General and unspecified", "Røde hunder", "Infeksjoner", "Allment og uspesifisert"),
-  data.table("A75", "a75", "Infectious mononucleosis", "General and unspecified", "Infections", "Mononukleose", "Infeksjoner", "Allment og uspesifisert"),
-  data.table("A76", "a76", "Viral exanthem other", "General and unspecified", "Infections", "Virussykdom med utslett IKA", "Infeksjoner", "Allment og uspesifisert"),
-  data.table("A77", "a77", "Viral disease other/NOS", "General and unspecified", "Infections", "Virussykdom IKA", "Infeksjoner", "Allment og uspesifisert"),
-  data.table("A78", "a78", "Infectious disease other/NOS", "General and unspecified", "Infections", "Infeksjonssykdom IKA", "Infeksjoner", "Allment og uspesifisert"),
+  data.table("A75", "a75", "Infectious mononucleosis", "Infections", "General and unspecified", "Mononukleose", "Infeksjoner", "Allment og uspesifisert"),
+  data.table("A76", "a76", "Viral exanthem other", "Infections", "General and unspecified", "Virussykdom med utslett IKA", "Infeksjoner", "Allment og uspesifisert"),
+  data.table("A77", "a77", "Viral disease other/NOS", "Infections", "General and unspecified", "Virussykdom IKA", "Infeksjoner", "Allment og uspesifisert"),
+  data.table("A78", "a78", "Infectious disease other/NOS", "Infections", "General and unspecified", "Infeksjonssykdom IKA", "Infeksjoner", "Allment og uspesifisert"),
   data.table("B02", "b02", "Lymph gland(s) enlarged/painful", "Symptoms/Complaints", "Blood, blood forming organs, and immune mechanism", "Lymfeknuter forstørrede/smertefulle", "Symptomer", "Blod, bloddannende organer og immunsystemet"),
   data.table("B70", "b70", "Lymphadenitis acute", "Infections", "Blood, blood forming organs, and immune mechanism", "Lymfadenitt akutt", "Infeksjoner", "Blod, bloddannende organer og immunsystemet"),
   data.table("B71", "b71", "lymphadenitis non-specific", "Infections", "Blood, blood forming organs, and immune mechanism", "Lymfadenitt kronisk/uspesifikk", "Infeksjoner", "Blod, bloddannende organer og immunsystemet"),
@@ -140,4 +140,84 @@ setnames(
 )
 
 icpc2[, includes_influenza_covid19 := icpc2group_tag %in% c("r80", "r991", "r992", "covid19", "respiratory_infections")]
-icpc2[, prioritized := icpc2group_tag %in% c("r80", "covid19", "respiratory_infections", "gastroenteritis", "r72")]
+
+reports <- list()
+reports$descriptions <- rbindlist(list(
+  data.table(
+    report_tag = "prioritized",
+    report_name_en = "Priority",
+    report_name_nb = "Prioritert",
+    report_name_file_nb_utf = "Prioritert",
+    report_name_file_nb_ascii = "Prioritert"
+  ),
+  data.table(
+    report_tag = "general_and_unspecified",
+    report_name_en = "General and unspecified",
+    report_name_nb = "Allment og uspesifisert",
+    report_name_file_nb_utf = "Allment_og_uspesifisert",
+    report_name_file_nb_ascii = "Allment_og_uspesifisert"
+  ),
+  data.table(
+    report_tag = "blood_and_immune",
+    report_name_en = "Blood, blood forming organs, and immune mechanism",
+    report_name_nb = "Blod, bloddannende organer og immunsystemet",
+    report_name_file_nb_utf = "Blod_bloddannende_organer_og_immunsystemet",
+    report_name_file_nb_ascii = "Blod_bloddannende_organer_og_immunsystemet"
+  ),
+  data.table(
+    report_tag = "digestive",
+    report_name_en = "Digestive",
+    report_name_nb = "Fordøyelsessystemet",
+    report_name_file_nb_utf = "Fordøyelsessystemet",
+    report_name_file_nb_ascii = "Fordoyelsessystemet"
+  ),
+  data.table(
+    report_tag = "eye",
+    report_name_en = "Eye",
+    report_name_nb = "Øye",
+    report_name_file_nb_utf = "Øye",
+    report_name_file_nb_ascii = "Oye"
+  ),
+  data.table(
+    report_tag = "ear",
+    report_name_en = "Ear",
+    report_name_nb = "Øre",
+    report_name_file_nb_utf = "Øre",
+    report_name_file_nb_ascii = "Ore"
+  ),
+  data.table(
+    report_tag = "respiratory",
+    report_name_en = "Respiratory",
+    report_name_nb = "Luftveier",
+    report_name_file_nb_utf = "Luftveier",
+    report_name_file_nb_ascii = "Luftveier"
+  ),
+  data.table(
+    report_tag = "skin",
+    report_name_en = "Skin",
+    report_name_nb = "Hud",
+    report_name_file_nb_utf = "Hud",
+    report_name_file_nb_ascii = "Hud"
+  ),
+  data.table(
+    report_tag = "all",
+    report_name_en = "All",
+    report_name_nb = "Alle",
+    report_name_file_nb_utf = "Alle",
+    report_name_file_nb_ascii = "Alle"
+  )
+))
+reports$icpc2 <- list()
+reports$icpc2$prioritized <- c("gastroenteritis", "respiratory_infections", "covid19", "r80", "r72")
+reports$icpc2$general_and_unspecified <- icpc2[bodysystem_en %in% c("General and unspecified")]$icpc2group_tag
+reports$icpc2$blood_and_immune <- icpc2[bodysystem_en %in% c("Blood, blood forming organs, and immune mechanism")]$icpc2group_tag
+reports$icpc2$digestive <- icpc2[bodysystem_en %in% c("Digestive")]$icpc2group_tag
+reports$icpc2$eye <- icpc2[bodysystem_en %in% c("Eye")]$icpc2group_tag
+reports$icpc2$ear <- icpc2[bodysystem_en %in% c("Ear")]$icpc2group_tag
+reports$icpc2$respiratory <- icpc2[bodysystem_en %in% c("Respiratory")]$icpc2group_tag
+reports$icpc2$skin <- icpc2[bodysystem_en %in% c("Skin")]$icpc2group_tag
+reports$icpc2$all <- icpc2$icpc2group_tag
+
+
+
+
