@@ -144,14 +144,14 @@ icpc2[, includes_influenza_covid19 := icpc2group_tag %in% c("r80", "r991", "r992
 reports <- list()
 reports$descriptions <- rbindlist(list(
   data.table(
-    report_tag = "prioritized",
-    report_name_en = "Prioritized diseases",
-    report_name_nb = "Prioriterte sykdommer",
-    report_name_file_nb_utf = "prioriterte_sykdommer",
-    report_name_file_nb_ascii = "prioriterte_sykdommer",
-    report_name_nn = "Prioriterte sjukdommar",
-    report_name_file_nn_utf = "prioriterte_sjukdommar",
-    report_name_file_nn_ascii = "prioriterte_sjukdommar"
+    report_tag = "selected",
+    report_name_en = "Selected diseases",
+    report_name_nb = "Utvalgte sykdommer",
+    report_name_file_nb_utf = "utvalgte_sykdommer",
+    report_name_file_nb_ascii = "utvalgte_sykdommer",
+    report_name_nn = "Utvalde sjukdommar",
+    report_name_file_nn_utf = "utvalde_sjukdommar",
+    report_name_file_nn_ascii = "utvalde_sjukdommar"
   ),
   data.table(
     report_tag = "general_and_unspecified",
@@ -235,7 +235,7 @@ reports$descriptions <- rbindlist(list(
   )
 ))
 reports$icpc2 <- list()
-reports$icpc2$prioritized <- c("gastroenteritis", "respiratory_infections", "covid19", "r80", "r72")
+reports$icpc2$selected <- c("gastroenteritis", "respiratory_infections", "covid19", "r80", "r72")
 reports$icpc2$general_and_unspecified <- icpc2[bodysystem_en %in% c("General and unspecified")]$icpc2group_tag
 reports$icpc2$blood_and_immune <- icpc2[bodysystem_en %in% c("Blood, blood forming organs, and immune mechanism")]$icpc2group_tag
 reports$icpc2$digestive <- icpc2[bodysystem_en %in% c("Digestive")]$icpc2group_tag
