@@ -181,7 +181,7 @@ reports$descriptions <- rbindlist(list(
     report_name_file_nb_ascii = "fordoyelsessystemet",
     report_name_nn = "Fordøyingssystemet",
     report_name_file_nn_utf = "fordøyingssystemet",
-    report_name_file_nn_ascii = "fordøyingssystemet"
+    report_name_file_nn_ascii = "fordoyingssystemet"
   ),
   data.table(
     report_tag = "eye",
