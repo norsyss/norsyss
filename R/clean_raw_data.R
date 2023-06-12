@@ -28,6 +28,12 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02"){
   d <- get_raw_data(date_from, date_to)
   setDT(d)
 
+  # Fixing covid
+  d[Diagnose=="R9910000", Diagnose := "R991"]
+  d[Diagnose=="R9920000", Diagnose := "R992"]
+  d[date < "2020-03-05" & Diagnose == "R991", Diagnose := "XXX"]
+  d[date < "2020-04-30" & Diagnose == "R992", Diagnose := "XXX"]
+
   time_from_date <- data.table(date = unique(d$date))
   time_from_date[, calyear := cstime::date_to_calyear_n(date)]
   time_from_date[, isoyearweek := cstime::date_to_isoyearweek_c(date)]
