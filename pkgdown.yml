@@ -1,0 +1,14 @@
+pandoc: 2.19.2
+pkgdown: 2.0.7
+pkgdown_sha: ~
+articles:
+  icpc2_codes: icpc2_codes.html
+  norsyss: norsyss.html
+  raw_tables: raw_tables.html
+  registration_delay: registration_delay.html
+  tariffs: tariffs.html
+last_built: 2023-06-15T05:51Z
+urls:
+  reference: https://norsyss.github.io/norsyss/reference
+  article: https://norsyss.github.io/norsyss/articles
+

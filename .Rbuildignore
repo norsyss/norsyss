@@ -1,7 +1,0 @@
-^.*\.Rproj$
-^\.Rproj\.user$
-Makefile
-nul
-dev
-_pkgdown.yaml
-@eaDir
