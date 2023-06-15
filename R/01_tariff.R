@@ -23,8 +23,7 @@ tariff$raw <- rbindlist(list(
   data.table("1be", "s", "Simple patient contact through electronic communication. The rate has expired on 1 July 2022, and included in rate 1bd.", "Enkel pasientkontakt ved elektronisk kommunikasjon. Taksten er utgått 1. juli 2022, og inkludert i takst 1bd."),
 
   data.table("1g", "s", "Easy patient contact, enquiries, counseling by telephone between 23 and 08. The rate can only be used during emergency care in an on-call district without an on-call presence.", "Enkel pasientkontakt, forespørsel, rådgivning per telefon mellom kl. 23 og 08. Taksten kan bare benyttes under legevakt i vaktdistrikt uten tilstedevakt."),
-  data.table("1h", "s", "Sick leave and referral without patient present.", "Sykemelding og henvisning uten pasient tilstede."),
-  data.table("1i", "s", "??????", "?????")
+  data.table("1h", "s", "Sick leave and referral without patient present.", "Sykemelding og henvisning uten pasient tilstede.")
 ))
 setnames(tariff$raw, c("tariffraw_tag", "tariffgroup_tag", "tariffraw_description_en", "tariffraw_description_nb"))
 tariff$group <- rbindlist(list(
