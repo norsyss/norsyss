@@ -73,9 +73,7 @@ icpc2 <- rbindlist(list(
     # "R96",
     "R99",
     "R991",
-    "R9910000",
-    "R992",
-    "R9920000"
+    "R992"
   )), "respiratory_infections", "Respiratory infections", "Combination", "Respiratory", "Luftveisinfeksjoner", "Kombinasjon", "Luftveier"),
   data.table(list(c("R991", "R992")), "covid19", "COVID-19", "Combination", "Respiratory", "Covid-19", "Kombinasjon", "Luftveier"),
   data.table("R01", "r01", "Pain respiratory system", "Symptoms/Complaints", "Respiratory", "Smerte luftveier", "Symptomer", "Luftveier"),

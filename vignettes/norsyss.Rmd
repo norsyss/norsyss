@@ -1,6 +1,6 @@
 ---
 title: "Introduction"
-date: "2023-05-03"
+date: "2023-06-15"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Introduction}
@@ -14,16 +14,28 @@ editor_options:
 
 
 
-As of 2023-05-03, NorSySS holds 416 729 003 consultations with general practitioners and out-of-hours primary care facilities between 2006-01-02 and 2023-04-30.
+As of 2023-06-15, NorSySS holds 421 204 173 consultations with general practitioners and out-of-hours primary care facilities between 2006-01-02 and 2023-06-11.
 
-<!--html_preserve--><div id="xrqloxhfbu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>html {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+<!--html_preserve--><div id="ipbulqekop" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ipbulqekop table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-#xrqloxhfbu .gt_table {
+#ipbulqekop thead, #ipbulqekop tbody, #ipbulqekop tfoot, #ipbulqekop tr, #ipbulqekop td, #ipbulqekop th {
+  border-style: none;
+}
+
+#ipbulqekop p {
+  margin: 0;
+  padding: 0;
+}
+
+#ipbulqekop .gt_table {
   display: table;
   border-collapse: collapse;
+  line-height: normal;
   margin-left: auto;
   margin-right: auto;
   color: #333333;
@@ -46,24 +58,12 @@ As of 2023-05-03, NorSySS holds 416 729 003 consultations with general practitio
   border-left-color: #D3D3D3;
 }
 
-#xrqloxhfbu .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#xrqloxhfbu .gt_caption {
+#ipbulqekop .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#xrqloxhfbu .gt_title {
+#ipbulqekop .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -75,25 +75,37 @@ As of 2023-05-03, NorSySS holds 416 729 003 consultations with general practitio
   border-bottom-width: 0;
 }
 
-#xrqloxhfbu .gt_subtitle {
+#ipbulqekop .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
-  padding-top: 0;
-  padding-bottom: 6px;
+  padding-top: 3px;
+  padding-bottom: 5px;
   padding-left: 5px;
   padding-right: 5px;
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
 
-#xrqloxhfbu .gt_bottom_border {
+#ipbulqekop .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ipbulqekop .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xrqloxhfbu .gt_col_headings {
+#ipbulqekop .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -108,7 +120,7 @@ As of 2023-05-03, NorSySS holds 416 729 003 consultations with general practitio
   border-right-color: #D3D3D3;
 }
 
-#xrqloxhfbu .gt_col_heading {
+#ipbulqekop .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -128,7 +140,7 @@ As of 2023-05-03, NorSySS holds 416 729 003 consultations with general practitio
   overflow-x: hidden;
 }
 
-#xrqloxhfbu .gt_column_spanner_outer {
+#ipbulqekop .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -140,15 +152,15 @@ As of 2023-05-03, NorSySS holds 416 729 003 consultations with general practitio
   padding-right: 4px;
 }
 
-#xrqloxhfbu .gt_column_spanner_outer:first-child {
+#ipbulqekop .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#xrqloxhfbu .gt_column_spanner_outer:last-child {
+#ipbulqekop .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#xrqloxhfbu .gt_column_spanner {
+#ipbulqekop .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -160,7 +172,11 @@ As of 2023-05-03, NorSySS holds 416 729 003 consultations with general practitio
   width: 100%;
 }
 
-#xrqloxhfbu .gt_group_heading {
+#ipbulqekop .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#ipbulqekop .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -186,7 +202,7 @@ As of 2023-05-03, NorSySS holds 416 729 003 consultations with general practitio
   text-align: left;
 }
 
-#xrqloxhfbu .gt_empty_group_heading {
+#ipbulqekop .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -201,15 +217,15 @@ As of 2023-05-03, NorSySS holds 416 729 003 consultations with general practitio
   vertical-align: middle;
 }
 
-#xrqloxhfbu .gt_from_md > :first-child {
+#ipbulqekop .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xrqloxhfbu .gt_from_md > :last-child {
+#ipbulqekop .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xrqloxhfbu .gt_row {
+#ipbulqekop .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -228,7 +244,7 @@ As of 2023-05-03, NorSySS holds 416 729 003 consultations with general practitio
   overflow-x: hidden;
 }
 
-#xrqloxhfbu .gt_stub {
+#ipbulqekop .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -241,7 +257,7 @@ As of 2023-05-03, NorSySS holds 416 729 003 consultations with general practitio
   padding-right: 5px;
 }
 
-#xrqloxhfbu .gt_stub_row_group {
+#ipbulqekop .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -255,11 +271,15 @@ As of 2023-05-03, NorSySS holds 416 729 003 consultations with general practitio
   vertical-align: top;
 }
 
-#xrqloxhfbu .gt_row_group_first td {
+#ipbulqekop .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#xrqloxhfbu .gt_summary_row {
+#ipbulqekop .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#ipbulqekop .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -269,16 +289,16 @@ As of 2023-05-03, NorSySS holds 416 729 003 consultations with general practitio
   padding-right: 5px;
 }
 
-#xrqloxhfbu .gt_first_summary_row {
+#ipbulqekop .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#xrqloxhfbu .gt_first_summary_row.thick {
+#ipbulqekop .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#xrqloxhfbu .gt_last_summary_row {
+#ipbulqekop .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -288,7 +308,7 @@ As of 2023-05-03, NorSySS holds 416 729 003 consultations with general practitio
   border-bottom-color: #D3D3D3;
 }
 
-#xrqloxhfbu .gt_grand_summary_row {
+#ipbulqekop .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -298,7 +318,7 @@ As of 2023-05-03, NorSySS holds 416 729 003 consultations with general practitio
   padding-right: 5px;
 }
 
-#xrqloxhfbu .gt_first_grand_summary_row {
+#ipbulqekop .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -308,11 +328,21 @@ As of 2023-05-03, NorSySS holds 416 729 003 consultations with general practitio
   border-top-color: #D3D3D3;
 }
 
-#xrqloxhfbu .gt_striped {
+#ipbulqekop .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ipbulqekop .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#xrqloxhfbu .gt_table_body {
+#ipbulqekop .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -321,7 +351,7 @@ As of 2023-05-03, NorSySS holds 416 729 003 consultations with general practitio
   border-bottom-color: #D3D3D3;
 }
 
-#xrqloxhfbu .gt_footnotes {
+#ipbulqekop .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -335,30 +365,8 @@ As of 2023-05-03, NorSySS holds 416 729 003 consultations with general practitio
   border-right-color: #D3D3D3;
 }
 
-#xrqloxhfbu .gt_footnote {
+#ipbulqekop .gt_footnote {
   margin: 0px;
-  font-size: 90%;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#xrqloxhfbu .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#xrqloxhfbu .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -366,78 +374,97 @@ As of 2023-05-03, NorSySS holds 416 729 003 consultations with general practitio
   padding-right: 5px;
 }
 
-#xrqloxhfbu .gt_left {
+#ipbulqekop .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ipbulqekop .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ipbulqekop .gt_left {
   text-align: left;
 }
 
-#xrqloxhfbu .gt_center {
+#ipbulqekop .gt_center {
   text-align: center;
 }
 
-#xrqloxhfbu .gt_right {
+#ipbulqekop .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xrqloxhfbu .gt_font_normal {
+#ipbulqekop .gt_font_normal {
   font-weight: normal;
 }
 
-#xrqloxhfbu .gt_font_bold {
+#ipbulqekop .gt_font_bold {
   font-weight: bold;
 }
 
-#xrqloxhfbu .gt_font_italic {
+#ipbulqekop .gt_font_italic {
   font-style: italic;
 }
 
-#xrqloxhfbu .gt_super {
+#ipbulqekop .gt_super {
   font-size: 65%;
 }
 
-#xrqloxhfbu .gt_footnote_marks {
-  font-style: italic;
-  font-weight: normal;
+#ipbulqekop .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
+  position: initial;
 }
 
-#xrqloxhfbu .gt_asterisk {
+#ipbulqekop .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#xrqloxhfbu .gt_indent_1 {
+#ipbulqekop .gt_indent_1 {
   text-indent: 5px;
 }
 
-#xrqloxhfbu .gt_indent_2 {
+#ipbulqekop .gt_indent_2 {
   text-indent: 10px;
 }
 
-#xrqloxhfbu .gt_indent_3 {
+#ipbulqekop .gt_indent_3 {
   text-indent: 15px;
 }
 
-#xrqloxhfbu .gt_indent_4 {
+#ipbulqekop .gt_indent_4 {
   text-indent: 20px;
 }
 
-#xrqloxhfbu .gt_indent_5 {
+#ipbulqekop .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
-<table class="gt_table">
-  <thead class="gt_header">
-    <tr>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <thead>
+    <tr class="gt_heading">
       <td colspan="4" class="gt_heading gt_title gt_font_normal" style>Consultations in NorSySS</td>
     </tr>
-    <tr>
-      <td colspan="4" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style>2006-01-20 to 2023-04-30</td>
+    <tr class="gt_heading">
+      <td colspan="4" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style>2006-01-20 to 2023-06-11</td>
     </tr>
-  </thead>
-  <thead class="gt_col_headings">
-    <tr>
+    <tr class="gt_col_headings gt_spanner_row">
       <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="3" scope="colgroup" id="Time">
         <span class="gt_column_spanner">Time</span>
       </th>
@@ -445,7 +472,7 @@ As of 2023-05-03, NorSySS holds 416 729 003 consultations with general practitio
         <span class="gt_column_spanner">Consultations</span>
       </th>
     </tr>
-    <tr>
+    <tr class="gt_col_headings">
       <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Isoyear">Isoyear</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Min">Min</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Max">Max</th>
@@ -476,7 +503,7 @@ As of 2023-05-03, NorSySS holds 416 729 003 consultations with general practitio
     <tr><td headers="isoyear" class="gt_row gt_center">2011</td>
 <td headers="date_min" class="gt_row gt_center">2011-01-03</td>
 <td headers="date_max" class="gt_row gt_center">2012-01-01</td>
-<td headers="consultations_n" class="gt_row gt_center">24 933 553</td></tr>
+<td headers="consultations_n" class="gt_row gt_center">24 960 034</td></tr>
     <tr><td headers="isoyear" class="gt_row gt_center">2012</td>
 <td headers="date_min" class="gt_row gt_center">2012-01-02</td>
 <td headers="date_max" class="gt_row gt_center">2012-12-30</td>
@@ -512,19 +539,19 @@ As of 2023-05-03, NorSySS holds 416 729 003 consultations with general practitio
     <tr><td headers="isoyear" class="gt_row gt_center">2020</td>
 <td headers="date_min" class="gt_row gt_center">2019-12-30</td>
 <td headers="date_max" class="gt_row gt_center">2021-01-03</td>
-<td headers="consultations_n" class="gt_row gt_center">27 066 469</td></tr>
+<td headers="consultations_n" class="gt_row gt_center">27 066 506</td></tr>
     <tr><td headers="isoyear" class="gt_row gt_center">2021</td>
 <td headers="date_min" class="gt_row gt_center">2021-01-04</td>
 <td headers="date_max" class="gt_row gt_center">2022-01-02</td>
-<td headers="consultations_n" class="gt_row gt_center">28 880 999</td></tr>
+<td headers="consultations_n" class="gt_row gt_center">28 881 122</td></tr>
     <tr><td headers="isoyear" class="gt_row gt_center">2022</td>
 <td headers="date_min" class="gt_row gt_center">2022-01-03</td>
 <td headers="date_max" class="gt_row gt_center">2023-01-01</td>
-<td headers="consultations_n" class="gt_row gt_center">27 075 666</td></tr>
+<td headers="consultations_n" class="gt_row gt_center">27 090 965</td></tr>
     <tr><td headers="isoyear" class="gt_row gt_center">2023</td>
 <td headers="date_min" class="gt_row gt_center">2023-01-02</td>
-<td headers="date_max" class="gt_row gt_center">2023-04-30</td>
-<td headers="consultations_n" class="gt_row gt_center">7 960 664</td></tr>
+<td headers="date_max" class="gt_row gt_center">2023-06-11</td>
+<td headers="consultations_n" class="gt_row gt_center">12 393 894</td></tr>
   </tbody>
   
   

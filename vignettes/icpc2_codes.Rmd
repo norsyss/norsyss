@@ -1,6 +1,6 @@
 ---
 title: "ICPC-2 codes / ICPC-2-koder"
-date: "2023-05-03"
+date: "2023-06-15"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{ICPC-2 codes / ICPC-2-koder}
@@ -12,14 +12,26 @@ editor_options:
 
 
 
-<!--html_preserve--><div id="ujzqptqwhu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>html {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+<!--html_preserve--><div id="sjahtnemlu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#sjahtnemlu table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-#ujzqptqwhu .gt_table {
+#sjahtnemlu thead, #sjahtnemlu tbody, #sjahtnemlu tfoot, #sjahtnemlu tr, #sjahtnemlu td, #sjahtnemlu th {
+  border-style: none;
+}
+
+#sjahtnemlu p {
+  margin: 0;
+  padding: 0;
+}
+
+#sjahtnemlu .gt_table {
   display: table;
   border-collapse: collapse;
+  line-height: normal;
   margin-left: auto;
   margin-right: auto;
   color: #333333;
@@ -42,24 +54,12 @@ editor_options:
   border-left-color: #D3D3D3;
 }
 
-#ujzqptqwhu .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#ujzqptqwhu .gt_caption {
+#sjahtnemlu .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ujzqptqwhu .gt_title {
+#sjahtnemlu .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -71,25 +71,37 @@ editor_options:
   border-bottom-width: 0;
 }
 
-#ujzqptqwhu .gt_subtitle {
+#sjahtnemlu .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
-  padding-top: 0;
-  padding-bottom: 6px;
+  padding-top: 3px;
+  padding-bottom: 5px;
   padding-left: 5px;
   padding-right: 5px;
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
 
-#ujzqptqwhu .gt_bottom_border {
+#sjahtnemlu .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#sjahtnemlu .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ujzqptqwhu .gt_col_headings {
+#sjahtnemlu .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -104,7 +116,7 @@ editor_options:
   border-right-color: #D3D3D3;
 }
 
-#ujzqptqwhu .gt_col_heading {
+#sjahtnemlu .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -124,7 +136,7 @@ editor_options:
   overflow-x: hidden;
 }
 
-#ujzqptqwhu .gt_column_spanner_outer {
+#sjahtnemlu .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -136,15 +148,15 @@ editor_options:
   padding-right: 4px;
 }
 
-#ujzqptqwhu .gt_column_spanner_outer:first-child {
+#sjahtnemlu .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ujzqptqwhu .gt_column_spanner_outer:last-child {
+#sjahtnemlu .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ujzqptqwhu .gt_column_spanner {
+#sjahtnemlu .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -156,7 +168,11 @@ editor_options:
   width: 100%;
 }
 
-#ujzqptqwhu .gt_group_heading {
+#sjahtnemlu .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#sjahtnemlu .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -182,7 +198,7 @@ editor_options:
   text-align: left;
 }
 
-#ujzqptqwhu .gt_empty_group_heading {
+#sjahtnemlu .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -197,15 +213,15 @@ editor_options:
   vertical-align: middle;
 }
 
-#ujzqptqwhu .gt_from_md > :first-child {
+#sjahtnemlu .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ujzqptqwhu .gt_from_md > :last-child {
+#sjahtnemlu .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ujzqptqwhu .gt_row {
+#sjahtnemlu .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -224,7 +240,7 @@ editor_options:
   overflow-x: hidden;
 }
 
-#ujzqptqwhu .gt_stub {
+#sjahtnemlu .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -237,7 +253,7 @@ editor_options:
   padding-right: 5px;
 }
 
-#ujzqptqwhu .gt_stub_row_group {
+#sjahtnemlu .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -251,11 +267,15 @@ editor_options:
   vertical-align: top;
 }
 
-#ujzqptqwhu .gt_row_group_first td {
+#sjahtnemlu .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ujzqptqwhu .gt_summary_row {
+#sjahtnemlu .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#sjahtnemlu .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -265,16 +285,16 @@ editor_options:
   padding-right: 5px;
 }
 
-#ujzqptqwhu .gt_first_summary_row {
+#sjahtnemlu .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ujzqptqwhu .gt_first_summary_row.thick {
+#sjahtnemlu .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ujzqptqwhu .gt_last_summary_row {
+#sjahtnemlu .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -284,7 +304,7 @@ editor_options:
   border-bottom-color: #D3D3D3;
 }
 
-#ujzqptqwhu .gt_grand_summary_row {
+#sjahtnemlu .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -294,7 +314,7 @@ editor_options:
   padding-right: 5px;
 }
 
-#ujzqptqwhu .gt_first_grand_summary_row {
+#sjahtnemlu .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -304,11 +324,21 @@ editor_options:
   border-top-color: #D3D3D3;
 }
 
-#ujzqptqwhu .gt_striped {
+#sjahtnemlu .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#sjahtnemlu .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ujzqptqwhu .gt_table_body {
+#sjahtnemlu .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -317,7 +347,7 @@ editor_options:
   border-bottom-color: #D3D3D3;
 }
 
-#ujzqptqwhu .gt_footnotes {
+#sjahtnemlu .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -331,30 +361,8 @@ editor_options:
   border-right-color: #D3D3D3;
 }
 
-#ujzqptqwhu .gt_footnote {
+#sjahtnemlu .gt_footnote {
   margin: 0px;
-  font-size: 90%;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#ujzqptqwhu .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#ujzqptqwhu .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -362,78 +370,97 @@ editor_options:
   padding-right: 5px;
 }
 
-#ujzqptqwhu .gt_left {
+#sjahtnemlu .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#sjahtnemlu .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#sjahtnemlu .gt_left {
   text-align: left;
 }
 
-#ujzqptqwhu .gt_center {
+#sjahtnemlu .gt_center {
   text-align: center;
 }
 
-#ujzqptqwhu .gt_right {
+#sjahtnemlu .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ujzqptqwhu .gt_font_normal {
+#sjahtnemlu .gt_font_normal {
   font-weight: normal;
 }
 
-#ujzqptqwhu .gt_font_bold {
+#sjahtnemlu .gt_font_bold {
   font-weight: bold;
 }
 
-#ujzqptqwhu .gt_font_italic {
+#sjahtnemlu .gt_font_italic {
   font-style: italic;
 }
 
-#ujzqptqwhu .gt_super {
+#sjahtnemlu .gt_super {
   font-size: 65%;
 }
 
-#ujzqptqwhu .gt_footnote_marks {
-  font-style: italic;
-  font-weight: normal;
+#sjahtnemlu .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
+  position: initial;
 }
 
-#ujzqptqwhu .gt_asterisk {
+#sjahtnemlu .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ujzqptqwhu .gt_indent_1 {
+#sjahtnemlu .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ujzqptqwhu .gt_indent_2 {
+#sjahtnemlu .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ujzqptqwhu .gt_indent_3 {
+#sjahtnemlu .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ujzqptqwhu .gt_indent_4 {
+#sjahtnemlu .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ujzqptqwhu .gt_indent_5 {
+#sjahtnemlu .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
-<table class="gt_table">
-  <thead class="gt_header">
-    <tr>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <thead>
+    <tr class="gt_heading">
       <td colspan="4" class="gt_heading gt_title gt_font_normal" style>ICPC-2-koder i NorSySS</td>
     </tr>
-    <tr>
+    <tr class="gt_heading">
       <td colspan="4" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style>Norsk bokmål</td>
     </tr>
-  </thead>
-  <thead class="gt_col_headings">
-    <tr>
+    <tr class="gt_col_headings">
       <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="NorSySS-gruppering">NorSySS-gruppering</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="ICPC-2-koder">ICPC-2-koder</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Beskrivelser">Beskrivelser</th>
@@ -510,7 +537,11 @@ editor_options:
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Fordøyelsessystemet">Fordøyelsessystemet</th>
     </tr>
-    <tr class="gt_row_group_first"><td headers="Fordøyelsessystemet  icpc2group_tag" class="gt_row gt_center">d01</td>
+    <tr class="gt_row_group_first"><td headers="Fordøyelsessystemet  icpc2group_tag" class="gt_row gt_center">gastroenteritis</td>
+<td headers="Fordøyelsessystemet  icpc2raw_tag" class="gt_row gt_center">D11, D70, D73</td>
+<td headers="Fordøyelsessystemet  icpc2group_description_nb" class="gt_row gt_center">Mage-tarminfeksjoner</td>
+<td headers="Fordøyelsessystemet  component_nb" class="gt_row gt_center">Kombinasjon</td></tr>
+    <tr><td headers="Fordøyelsessystemet  icpc2group_tag" class="gt_row gt_center">d01</td>
 <td headers="Fordøyelsessystemet  icpc2raw_tag" class="gt_row gt_center">D01</td>
 <td headers="Fordøyelsessystemet  icpc2group_description_nb" class="gt_row gt_center">Abdominalsmerte/krampe generell</td>
 <td headers="Fordøyelsessystemet  component_nb" class="gt_row gt_center">Symptomer</td></tr>
@@ -570,10 +601,6 @@ editor_options:
 <td headers="Fordøyelsessystemet  icpc2raw_tag" class="gt_row gt_center">D99</td>
 <td headers="Fordøyelsessystemet  icpc2group_description_nb" class="gt_row gt_center">Sykdom i fordøyelsessystemet IKA</td>
 <td headers="Fordøyelsessystemet  component_nb" class="gt_row gt_center">Annet</td></tr>
-    <tr><td headers="Fordøyelsessystemet  icpc2group_tag" class="gt_row gt_center">gastroenteritis</td>
-<td headers="Fordøyelsessystemet  icpc2raw_tag" class="gt_row gt_center">D11, D70, D73</td>
-<td headers="Fordøyelsessystemet  icpc2group_description_nb" class="gt_row gt_center">Mage-tarminfeksjoner</td>
-<td headers="Fordøyelsessystemet  component_nb" class="gt_row gt_center">Kombinasjon</td></tr>
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Øye">Øye</th>
     </tr>
@@ -615,7 +642,15 @@ editor_options:
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Luftveier">Luftveier</th>
     </tr>
-    <tr class="gt_row_group_first"><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r01</td>
+    <tr class="gt_row_group_first"><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">respiratory_infections</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R01, R02, R03, R04, R05, R07, R08, R09, R21, R24, R25, R27, R270000, R29, R33, R71, R72, R74, R75, R76, R77, R78, R79, R80, R81, R82, R83, R99, R991, R9910000, R992, R9920000</td>
+<td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Luftveisinfeksjoner</td>
+<td headers="Luftveier  component_nb" class="gt_row gt_center">Kombinasjon</td></tr>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">covid19</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R991, R992</td>
+<td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Covid-19</td>
+<td headers="Luftveier  component_nb" class="gt_row gt_center">Kombinasjon</td></tr>
+    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r01</td>
 <td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R01</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Smerte luftveier</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Symptomer</td></tr>
@@ -664,7 +699,7 @@ editor_options:
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Unormalt oppspytt/ekspektorat</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Symptomer</td></tr>
     <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r27</td>
-<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R27, R270000</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R27</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Engstelig for sykdom luftveier IKA</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Symptomer</td></tr>
     <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r29</td>
@@ -736,21 +771,13 @@ editor_options:
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Luftveissykdom IKA</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Annet</td></tr>
     <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r991</td>
-<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R991, R9910000</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R991</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Covid-19 (sannsynlig/mistenkt)</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
     <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">r992</td>
-<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R992, R9920000</td>
+<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R992</td>
 <td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Covid-19 (bekreftet)</td>
 <td headers="Luftveier  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
-    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">respiratory_infections</td>
-<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R01, R02, R03, R04, R05, R07, R08, R09, R21, R24, R25, R27, R270000, R29, R33, R71, R72, R74, R75, R76, R77, R78, R79, R80, R81, R82, R83, R99, R991, R9910000, R992, R9920000</td>
-<td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Luftveisinfeksjoner</td>
-<td headers="Luftveier  component_nb" class="gt_row gt_center">Kombinasjon</td></tr>
-    <tr><td headers="Luftveier  icpc2group_tag" class="gt_row gt_center">covid19</td>
-<td headers="Luftveier  icpc2raw_tag" class="gt_row gt_center">R991, R9910000, R992, R9920000</td>
-<td headers="Luftveier  icpc2group_description_nb" class="gt_row gt_center">Covid-19</td>
-<td headers="Luftveier  component_nb" class="gt_row gt_center">Kombinasjon</td></tr>
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Hud">Hud</th>
     </tr>
@@ -794,6 +821,14 @@ editor_options:
 <td headers="Hud  icpc2raw_tag" class="gt_row gt_center">S73</td>
 <td headers="Hud  icpc2group_description_nb" class="gt_row gt_center">Infestasjon parasitt IKA</td>
 <td headers="Hud  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
+    <tr><td headers="Hud  icpc2group_tag" class="gt_row gt_center">s74</td>
+<td headers="Hud  icpc2raw_tag" class="gt_row gt_center">S74</td>
+<td headers="Hud  icpc2group_description_nb" class="gt_row gt_center">Ringorm/hudsopp IKA</td>
+<td headers="Hud  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
+    <tr><td headers="Hud  icpc2group_tag" class="gt_row gt_center">s75</td>
+<td headers="Hud  icpc2raw_tag" class="gt_row gt_center">S75</td>
+<td headers="Hud  icpc2group_description_nb" class="gt_row gt_center">Candidainfeksjon hud</td>
+<td headers="Hud  component_nb" class="gt_row gt_center">Infeksjoner</td></tr>
     <tr><td headers="Hud  icpc2group_tag" class="gt_row gt_center">s76</td>
 <td headers="Hud  icpc2raw_tag" class="gt_row gt_center">S76</td>
 <td headers="Hud  icpc2group_description_nb" class="gt_row gt_center">Hudinfeksjon IKA</td>
@@ -816,14 +851,26 @@ editor_options:
 </table>
 </div><!--/html_preserve-->
 
-<!--html_preserve--><div id="gzfojlstvq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>html {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+<!--html_preserve--><div id="naaffwgnug" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#naaffwgnug table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-#gzfojlstvq .gt_table {
+#naaffwgnug thead, #naaffwgnug tbody, #naaffwgnug tfoot, #naaffwgnug tr, #naaffwgnug td, #naaffwgnug th {
+  border-style: none;
+}
+
+#naaffwgnug p {
+  margin: 0;
+  padding: 0;
+}
+
+#naaffwgnug .gt_table {
   display: table;
   border-collapse: collapse;
+  line-height: normal;
   margin-left: auto;
   margin-right: auto;
   color: #333333;
@@ -846,24 +893,12 @@ editor_options:
   border-left-color: #D3D3D3;
 }
 
-#gzfojlstvq .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#gzfojlstvq .gt_caption {
+#naaffwgnug .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#gzfojlstvq .gt_title {
+#naaffwgnug .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -875,25 +910,37 @@ editor_options:
   border-bottom-width: 0;
 }
 
-#gzfojlstvq .gt_subtitle {
+#naaffwgnug .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
-  padding-top: 0;
-  padding-bottom: 6px;
+  padding-top: 3px;
+  padding-bottom: 5px;
   padding-left: 5px;
   padding-right: 5px;
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
 
-#gzfojlstvq .gt_bottom_border {
+#naaffwgnug .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#naaffwgnug .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#gzfojlstvq .gt_col_headings {
+#naaffwgnug .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -908,7 +955,7 @@ editor_options:
   border-right-color: #D3D3D3;
 }
 
-#gzfojlstvq .gt_col_heading {
+#naaffwgnug .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -928,7 +975,7 @@ editor_options:
   overflow-x: hidden;
 }
 
-#gzfojlstvq .gt_column_spanner_outer {
+#naaffwgnug .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -940,15 +987,15 @@ editor_options:
   padding-right: 4px;
 }
 
-#gzfojlstvq .gt_column_spanner_outer:first-child {
+#naaffwgnug .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#gzfojlstvq .gt_column_spanner_outer:last-child {
+#naaffwgnug .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#gzfojlstvq .gt_column_spanner {
+#naaffwgnug .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -960,7 +1007,11 @@ editor_options:
   width: 100%;
 }
 
-#gzfojlstvq .gt_group_heading {
+#naaffwgnug .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#naaffwgnug .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -986,7 +1037,7 @@ editor_options:
   text-align: left;
 }
 
-#gzfojlstvq .gt_empty_group_heading {
+#naaffwgnug .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1001,15 +1052,15 @@ editor_options:
   vertical-align: middle;
 }
 
-#gzfojlstvq .gt_from_md > :first-child {
+#naaffwgnug .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#gzfojlstvq .gt_from_md > :last-child {
+#naaffwgnug .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#gzfojlstvq .gt_row {
+#naaffwgnug .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1028,7 +1079,7 @@ editor_options:
   overflow-x: hidden;
 }
 
-#gzfojlstvq .gt_stub {
+#naaffwgnug .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1041,7 +1092,7 @@ editor_options:
   padding-right: 5px;
 }
 
-#gzfojlstvq .gt_stub_row_group {
+#naaffwgnug .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1055,11 +1106,15 @@ editor_options:
   vertical-align: top;
 }
 
-#gzfojlstvq .gt_row_group_first td {
+#naaffwgnug .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#gzfojlstvq .gt_summary_row {
+#naaffwgnug .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#naaffwgnug .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1069,16 +1124,16 @@ editor_options:
   padding-right: 5px;
 }
 
-#gzfojlstvq .gt_first_summary_row {
+#naaffwgnug .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#gzfojlstvq .gt_first_summary_row.thick {
+#naaffwgnug .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#gzfojlstvq .gt_last_summary_row {
+#naaffwgnug .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1088,7 +1143,7 @@ editor_options:
   border-bottom-color: #D3D3D3;
 }
 
-#gzfojlstvq .gt_grand_summary_row {
+#naaffwgnug .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1098,7 +1153,7 @@ editor_options:
   padding-right: 5px;
 }
 
-#gzfojlstvq .gt_first_grand_summary_row {
+#naaffwgnug .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1108,11 +1163,21 @@ editor_options:
   border-top-color: #D3D3D3;
 }
 
-#gzfojlstvq .gt_striped {
+#naaffwgnug .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#naaffwgnug .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#gzfojlstvq .gt_table_body {
+#naaffwgnug .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1121,7 +1186,7 @@ editor_options:
   border-bottom-color: #D3D3D3;
 }
 
-#gzfojlstvq .gt_footnotes {
+#naaffwgnug .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1135,30 +1200,8 @@ editor_options:
   border-right-color: #D3D3D3;
 }
 
-#gzfojlstvq .gt_footnote {
+#naaffwgnug .gt_footnote {
   margin: 0px;
-  font-size: 90%;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#gzfojlstvq .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#gzfojlstvq .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1166,78 +1209,97 @@ editor_options:
   padding-right: 5px;
 }
 
-#gzfojlstvq .gt_left {
+#naaffwgnug .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#naaffwgnug .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#naaffwgnug .gt_left {
   text-align: left;
 }
 
-#gzfojlstvq .gt_center {
+#naaffwgnug .gt_center {
   text-align: center;
 }
 
-#gzfojlstvq .gt_right {
+#naaffwgnug .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#gzfojlstvq .gt_font_normal {
+#naaffwgnug .gt_font_normal {
   font-weight: normal;
 }
 
-#gzfojlstvq .gt_font_bold {
+#naaffwgnug .gt_font_bold {
   font-weight: bold;
 }
 
-#gzfojlstvq .gt_font_italic {
+#naaffwgnug .gt_font_italic {
   font-style: italic;
 }
 
-#gzfojlstvq .gt_super {
+#naaffwgnug .gt_super {
   font-size: 65%;
 }
 
-#gzfojlstvq .gt_footnote_marks {
-  font-style: italic;
-  font-weight: normal;
+#naaffwgnug .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
+  position: initial;
 }
 
-#gzfojlstvq .gt_asterisk {
+#naaffwgnug .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#gzfojlstvq .gt_indent_1 {
+#naaffwgnug .gt_indent_1 {
   text-indent: 5px;
 }
 
-#gzfojlstvq .gt_indent_2 {
+#naaffwgnug .gt_indent_2 {
   text-indent: 10px;
 }
 
-#gzfojlstvq .gt_indent_3 {
+#naaffwgnug .gt_indent_3 {
   text-indent: 15px;
 }
 
-#gzfojlstvq .gt_indent_4 {
+#naaffwgnug .gt_indent_4 {
   text-indent: 20px;
 }
 
-#gzfojlstvq .gt_indent_5 {
+#naaffwgnug .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
-<table class="gt_table">
-  <thead class="gt_header">
-    <tr>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <thead>
+    <tr class="gt_heading">
       <td colspan="4" class="gt_heading gt_title gt_font_normal" style>ICPC-2 codes in NorSySS</td>
     </tr>
-    <tr>
+    <tr class="gt_heading">
       <td colspan="4" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style>English</td>
     </tr>
-  </thead>
-  <thead class="gt_col_headings">
-    <tr>
+    <tr class="gt_col_headings">
       <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="NorSySS grouping">NorSySS grouping</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="ICPC-2 codes">ICPC-2 codes</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Description">Description</th>
@@ -1280,25 +1342,22 @@ editor_options:
 <td headers="General and unspecified  icpc2raw_tag" class="gt_row gt_center">A74</td>
 <td headers="General and unspecified  icpc2group_description_en" class="gt_row gt_center">Rubella</td>
 <td headers="General and unspecified  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr class="gt_group_heading_row">
-      <th colspan="4" class="gt_group_heading" scope="colgroup" id="Infections">Infections</th>
-    </tr>
-    <tr class="gt_row_group_first"><td headers="Infections  icpc2group_tag" class="gt_row gt_center">a75</td>
-<td headers="Infections  icpc2raw_tag" class="gt_row gt_center">A75</td>
-<td headers="Infections  icpc2group_description_en" class="gt_row gt_center">Infectious mononucleosis</td>
-<td headers="Infections  component_en" class="gt_row gt_center">General and unspecified</td></tr>
-    <tr><td headers="Infections  icpc2group_tag" class="gt_row gt_center">a76</td>
-<td headers="Infections  icpc2raw_tag" class="gt_row gt_center">A76</td>
-<td headers="Infections  icpc2group_description_en" class="gt_row gt_center">Viral exanthem other</td>
-<td headers="Infections  component_en" class="gt_row gt_center">General and unspecified</td></tr>
-    <tr><td headers="Infections  icpc2group_tag" class="gt_row gt_center">a77</td>
-<td headers="Infections  icpc2raw_tag" class="gt_row gt_center">A77</td>
-<td headers="Infections  icpc2group_description_en" class="gt_row gt_center">Viral disease other/NOS</td>
-<td headers="Infections  component_en" class="gt_row gt_center">General and unspecified</td></tr>
-    <tr><td headers="Infections  icpc2group_tag" class="gt_row gt_center">a78</td>
-<td headers="Infections  icpc2raw_tag" class="gt_row gt_center">A78</td>
-<td headers="Infections  icpc2group_description_en" class="gt_row gt_center">Infectious disease other/NOS</td>
-<td headers="Infections  component_en" class="gt_row gt_center">General and unspecified</td></tr>
+    <tr><td headers="General and unspecified  icpc2group_tag" class="gt_row gt_center">a75</td>
+<td headers="General and unspecified  icpc2raw_tag" class="gt_row gt_center">A75</td>
+<td headers="General and unspecified  icpc2group_description_en" class="gt_row gt_center">Infectious mononucleosis</td>
+<td headers="General and unspecified  component_en" class="gt_row gt_center">Infections</td></tr>
+    <tr><td headers="General and unspecified  icpc2group_tag" class="gt_row gt_center">a76</td>
+<td headers="General and unspecified  icpc2raw_tag" class="gt_row gt_center">A76</td>
+<td headers="General and unspecified  icpc2group_description_en" class="gt_row gt_center">Viral exanthem other</td>
+<td headers="General and unspecified  component_en" class="gt_row gt_center">Infections</td></tr>
+    <tr><td headers="General and unspecified  icpc2group_tag" class="gt_row gt_center">a77</td>
+<td headers="General and unspecified  icpc2raw_tag" class="gt_row gt_center">A77</td>
+<td headers="General and unspecified  icpc2group_description_en" class="gt_row gt_center">Viral disease other/NOS</td>
+<td headers="General and unspecified  component_en" class="gt_row gt_center">Infections</td></tr>
+    <tr><td headers="General and unspecified  icpc2group_tag" class="gt_row gt_center">a78</td>
+<td headers="General and unspecified  icpc2raw_tag" class="gt_row gt_center">A78</td>
+<td headers="General and unspecified  icpc2group_description_en" class="gt_row gt_center">Infectious disease other/NOS</td>
+<td headers="General and unspecified  component_en" class="gt_row gt_center">Infections</td></tr>
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Blood, blood forming organs, and immune mechanism">Blood, blood forming organs, and immune mechanism</th>
     </tr>
@@ -1317,7 +1376,11 @@ editor_options:
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Digestive">Digestive</th>
     </tr>
-    <tr class="gt_row_group_first"><td headers="Digestive  icpc2group_tag" class="gt_row gt_center">d01</td>
+    <tr class="gt_row_group_first"><td headers="Digestive  icpc2group_tag" class="gt_row gt_center">gastroenteritis</td>
+<td headers="Digestive  icpc2raw_tag" class="gt_row gt_center">D11, D70, D73</td>
+<td headers="Digestive  icpc2group_description_en" class="gt_row gt_center">Gastroenteritis</td>
+<td headers="Digestive  component_en" class="gt_row gt_center">Combination</td></tr>
+    <tr><td headers="Digestive  icpc2group_tag" class="gt_row gt_center">d01</td>
 <td headers="Digestive  icpc2raw_tag" class="gt_row gt_center">D01</td>
 <td headers="Digestive  icpc2group_description_en" class="gt_row gt_center">Abdominal pain/cramps general</td>
 <td headers="Digestive  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
@@ -1377,10 +1440,6 @@ editor_options:
 <td headers="Digestive  icpc2raw_tag" class="gt_row gt_center">D99</td>
 <td headers="Digestive  icpc2group_description_en" class="gt_row gt_center">Disease digestive system, other</td>
 <td headers="Digestive  component_en" class="gt_row gt_center">Other diagnoses</td></tr>
-    <tr><td headers="Digestive  icpc2group_tag" class="gt_row gt_center">gastroenteritis</td>
-<td headers="Digestive  icpc2raw_tag" class="gt_row gt_center">D11, D70, D73</td>
-<td headers="Digestive  icpc2group_description_en" class="gt_row gt_center">Gastroenteritis</td>
-<td headers="Digestive  component_en" class="gt_row gt_center">Combination</td></tr>
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Eye">Eye</th>
     </tr>
@@ -1422,7 +1481,15 @@ editor_options:
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Respiratory">Respiratory</th>
     </tr>
-    <tr class="gt_row_group_first"><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r01</td>
+    <tr class="gt_row_group_first"><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">respiratory_infections</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R01, R02, R03, R04, R05, R07, R08, R09, R21, R24, R25, R27, R270000, R29, R33, R71, R72, R74, R75, R76, R77, R78, R79, R80, R81, R82, R83, R99, R991, R9910000, R992, R9920000</td>
+<td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Respiratory infections</td>
+<td headers="Respiratory  component_en" class="gt_row gt_center">Combination</td></tr>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">covid19</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R991, R992</td>
+<td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">COVID-19</td>
+<td headers="Respiratory  component_en" class="gt_row gt_center">Combination</td></tr>
+    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r01</td>
 <td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R01</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Pain respiratory system</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
@@ -1471,7 +1538,7 @@ editor_options:
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Sputum/phlegm abnormal</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
     <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r27</td>
-<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R27, R270000</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R27</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Fear of respiratory disease, other</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Symptoms/Complaints</td></tr>
     <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r29</td>
@@ -1543,21 +1610,13 @@ editor_options:
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Respiratory disease other</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Other diagnoses</td></tr>
     <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r991</td>
-<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R991, R9910000</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R991</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">COVID-19 (Probable/Suspected)</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Infections</td></tr>
     <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">r992</td>
-<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R992, R9920000</td>
+<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R992</td>
 <td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">COVID-19 (Confirmed)</td>
 <td headers="Respiratory  component_en" class="gt_row gt_center">Infections</td></tr>
-    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">respiratory_infections</td>
-<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R01, R02, R03, R04, R05, R07, R08, R09, R21, R24, R25, R27, R270000, R29, R33, R71, R72, R74, R75, R76, R77, R78, R79, R80, R81, R82, R83, R99, R991, R9910000, R992, R9920000</td>
-<td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">Respiratory infections</td>
-<td headers="Respiratory  component_en" class="gt_row gt_center">Combination</td></tr>
-    <tr><td headers="Respiratory  icpc2group_tag" class="gt_row gt_center">covid19</td>
-<td headers="Respiratory  icpc2raw_tag" class="gt_row gt_center">R991, R9910000, R992, R9920000</td>
-<td headers="Respiratory  icpc2group_description_en" class="gt_row gt_center">COVID-19</td>
-<td headers="Respiratory  component_en" class="gt_row gt_center">Combination</td></tr>
     <tr class="gt_group_heading_row">
       <th colspan="4" class="gt_group_heading" scope="colgroup" id="Skin">Skin</th>
     </tr>
@@ -1600,6 +1659,14 @@ editor_options:
     <tr><td headers="Skin  icpc2group_tag" class="gt_row gt_center">s73</td>
 <td headers="Skin  icpc2raw_tag" class="gt_row gt_center">S73</td>
 <td headers="Skin  icpc2group_description_en" class="gt_row gt_center">Pediculosis/skin infestation other</td>
+<td headers="Skin  component_en" class="gt_row gt_center">Infections</td></tr>
+    <tr><td headers="Skin  icpc2group_tag" class="gt_row gt_center">s74</td>
+<td headers="Skin  icpc2raw_tag" class="gt_row gt_center">S74</td>
+<td headers="Skin  icpc2group_description_en" class="gt_row gt_center">Dermatophytosis</td>
+<td headers="Skin  component_en" class="gt_row gt_center">Infections</td></tr>
+    <tr><td headers="Skin  icpc2group_tag" class="gt_row gt_center">s75</td>
+<td headers="Skin  icpc2raw_tag" class="gt_row gt_center">S75</td>
+<td headers="Skin  icpc2group_description_en" class="gt_row gt_center">Moniliasis/candidiasis skin</td>
 <td headers="Skin  component_en" class="gt_row gt_center">Infections</td></tr>
     <tr><td headers="Skin  icpc2group_tag" class="gt_row gt_center">s76</td>
 <td headers="Skin  icpc2raw_tag" class="gt_row gt_center">S76</td>

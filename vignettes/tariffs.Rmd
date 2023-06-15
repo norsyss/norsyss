@@ -1,6 +1,6 @@
 ---
 title: "Tariffs / Takstkoder"
-date: "2023-05-03"
+date: "2023-06-15"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Tariffs / Takstkoder}
@@ -16,14 +16,26 @@ https://lovdata.no/dokument/SF/forskrift/2022-06-29-1269
 
 https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenesten
 
-<!--html_preserve--><div id="xpnrkbcqxy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>html {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+<!--html_preserve--><div id="hdgeztyira" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#hdgeztyira table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-#xpnrkbcqxy .gt_table {
+#hdgeztyira thead, #hdgeztyira tbody, #hdgeztyira tfoot, #hdgeztyira tr, #hdgeztyira td, #hdgeztyira th {
+  border-style: none;
+}
+
+#hdgeztyira p {
+  margin: 0;
+  padding: 0;
+}
+
+#hdgeztyira .gt_table {
   display: table;
   border-collapse: collapse;
+  line-height: normal;
   margin-left: auto;
   margin-right: auto;
   color: #333333;
@@ -46,24 +58,12 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   border-left-color: #D3D3D3;
 }
 
-#xpnrkbcqxy .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#xpnrkbcqxy .gt_caption {
+#hdgeztyira .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#xpnrkbcqxy .gt_title {
+#hdgeztyira .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -75,25 +75,37 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   border-bottom-width: 0;
 }
 
-#xpnrkbcqxy .gt_subtitle {
+#hdgeztyira .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
-  padding-top: 0;
-  padding-bottom: 6px;
+  padding-top: 3px;
+  padding-bottom: 5px;
   padding-left: 5px;
   padding-right: 5px;
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
 
-#xpnrkbcqxy .gt_bottom_border {
+#hdgeztyira .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#hdgeztyira .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xpnrkbcqxy .gt_col_headings {
+#hdgeztyira .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -108,7 +120,7 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   border-right-color: #D3D3D3;
 }
 
-#xpnrkbcqxy .gt_col_heading {
+#hdgeztyira .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -128,7 +140,7 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   overflow-x: hidden;
 }
 
-#xpnrkbcqxy .gt_column_spanner_outer {
+#hdgeztyira .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -140,15 +152,15 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   padding-right: 4px;
 }
 
-#xpnrkbcqxy .gt_column_spanner_outer:first-child {
+#hdgeztyira .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#xpnrkbcqxy .gt_column_spanner_outer:last-child {
+#hdgeztyira .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#xpnrkbcqxy .gt_column_spanner {
+#hdgeztyira .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -160,7 +172,11 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   width: 100%;
 }
 
-#xpnrkbcqxy .gt_group_heading {
+#hdgeztyira .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#hdgeztyira .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -186,7 +202,7 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   text-align: left;
 }
 
-#xpnrkbcqxy .gt_empty_group_heading {
+#hdgeztyira .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -201,15 +217,15 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   vertical-align: middle;
 }
 
-#xpnrkbcqxy .gt_from_md > :first-child {
+#hdgeztyira .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xpnrkbcqxy .gt_from_md > :last-child {
+#hdgeztyira .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xpnrkbcqxy .gt_row {
+#hdgeztyira .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -228,7 +244,7 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   overflow-x: hidden;
 }
 
-#xpnrkbcqxy .gt_stub {
+#hdgeztyira .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -241,7 +257,7 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   padding-right: 5px;
 }
 
-#xpnrkbcqxy .gt_stub_row_group {
+#hdgeztyira .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -255,11 +271,15 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   vertical-align: top;
 }
 
-#xpnrkbcqxy .gt_row_group_first td {
+#hdgeztyira .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#xpnrkbcqxy .gt_summary_row {
+#hdgeztyira .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#hdgeztyira .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -269,16 +289,16 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   padding-right: 5px;
 }
 
-#xpnrkbcqxy .gt_first_summary_row {
+#hdgeztyira .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#xpnrkbcqxy .gt_first_summary_row.thick {
+#hdgeztyira .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#xpnrkbcqxy .gt_last_summary_row {
+#hdgeztyira .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -288,7 +308,7 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   border-bottom-color: #D3D3D3;
 }
 
-#xpnrkbcqxy .gt_grand_summary_row {
+#hdgeztyira .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -298,7 +318,7 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   padding-right: 5px;
 }
 
-#xpnrkbcqxy .gt_first_grand_summary_row {
+#hdgeztyira .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -308,11 +328,21 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   border-top-color: #D3D3D3;
 }
 
-#xpnrkbcqxy .gt_striped {
+#hdgeztyira .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#hdgeztyira .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#xpnrkbcqxy .gt_table_body {
+#hdgeztyira .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -321,7 +351,7 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   border-bottom-color: #D3D3D3;
 }
 
-#xpnrkbcqxy .gt_footnotes {
+#hdgeztyira .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -335,30 +365,8 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   border-right-color: #D3D3D3;
 }
 
-#xpnrkbcqxy .gt_footnote {
+#hdgeztyira .gt_footnote {
   margin: 0px;
-  font-size: 90%;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#xpnrkbcqxy .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#xpnrkbcqxy .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -366,77 +374,98 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   padding-right: 5px;
 }
 
-#xpnrkbcqxy .gt_left {
+#hdgeztyira .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#hdgeztyira .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#hdgeztyira .gt_left {
   text-align: left;
 }
 
-#xpnrkbcqxy .gt_center {
+#hdgeztyira .gt_center {
   text-align: center;
 }
 
-#xpnrkbcqxy .gt_right {
+#hdgeztyira .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xpnrkbcqxy .gt_font_normal {
+#hdgeztyira .gt_font_normal {
   font-weight: normal;
 }
 
-#xpnrkbcqxy .gt_font_bold {
+#hdgeztyira .gt_font_bold {
   font-weight: bold;
 }
 
-#xpnrkbcqxy .gt_font_italic {
+#hdgeztyira .gt_font_italic {
   font-style: italic;
 }
 
-#xpnrkbcqxy .gt_super {
+#hdgeztyira .gt_super {
   font-size: 65%;
 }
 
-#xpnrkbcqxy .gt_footnote_marks {
-  font-style: italic;
-  font-weight: normal;
+#hdgeztyira .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
+  position: initial;
 }
 
-#xpnrkbcqxy .gt_asterisk {
+#hdgeztyira .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#xpnrkbcqxy .gt_indent_1 {
+#hdgeztyira .gt_indent_1 {
   text-indent: 5px;
 }
 
-#xpnrkbcqxy .gt_indent_2 {
+#hdgeztyira .gt_indent_2 {
   text-indent: 10px;
 }
 
-#xpnrkbcqxy .gt_indent_3 {
+#hdgeztyira .gt_indent_3 {
   text-indent: 15px;
 }
 
-#xpnrkbcqxy .gt_indent_4 {
+#hdgeztyira .gt_indent_4 {
   text-indent: 20px;
 }
 
-#xpnrkbcqxy .gt_indent_5 {
+#hdgeztyira .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
-<table class="gt_table">
-  <thead class="gt_header">
-    <tr>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <thead>
+    <tr class="gt_heading">
       <td colspan="2" class="gt_heading gt_title gt_font_normal" style>Tariff codes in NorSySS</td>
     </tr>
-    <tr>
+    <tr class="gt_heading">
       <td colspan="2" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style>Norwegian bokmål</td>
     </tr>
+    
   </thead>
-  
   <tbody class="gt_table_body">
     <tr class="gt_group_heading_row">
       <th colspan="2" class="gt_group_heading" scope="colgroup" id="Konsultasjon/sykebesøk (tilstede) (&quot;f&quot;)">Konsultasjon/sykebesøk (tilstede) ("f")</th>
@@ -475,22 +504,32 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
 <td headers="Enkelt kontakt ("s") stub_1_13 tariffraw_description_nb" class="gt_row gt_left">Enkel pasientkontakt, forespørsel, rådgivning per telefon mellom kl. 23 og 08. Taksten kan bare benyttes under legevakt i vaktdistrikt uten tilstedevakt.</td></tr>
     <tr><th id="stub_1_14" scope="row" class="gt_row gt_left gt_stub">1h</th>
 <td headers="Enkelt kontakt ("s") stub_1_14 tariffraw_description_nb" class="gt_row gt_left">Sykemelding og henvisning uten pasient tilstede.</td></tr>
-    <tr><th id="stub_1_15" scope="row" class="gt_row gt_left gt_stub">1i</th>
-<td headers="Enkelt kontakt ("s") stub_1_15 tariffraw_description_nb" class="gt_row gt_left">?????</td></tr>
   </tbody>
   
   
 </table>
 </div><!--/html_preserve-->
 
-<!--html_preserve--><div id="xybexgcjrv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>html {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+<!--html_preserve--><div id="kiwfroahsp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#kiwfroahsp table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-#xybexgcjrv .gt_table {
+#kiwfroahsp thead, #kiwfroahsp tbody, #kiwfroahsp tfoot, #kiwfroahsp tr, #kiwfroahsp td, #kiwfroahsp th {
+  border-style: none;
+}
+
+#kiwfroahsp p {
+  margin: 0;
+  padding: 0;
+}
+
+#kiwfroahsp .gt_table {
   display: table;
   border-collapse: collapse;
+  line-height: normal;
   margin-left: auto;
   margin-right: auto;
   color: #333333;
@@ -513,24 +552,12 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   border-left-color: #D3D3D3;
 }
 
-#xybexgcjrv .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#xybexgcjrv .gt_caption {
+#kiwfroahsp .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#xybexgcjrv .gt_title {
+#kiwfroahsp .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -542,25 +569,37 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   border-bottom-width: 0;
 }
 
-#xybexgcjrv .gt_subtitle {
+#kiwfroahsp .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
-  padding-top: 0;
-  padding-bottom: 6px;
+  padding-top: 3px;
+  padding-bottom: 5px;
   padding-left: 5px;
   padding-right: 5px;
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
 
-#xybexgcjrv .gt_bottom_border {
+#kiwfroahsp .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#kiwfroahsp .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xybexgcjrv .gt_col_headings {
+#kiwfroahsp .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -575,7 +614,7 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   border-right-color: #D3D3D3;
 }
 
-#xybexgcjrv .gt_col_heading {
+#kiwfroahsp .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -595,7 +634,7 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   overflow-x: hidden;
 }
 
-#xybexgcjrv .gt_column_spanner_outer {
+#kiwfroahsp .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -607,15 +646,15 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   padding-right: 4px;
 }
 
-#xybexgcjrv .gt_column_spanner_outer:first-child {
+#kiwfroahsp .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#xybexgcjrv .gt_column_spanner_outer:last-child {
+#kiwfroahsp .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#xybexgcjrv .gt_column_spanner {
+#kiwfroahsp .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -627,7 +666,11 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   width: 100%;
 }
 
-#xybexgcjrv .gt_group_heading {
+#kiwfroahsp .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#kiwfroahsp .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -653,7 +696,7 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   text-align: left;
 }
 
-#xybexgcjrv .gt_empty_group_heading {
+#kiwfroahsp .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -668,15 +711,15 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   vertical-align: middle;
 }
 
-#xybexgcjrv .gt_from_md > :first-child {
+#kiwfroahsp .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xybexgcjrv .gt_from_md > :last-child {
+#kiwfroahsp .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xybexgcjrv .gt_row {
+#kiwfroahsp .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -695,7 +738,7 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   overflow-x: hidden;
 }
 
-#xybexgcjrv .gt_stub {
+#kiwfroahsp .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -708,7 +751,7 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   padding-right: 5px;
 }
 
-#xybexgcjrv .gt_stub_row_group {
+#kiwfroahsp .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -722,11 +765,15 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   vertical-align: top;
 }
 
-#xybexgcjrv .gt_row_group_first td {
+#kiwfroahsp .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#xybexgcjrv .gt_summary_row {
+#kiwfroahsp .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#kiwfroahsp .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -736,16 +783,16 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   padding-right: 5px;
 }
 
-#xybexgcjrv .gt_first_summary_row {
+#kiwfroahsp .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#xybexgcjrv .gt_first_summary_row.thick {
+#kiwfroahsp .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#xybexgcjrv .gt_last_summary_row {
+#kiwfroahsp .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -755,7 +802,7 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   border-bottom-color: #D3D3D3;
 }
 
-#xybexgcjrv .gt_grand_summary_row {
+#kiwfroahsp .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -765,7 +812,7 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   padding-right: 5px;
 }
 
-#xybexgcjrv .gt_first_grand_summary_row {
+#kiwfroahsp .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -775,11 +822,21 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   border-top-color: #D3D3D3;
 }
 
-#xybexgcjrv .gt_striped {
+#kiwfroahsp .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kiwfroahsp .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#xybexgcjrv .gt_table_body {
+#kiwfroahsp .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -788,7 +845,7 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   border-bottom-color: #D3D3D3;
 }
 
-#xybexgcjrv .gt_footnotes {
+#kiwfroahsp .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -802,30 +859,8 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   border-right-color: #D3D3D3;
 }
 
-#xybexgcjrv .gt_footnote {
+#kiwfroahsp .gt_footnote {
   margin: 0px;
-  font-size: 90%;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#xybexgcjrv .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#xybexgcjrv .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -833,77 +868,98 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
   padding-right: 5px;
 }
 
-#xybexgcjrv .gt_left {
+#kiwfroahsp .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#kiwfroahsp .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kiwfroahsp .gt_left {
   text-align: left;
 }
 
-#xybexgcjrv .gt_center {
+#kiwfroahsp .gt_center {
   text-align: center;
 }
 
-#xybexgcjrv .gt_right {
+#kiwfroahsp .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xybexgcjrv .gt_font_normal {
+#kiwfroahsp .gt_font_normal {
   font-weight: normal;
 }
 
-#xybexgcjrv .gt_font_bold {
+#kiwfroahsp .gt_font_bold {
   font-weight: bold;
 }
 
-#xybexgcjrv .gt_font_italic {
+#kiwfroahsp .gt_font_italic {
   font-style: italic;
 }
 
-#xybexgcjrv .gt_super {
+#kiwfroahsp .gt_super {
   font-size: 65%;
 }
 
-#xybexgcjrv .gt_footnote_marks {
-  font-style: italic;
-  font-weight: normal;
+#kiwfroahsp .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
+  position: initial;
 }
 
-#xybexgcjrv .gt_asterisk {
+#kiwfroahsp .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#xybexgcjrv .gt_indent_1 {
+#kiwfroahsp .gt_indent_1 {
   text-indent: 5px;
 }
 
-#xybexgcjrv .gt_indent_2 {
+#kiwfroahsp .gt_indent_2 {
   text-indent: 10px;
 }
 
-#xybexgcjrv .gt_indent_3 {
+#kiwfroahsp .gt_indent_3 {
   text-indent: 15px;
 }
 
-#xybexgcjrv .gt_indent_4 {
+#kiwfroahsp .gt_indent_4 {
   text-indent: 20px;
 }
 
-#xybexgcjrv .gt_indent_5 {
+#kiwfroahsp .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
-<table class="gt_table">
-  <thead class="gt_header">
-    <tr>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <thead>
+    <tr class="gt_heading">
       <td colspan="2" class="gt_heading gt_title gt_font_normal" style>Tariff codes in NorSySS</td>
     </tr>
-    <tr>
+    <tr class="gt_heading">
       <td colspan="2" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style>English</td>
     </tr>
+    
   </thead>
-  
   <tbody class="gt_table_body">
     <tr class="gt_group_heading_row">
       <th colspan="2" class="gt_group_heading" scope="colgroup" id="Consultation/visit (face-to-face) (&quot;f&quot;)">Consultation/visit (face-to-face) ("f")</th>
@@ -942,8 +998,6 @@ https://www.helsedirektoratet.no/statistikk/om-data-statistikk-om-fastlegetjenes
 <td headers="Simple contact ("s") stub_1_13 tariffraw_description_en" class="gt_row gt_left">Easy patient contact, enquiries, counseling by telephone between 23 and 08. The rate can only be used during emergency care in an on-call district without an on-call presence.</td></tr>
     <tr><th id="stub_1_14" scope="row" class="gt_row gt_left gt_stub">1h</th>
 <td headers="Simple contact ("s") stub_1_14 tariffraw_description_en" class="gt_row gt_left">Sick leave and referral without patient present.</td></tr>
-    <tr><th id="stub_1_15" scope="row" class="gt_row gt_left gt_stub">1i</th>
-<td headers="Simple contact ("s") stub_1_15 tariffraw_description_en" class="gt_row gt_left">??????</td></tr>
   </tbody>
   
   
