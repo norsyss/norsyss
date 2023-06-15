@@ -115,9 +115,11 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02"){
   d[, tariffgroup_tag := fcase(
     Takst %in% tariff$raw[tariffgroup_tag=="f"]$tariffraw_tag, "f",
     Takst %in% tariff$raw[tariffgroup_tag=="e"]$tariffraw_tag, "e",
-    Takst %in% tariff$raw[tariffgroup_tag=="s"]$tariffraw_tag, "s"
+    Takst %in% tariff$raw[tariffgroup_tag=="s"]$tariffraw_tag, "s",
+    default = "XXX"
   )]
   d[, Takst := NULL]
+  d <- d[tariffgroup_tag!="XXX"]
 
   d_fes <- copy(d)
   d_fes[, tariffgroup_tag := "fes"]

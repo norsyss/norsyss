@@ -63,7 +63,7 @@ As of `r lubridate::today()`, NorSySS holds `r d_consultations$consultations_n |
 gt::gt(d_consultations) %>%
   gt::tab_header(
     title = "Consultations in NorSySS",
-    subtitle = glue::glue("2006-01-20 to {konsultasjonsdato_max}")
+    subtitle = glue::glue("2006-01-02 to {konsultasjonsdato_max}")
   ) %>%
   gt::tab_spanner(
     label = "Time",
