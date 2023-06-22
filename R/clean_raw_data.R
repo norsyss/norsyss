@@ -198,7 +198,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024){
 
   s_municip <- merge(
     s_nation,
-    csdata::nor_locations_redistricting()[granularity_geo == "municip"],
+    csdata::nor_locations_redistricting(border = border)[granularity_geo == "municip"],
     by = c("calyear"),
     allow.cartesian = TRUE
   )
