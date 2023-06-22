@@ -19,7 +19,7 @@ get_raw_data <- function(date_from, date_to){
 }
 
 #' @export
-get_and_process_raw_data <- function(x_isoyearweek = "2021-02"){
+get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024){
   # isoyearweek_from <- "2022-52"
   # isoyearweek_to <- "2022-52"
   date_from <- cstime::dates_by_isoyearweek[isoyearweek==x_isoyearweek]$mon %>% min()
@@ -304,7 +304,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02"){
 
   d_agg[, isoyearweek := x_isoyearweek]
   d_agg[, granularity_time := "isoyearweek"]
-  d_agg[, border := 2020]
+  d_agg[, border := border]
   d_agg[, country_iso3 := "nor"]
   d_agg[, sex := "total"]
 
