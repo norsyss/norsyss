@@ -193,9 +193,9 @@ reports$descriptions <- rbindlist(list(
     report_name_nb = "Øye",
     report_name_file_nb_utf = "øye",
     report_name_file_nb_ascii = "oye",
-    report_name_nn = "Øye",
-    report_name_file_nn_utf = "øye",
-    report_name_file_nn_ascii = "oye"
+    report_name_nn = "Auge",
+    report_name_file_nn_utf = "auge",
+    report_name_file_nn_ascii = "auge"
   ),
   data.table(
     report_tag = "ear",
