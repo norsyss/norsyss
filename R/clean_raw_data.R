@@ -29,6 +29,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024){
   setDT(d)
 
   # Fixing covid
+  d[Diagnose=="R270000", Diagnose := "R27"]
   d[Diagnose=="R9910000", Diagnose := "R991"]
   d[Diagnose=="R9920000", Diagnose := "R992"]
   d[date < "2020-03-05" & Diagnose == "R991", Diagnose := "XXX"]
@@ -263,6 +264,27 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024){
   setnames(s_county, "to_code", "location_code")
   s_county[, granularity_geo := "county"]
 
+  # georegion ----
+  s_georegion <- merge(
+    s_county,
+    csdata::nor_locations_hierarchy_from_to("county", "georegion"),
+    by.x = "location_code",
+    by.y = "from_code"
+  )
+
+  s_georegion <- s_georegion[
+    ,
+    lapply(.SD, sum),
+    by = .(
+      age,
+      tariffgroup_tag,
+      to_code
+    ),
+    .SDcols = c(icpc2$icpc2group_tag, "consultations_all_n")
+  ]
+  setnames(s_georegion, "to_code", "location_code")
+  s_georegion[, granularity_geo := "georegion"]
+
   # nation ----
   s_nation <- merge(
     s_nation,
@@ -280,8 +302,8 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024){
   s_nation[, granularity_geo := "nation"]
 
   # together
-  d_agg <- rbindlist(list(s_nation,s_county, s_municip), use.names = TRUE)
-  rm("s_nation", "s_county", "s_municip")
+  d_agg <- rbindlist(list(s_nation, s_georegion, s_county, s_municip), use.names = TRUE)
+  rm("s_nation", "s_georegion", "s_county", "s_municip")
   #gc()
 
   d_agg[, consultations_without_influenza_covid19_n := consultations_all_n - r80 - covid19]

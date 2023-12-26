@@ -54,7 +54,6 @@ icpc2 <- rbindlist(list(
     "R24",
     "R25",
     "R27",
-    "R270000",
     "R29",
     "R33",
     "R71",
@@ -145,6 +144,7 @@ icpc2[, includes_influenza_covid19 := icpc2group_tag %in% c("r80", "r991", "r992
 icpc2[, has_historical_data := !icpc2group_tag %in% c("r991", "r992", "covid19")]
 icpc2[, outbreak_pattern := "unknown"]
 icpc2[icpc2group_tag %in% c("r991", "r992", "covid19"), outbreak_pattern := "valley_increase_decrease"]
+icpc2[, short_term_trend_include_decreasing := outbreak_pattern %in% c("unknown")]
 
 #' @export
 reports <- list()
