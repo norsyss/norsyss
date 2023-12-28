@@ -385,6 +385,8 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024){
       "isoyear",
       "isoweek",
       "isoyearweek",
+      "isoquarter",
+      "isoyearquarter",
       "season",
       "seasonweek",
       "calyear",
