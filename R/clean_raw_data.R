@@ -362,7 +362,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024){
   #     date
   #   )
   # ]
-  cstidy::set_csfmt_rts_data_v1(d_agg)
+  cstidy::set_csfmt_rts_data_v2(d_agg)
 
   #gc()
 
