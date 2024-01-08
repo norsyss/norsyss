@@ -8,7 +8,7 @@ get_raw_data <- function(date_from, date_to){
   )
 
   command <- glue::glue(
-    "select Id,Diagnose,PasientAlder,BehandlerKommune,Konsultasjonsdato as date,Takst from Konsultasjon join KonsultasjonDiagnose on Id=KonsultasjonId join KonsultasjonTakst on Id=KonsultasjonTakst.KonsultasjonId where Konsultasjonsdato >='{date_from}' AND Konsultasjonsdato<='{date_to}'"
+    "select Id,Diagnose,PasientAlder,PasientKjønn as sex,BehandlerKommune,Konsultasjonsdato as date,Takst from Konsultasjon join KonsultasjonDiagnose on Id=KonsultasjonId join KonsultasjonTakst on Id=KonsultasjonTakst.KonsultasjonId where Konsultasjonsdato >='{date_from}' AND Konsultasjonsdato<='{date_to}'"
   )
   d <- DBI::dbGetQuery(db, command)
 
@@ -111,6 +111,16 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024){
   d_age[, age := "total"]
   d <- rbindlist(list(d, d_age))
   rm("d_age")
+
+  d[, sex := fcase(
+    sex == "Mann", "male",
+    sex == "Kvinne", "female",
+    default = "missing"
+  )]
+  d_sex <- copy(d)
+  d_sex[, sex := "total"]
+  d <- rbindlist(list(d[sex %in% c("male", "female")], d_sex))
+  rm("d_sex")
   #gc()
 
   d[, tariffgroup_tag := fcase(
@@ -122,14 +132,14 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024){
   d[, Takst := NULL]
   d <- d[tariffgroup_tag!="XXX"]
 
-  d_fes <- copy(d)
-  d_fes[, tariffgroup_tag := "fes"]
+  # d_fes <- copy(d)
+  # d_fes[, tariffgroup_tag := "fes"]
 
   d_fe <- d[tariffgroup_tag %in% c("f", "e")]
   d_fe[, tariffgroup_tag := "fe"]
 
-  d <- rbindlist(list(d_fes, d_fe, d)) #, d_fs, d_es)
-  rm("d_fes", "d_fe")
+  d <- d_fe # rbindlist(list(d_fes, d_fe, d)) #, d_fs, d_es)
+  rm("d_fe")
   #gc()
 
   setkey(d, Diagnose)
@@ -145,6 +155,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024){
     Id,
     BehandlerKommune,
     age,
+    sex,
     date,
     tariffgroup_tag
   )]
@@ -169,6 +180,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024){
          by = .(
            BehandlerKommune,
            age,
+           sex,
            date,
            tariffgroup_tag
          ),
@@ -180,6 +192,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024){
   d_nation <- d[, lapply(.SD, sum), ,
          by = .(
            age,
+           sex,
            tariffgroup_tag
          ),
          .SDcols = c(icpc2$icpc2group_tag, "consultations_all_n")
@@ -190,7 +203,8 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024){
   # skeletons ----
   s_nation <- expand.grid(
     age = c("total", "000_004", "005_014", "015_019", "020_029", "030_064", "065_069", "070_079", "080p"),
-    tariffgroup_tag = c("f", "e", "s", "fe", "fes"),
+    sex = c("total", "male", "female"),
+    tariffgroup_tag = c("fe"),
     date = seq.Date(as.Date(date_from), as.Date(date_to), 1)
   ) %>%
     setDT()
@@ -216,6 +230,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024){
     d,
     by = c(
       "age",
+      "sex",
       "tariffgroup_tag",
       "date",
       "location_code_original"
@@ -234,6 +249,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024){
     lapply(.SD, function(x) round(sum(x))),
     keyby = .(
       age,
+      sex,
       tariffgroup_tag,
       location_code_current
     ),
@@ -256,6 +272,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024){
     lapply(.SD, sum),
     by = .(
       age,
+      sex,
       tariffgroup_tag,
       to_code
     ),
@@ -277,6 +294,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024){
     lapply(.SD, sum),
     by = .(
       age,
+      sex,
       tariffgroup_tag,
       to_code
     ),
@@ -291,6 +309,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024){
     d_nation,
     by = c(
       "age",
+      "sex",
       "tariffgroup_tag"
     ),
     all.x = T
@@ -314,6 +333,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024){
       "granularity_geo",
       "location_code",
       "age",
+      "sex",
       "tariffgroup_tag",
       "consultations_all_n",
       "consultations_without_influenza_covid19_n"
@@ -328,7 +348,6 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024){
   d_agg[, granularity_time := "isoyearweek"]
   d_agg[, border := border]
   d_agg[, country_iso3 := "nor"]
-  d_agg[, sex := "total"]
 
   # s_locations <- data.table(location_code = unique(d_agg$location_code), country_iso3 = "nor")
   # csdata::add_granularity_geo_to_data_set(s_locations)

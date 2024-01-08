@@ -1,3 +1,8 @@
+# Version 2024.1.8
+
+- Included sex=total/male/female.
+- Restricted tariffgroup_tag=fe.
+
 # Version 2023.4.13
 
 - Included A04 Weakness/tiredness general as a new ICPC-2 code.
