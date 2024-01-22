@@ -135,11 +135,9 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024){
   # d_fes <- copy(d)
   # d_fes[, tariffgroup_tag := "fes"]
 
-  d_fe <- d[tariffgroup_tag %in% c("f", "e")]
-  d_fe[, tariffgroup_tag := "fe"]
+  d <- d[tariffgroup_tag %in% c("f", "e")]
+  d[, tariffgroup_tag := "fe"]
 
-  d <- d_fe # rbindlist(list(d_fes, d_fe, d)) #, d_fs, d_es)
-  rm("d_fe")
   #gc()
 
   setkey(d, Diagnose)
