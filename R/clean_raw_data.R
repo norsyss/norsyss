@@ -2,7 +2,7 @@ get_raw_data <- function(date_from, date_to){
   db <- DBI::dbConnect(
     odbc::odbc(),
     driver="ODBC Driver 17 for SQL Server",
-    server="dm-prod",
+    server="sql-sykdomspulsen",
     database="SykdomspulsenAnalyse",
     trusted_connection="yes"
   )
