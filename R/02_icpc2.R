@@ -241,7 +241,7 @@ reports$descriptions <- rbindlist(list(
   )
 ))
 reports$icpc2 <- list()
-reports$icpc2$selected <- c("a78", "a04", "gastroenteritis", "respiratory_infections", "covid19", "r80", "r72")
+reports$icpc2$selected <- c("a78", "a04", "gastroenteritis", "respiratory_infections", "covid19", "r80", "r71", "r72")
 reports$icpc2$general_and_unspecified <- icpc2[bodysystem_en %in% c("General and unspecified")]$icpc2group_tag
 reports$icpc2$blood_and_immune <- icpc2[bodysystem_en %in% c("Blood, blood forming organs, and immune mechanism")]$icpc2group_tag
 reports$icpc2$digestive <- icpc2[bodysystem_en %in% c("Digestive")]$icpc2group_tag
