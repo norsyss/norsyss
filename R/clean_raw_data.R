@@ -31,7 +31,13 @@ get_raw_data_fida_pilot <- function(date_from, date_to){
   )
 
   command <- glue::glue(
-    "select Id,Diagnose,PasientAlder,PasientKjønn as sex,BehandlerKommune,Konsultasjonsdato as date,Takst from raw_norsyss.Konsultasjon join raw_norsyss.KonsultasjonDiagnose on Id=KonsultasjonId join raw_norsyss.KonsultasjonTakst on Id=KonsultasjonTakst.KonsultasjonId where Konsultasjonsdato >='{date_from}' AND Konsultasjonsdato<='{date_to}'"
+    'SELECT "Id", "Diagnose", "PasientAlder", "PasientKjønn" AS sex, "BehandlerKommune", "Konsultasjonsdato" AS date, "Takst"
+    FROM raw_norsyss."Konsultasjon"
+    JOIN raw_norsyss."KonsultasjonDiagnose"
+    ON "Id"="KonsultasjonId"
+    JOIN raw_norsyss."KonsultasjonTakst"
+    ON "Id"="KonsultasjonTakst"."KonsultasjonId"
+    WHERE "Konsultasjonsdato" >=\'{date_from}\' AND "Konsultasjonsdato"<=\'{date_to}\''
   )
   d <- DBI::dbGetQuery(db, command)
 
