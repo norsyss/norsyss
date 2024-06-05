@@ -22,7 +22,7 @@ get_raw_data_fida_pilot <- function(date_from, date_to){
   db <- DBI::dbConnect(
     odbc::odbc(),
     driver=Sys.getenv("CS9_DBCONFIG_DRIVER"),
-    server=Sys.getenv("CS9_DBCONFIG_DRIVER"),
+    server=Sys.getenv("CS9_DBCONFIG_SERVER"),
     port=Sys.getenv("CS9_DBCONFIG_PORT"),
     uid=Sys.getenv("CS9_DBCONFIG_USER"),
     password=Sys.getenv("CS9_DBCONFIG_PASSWORD"),
