@@ -48,10 +48,13 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
   date_from <- cstime::dates_by_isoyearweek[isoyearweek==x_isoyearweek]$mon %>% min()
   date_to <- cstime::dates_by_isoyearweek[isoyearweek==x_isoyearweek]$sun %>% max()
   #date_to <- date_from
+
   if(location=="NHN"){
     d <- get_raw_data_nhn(date_from, date_to)
   } else if(location=="FIDA_PILOT"){
     d <- get_raw_data_fida_pilot(date_from, date_to)
+  } else {
+    stop("location must be either NHN or FIDA_PILOT")
   }
   setDT(d)
 
