@@ -1,4 +1,4 @@
-get_raw_data <- function(date_from, date_to){
+get_raw_data_nhn <- function(date_from, date_to){
   db <- DBI::dbConnect(
     odbc::odbc(),
     driver="ODBC Driver 17 for SQL Server",
@@ -18,14 +18,41 @@ get_raw_data <- function(date_from, date_to){
   return(d)
 }
 
+get_raw_data_fida_pilot <- function(date_from, date_to){
+  db <- DBI::dbConnect(
+    odbc::odbc(),
+    driver=Sys.getenv("CS9_DBCONFIG_DRIVER"),
+    server=Sys.getenv("CS9_DBCONFIG_DRIVER"),
+    port=Sys.getenv("CS9_DBCONFIG_PORT"),
+    uid=Sys.getenv("CS9_DBCONFIG_USER"),
+    password=Sys.getenv("CS9_DBCONFIG_PASSWORD"),
+    database="p2932_db01",
+    sslmode="require"
+  )
+
+  command <- glue::glue(
+    "select Id,Diagnose,PasientAlder,PasientKjønn as sex,BehandlerKommune,Konsultasjonsdato as date,Takst from raw_norsyss.Konsultasjon join raw_norsyss.KonsultasjonDiagnose on Id=KonsultasjonId join raw_norsyss.KonsultasjonTakst on Id=KonsultasjonTakst.KonsultasjonId where Konsultasjonsdato >='{date_from}' AND Konsultasjonsdato<='{date_to}'"
+  )
+  d <- DBI::dbGetQuery(db, command)
+
+  attr(d, "date_from") <- date_from
+  attr(d, "date_to") <- date_to
+
+  return(d)
+}
+
 #' @export
-get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024){
+get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, location="NHN"){
   # isoyearweek_from <- "2022-52"
   # isoyearweek_to <- "2022-52"
   date_from <- cstime::dates_by_isoyearweek[isoyearweek==x_isoyearweek]$mon %>% min()
   date_to <- cstime::dates_by_isoyearweek[isoyearweek==x_isoyearweek]$sun %>% max()
   #date_to <- date_from
-  d <- get_raw_data(date_from, date_to)
+  if(location=="NHN"){
+    d <- get_raw_data_nhn(date_from, date_to)
+  } else if(location=="FIDA_PILOT"){
+    d <- get_raw_data_fida_pilot(date_from, date_to)
+  }
   setDT(d)
 
   # Fixing covid
