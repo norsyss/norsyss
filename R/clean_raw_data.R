@@ -62,6 +62,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
   } else {
     stop("location must be either NHN or FIDA_PILOT")
   }
+  if(nrow(d)==0) return(NULL)
   setDT(d)
 
   # Fixing covid
