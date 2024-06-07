@@ -57,8 +57,10 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
 
   if(location=="NHN"){
     d <- get_raw_data_nhn(date_from, date_to)
+    use_icpc2 <- icpc2
   } else if(location=="FIDA_PILOT"){
     d <- get_raw_data_fida_pilot(date_from, date_to)
+    use_icpc2 <- fida_pilot$icpc2
   } else {
     stop("location must be either NHN or FIDA_PILOT")
   }
@@ -178,8 +180,8 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
   #gc()
 
   setkey(d, Diagnose)
-  for (i in seq_along(icpc2$icpc2raw_tag)) {
-    d[, (icpc2$icpc2group_tag[i]) := as.integer(Diagnose %in% icpc2$icpc2raw_tag[[i]])]
+  for (i in seq_along(use_icpc2$icpc2raw_tag)) {
+    d[, (use_icpc2$icpc2group_tag[i]) := as.integer(Diagnose %in% use_icpc2$icpc2raw_tag[[i]])]
     # d[, (icpc2$icpc2group_tag[i]) := 0]
     # d[Diagnose %in% icpc2$icpc2raw_tag[[i]], (icpc2$icpc2group_tag[i]) := 1]
   }
@@ -219,7 +221,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
            date,
            tariffgroup_tag
          ),
-         .SDcols = c(icpc2$icpc2group_tag, "consultations_all_n")
+         .SDcols = c(use_icpc2$icpc2group_tag, "consultations_all_n")
   ]
   # d[time_from_date, on = "date", isoyearweek := isoyearweek]
   #gc()
@@ -230,7 +232,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
            sex,
            tariffgroup_tag
          ),
-         .SDcols = c(icpc2$icpc2group_tag, "consultations_all_n")
+         .SDcols = c(use_icpc2$icpc2group_tag, "consultations_all_n")
   ]
 
   d[, location_code_original := paste0("municip_nor",BehandlerKommune)]
@@ -275,7 +277,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
   rm("d")
   #gc()
 
-  for (i in c(icpc2$icpc2group_tag, "consultations_all_n")) s_municip[, (i) := fcase(
+  for (i in c(use_icpc2$icpc2group_tag, "consultations_all_n")) s_municip[, (i) := fcase(
     !is.na(get(i)), get(i) * weighting,
     default = 0
   )]
@@ -288,7 +290,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
       tariffgroup_tag,
       location_code_current
     ),
-    .SDcols = c(icpc2$icpc2group_tag, "consultations_all_n")
+    .SDcols = c(use_icpc2$icpc2group_tag, "consultations_all_n")
   ]
   #gc()
   setnames(s_municip, "location_code_current", "location_code")
@@ -311,7 +313,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
       tariffgroup_tag,
       to_code
     ),
-    .SDcols = c(icpc2$icpc2group_tag, "consultations_all_n")
+    .SDcols = c(use_icpc2$icpc2group_tag, "consultations_all_n")
   ]
   setnames(s_county, "to_code", "location_code")
   s_county[, granularity_geo := "county"]
@@ -333,7 +335,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
       tariffgroup_tag,
       to_code
     ),
-    .SDcols = c(icpc2$icpc2group_tag, "consultations_all_n")
+    .SDcols = c(use_icpc2$icpc2group_tag, "consultations_all_n")
   ]
   setnames(s_georegion, "to_code", "location_code")
   s_georegion[, granularity_geo := "georegion"]
@@ -351,7 +353,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
   )
   rm("d_nation")
   #gc()
-  for (i in c(icpc2$icpc2group_tag, "consultations_all_n")) s_nation[is.na(get(i)), (i) := 0]
+  for (i in c(use_icpc2$icpc2group_tag, "consultations_all_n")) s_nation[is.na(get(i)), (i) := 0]
   s_nation[, location_code := "nation_nor"]
   s_nation[, granularity_geo := "nation"]
 

@@ -251,6 +251,6 @@ reports$icpc2$respiratory <- icpc2[bodysystem_en %in% c("Respiratory")]$icpc2gro
 reports$icpc2$skin <- icpc2[bodysystem_en %in% c("Skin")]$icpc2group_tag
 reports$icpc2$all <- icpc2$icpc2group_tag
 
-
-
-
+#' @export
+fida_pilot <- list()
+fida_pilot$icpc2 <- icpc2[icpc2group_tag %in% c("r71", "r80", "covid19")]
