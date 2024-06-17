@@ -463,7 +463,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
 
   if(location=="FIDA_PILOT"){
     setnames(
-      d,
+      d_agg,
       c(
         "consultations_icpc2group_n",
         "consultations_icpc2group_vs_all_pr100",
