@@ -461,6 +461,26 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
   )
   # cstidy::set_csfmt_rts_data_v1(d_agg)
 
+  if(location=="FIDA_PILOT"){
+    setnames(
+      d,
+      c(
+        "consultations_icpc2group_n",
+        "consultations_icpc2group_vs_all_pr100",
+        "consultations_icpc2group_vs_without_influenza_covid19_pr100",
+        "consultations_all_n",
+        "consultations_without_influenza_covid19_n"
+      ),
+      c(
+        "consults_icpc2group_n",
+        "consults_icpc2group_vs_all_pr100",
+        "consults_icpc2group_vs_without_influenza_covid19_pr100",
+        "consults_all_n",
+        "consults_without_influenza_covid19_n"
+      )
+    ) 
+  }
+
   data.table::shouldPrint(d_agg)
 
   return(d_agg)
