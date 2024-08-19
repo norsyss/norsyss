@@ -28,7 +28,7 @@ Suggests:
 License: GPL-3 + file LICENSE
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 VignetteBuilder: knitr
 Encoding: UTF-8
 Date/Publication: 2023-06-15 05:50:43 UTC

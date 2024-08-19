@@ -3,6 +3,7 @@
 export("%>%")
 export(fida_pilot)
 export(get_and_process_raw_data)
+export(get_providers_n)
 export(icpc2)
 export(reports)
 export(tariff)
