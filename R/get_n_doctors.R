@@ -22,7 +22,12 @@ get_providers_n_nhn <- function(){
   d[, isoyearweek := cstime::date_to_isoyearweek_c(date)]
   d[, isoweek := cstime::date_to_isoweek_n(date)]
 
-  d <- d[,.(providers_id, isoyear, isoweek, isoyearweek)] |>
+  d <- d[
+    isoyearweek < cstime::date_to_isoyearweek_c(),
+    .(
+      providers_id, isoyear, isoweek, isoyearweek
+    )
+    ] |>
     unique()
 
   setorder(d, isoyear)
