@@ -33,18 +33,18 @@ get_providers_n_nhn <- function(){
   setorder(d, isoyear)
 
   collapsed <- d[isoyearweek >= "2006-01",.(
-    providers_registered_n = length(unique(providers_id))
+    providers_reported_n = length(unique(providers_id))
   ),keyby=.(isoyear, isoweek, isoyearweek)]
 
   collapsed[
     ,
     providers_expected_n :=
       pmax(
-        providers_registered_n,
-        shift(providers_registered_n, n=1L),
-        shift(providers_registered_n, n=2L),
-        shift(providers_registered_n, n=3L),
-        shift(providers_registered_n, n=4L)
+        providers_reported_n,
+        shift(providers_reported_n, n=1L),
+        shift(providers_reported_n, n=2L),
+        shift(providers_reported_n, n=3L),
+        shift(providers_reported_n, n=4L)
       ,
       #probs = c(0.75),
       na.rm = T
@@ -56,8 +56,8 @@ get_providers_n_nhn <- function(){
 
   isoyearweeks <- sort(collapsed$isoyearweek, decreasing = TRUE)
   collapsed[!isoyearweek %in% isoyearweeks[1:26], providers_expected_n := providers_registered_n]
-  collapsed[, completeness_pr100 := round(100*providers_registered_n / providers_expected_n, 4)]
-  collapsed[, completeness_pr1 := round(providers_registered_n / providers_expected_n, 4)]
+  collapsed[, completeness_pr100 := round(100*providers_reported_n / providers_expected_n, 4)]
+  collapsed[, completeness_pr1 := round(providers_reported_n / providers_expected_n, 4)]
 
   return(collapsed)
 }
