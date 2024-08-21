@@ -55,7 +55,7 @@ get_providers_n_nhn <- function(){
   ]
 
   isoyearweeks <- sort(collapsed$isoyearweek, decreasing = TRUE)
-  collapsed[!isoyearweek %in% isoyearweeks[1:26], providers_expected_n := providers_registered_n]
+  collapsed[!isoyearweek %in% isoyearweeks[1:26], providers_expected_n := providers_reported_n]
   collapsed[, completeness_pr100 := round(100*providers_reported_n / providers_expected_n, 4)]
   collapsed[, completeness_pr1 := round(providers_reported_n / providers_expected_n, 4)]
 
