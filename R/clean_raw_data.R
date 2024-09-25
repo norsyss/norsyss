@@ -67,6 +67,9 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
   if(nrow(d)==0) return(NULL)
   setDT(d)
 
+  # Fixing municipalities
+  d[, BehandlerKommune := formatC(as.numeric(BehandlerKommune), width = 4, flag = "0")]
+
   # Fixing covid
   d[Diagnose=="R270000", Diagnose := "R27"]
   d[Diagnose=="R9910000", Diagnose := "R991"]
