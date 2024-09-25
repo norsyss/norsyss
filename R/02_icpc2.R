@@ -140,6 +140,15 @@ setnames(
     "bodysystem_nn"
   )
 )
+icpc2[, icpc2group_tag_formatted := toupper(icpc2group_tag)]
+icpc2[icpc2group_tag=="covid19", icpc2group_tag_formatted := "R991+R992"]
+icpc2[icpc2group_tag=="respiratory_infections", icpc2group_tag_formatted := "R**"]
+icpc2[icpc2group_tag=="gastroenteritis", icpc2group_tag_formatted := "D11+D70+D73"]
+
+icpc2[, icpc2group_description_with_tag_en := paste0(icpc2group_description_en, " (", icpc2group_tag_formatted, ")")]
+icpc2[, icpc2group_description_with_tag_nb := paste0(icpc2group_description_nb, " (", icpc2group_tag_formatted, ")")]
+icpc2[, icpc2group_description_with_tag_nn := paste0(icpc2group_description_nn, " (", icpc2group_tag_formatted, ")")]
+
 icpc2[, includes_influenza_covid19 := icpc2group_tag %in% c("r80", "r991", "r992", "covid19", "respiratory_infections")]
 icpc2[, has_historical_data := !icpc2group_tag %in% c("r991", "r992", "covid19")]
 icpc2[, outbreak_pattern := "unknown"]
