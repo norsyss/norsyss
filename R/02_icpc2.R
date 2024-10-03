@@ -5,6 +5,7 @@ icpc2 <- rbindlist(list(
   data.table("A03", "a03", "Fever", "Symptoms/Complaints", "General and unspecified", "Feber", "Symptomer", "Allment og uspesifisert", "Feber", "Symptom", "Allment og uspesifisert"),
   data.table("A04", "a04", "Weakness/tiredness general", "Symptoms/Complaints", "General and unspecified", "Slapphet/tretthet", "Symptomer", "Allment og uspesifisert", "Slappheit/trøyttleik", "Symptom", "Allment og uspesifisert"),
   data.table("A05", "a05", "Feeling ill", "Symptoms/Complaints", "General and unspecified", "Sykdomsfølelse", "Symptomer", "Allment og uspesifisert", "Sykdomsfølelse", "Symptom", "Allment og uspesifisert"),
+  data.table("A27", "a27", "Fear of other diseases NOS", "Symptoms/Complaints", "General and unspecified", "Engstelig for sykdom IKA", "Symptomer", "Allment og uspesifisert", "Engstelig for sykdom IKA", "Symptom", "Allment og uspesifisert"), #
   data.table("A71", "a71", "Measles", "Infections", "General and unspecified", "Meslinger", "Infeksjoner", "Allment og uspesifisert", "Meslingar", "Infeksjonar", "Allment og uspesifisert"),
   data.table("A72", "a72", "Chickenpox", "Infections", "General and unspecified", "Vannkopper", "Infeksjoner", "Allment og uspesifisert", "Vannkoppar", "Infeksjonar", "Allment og uspesifisert"),
   data.table("A73", "a73", "Malaria", "Infections", "General and unspecified", "Malaria", "Infeksjoner", "Allment og uspesifisert", "Malaria", "Infeksjonar", "Allment og uspesifisert"),
@@ -14,6 +15,7 @@ icpc2 <- rbindlist(list(
   data.table("A77", "a77", "Viral disease other/NOS", "Infections", "General and unspecified", "Virussykdom IKA", "Infeksjoner", "Allment og uspesifisert", "Virussjukdom IKA", "Infeksjonar", "Allment og uspesifisert"),
   data.table("A78", "a78", "Infectious disease other/NOS", "Infections", "General and unspecified", "Infeksjonssykdom IKA", "Infeksjoner", "Allment og uspesifisert", "Infeksjonssjukdom IKA", "Infeksjonar", "Allment og uspesifisert"),
   data.table("B02", "b02", "Lymph gland(s) enlarged/painful", "Symptoms/Complaints", "Blood, blood forming organs, and immune mechanism", "Lymfeknuter forstørrede/smertefulle", "Symptomer", "Blod, bloddannende organer og immunsystemet", "Lymfeknuter forstørra/smertefulle", "Symptom", "Blod, bloddannande organ og immunsystemet"),
+  data.table("B25", "b25", "Fear of AIDS/HIV", "Symptoms/Complaints", "Blood, blood forming organs, and immune mechanism", "Engstelig for hiv/aids", "Symptomer", "Blod, bloddannende organer og immunsystemet", "Engstelig for hiv/aids", "Symptom", "Blod, bloddannande organ og immunsystemet"), #
   data.table("B70", "b70", "Lymphadenitis acute", "Infections", "Blood, blood forming organs, and immune mechanism", "Lymfadenitt akutt", "Infeksjoner", "Blod, bloddannende organer og immunsystemet", "Lymfadenitt akutt", "Infeksjonar", "Blod, bloddannande organ og immunsystemet"),
   data.table("B71", "b71", "lymphadenitis non-specific", "Infections", "Blood, blood forming organs, and immune mechanism", "Lymfadenitt kronisk/uspesifikk", "Infeksjoner", "Blod, bloddannende organer og immunsystemet", "Lymfadenitt kronisk/uspesifikk", "Infeksjonar", "Blod, bloddannande organ og immunsystemet"),
   data.table(list(c("D11", "D70", "D73")), "gastroenteritis", "Gastroenteritis", "Combination", "Digestive", "Mage-tarminfeksjoner", "Kombinasjon", "Fordøyelsessystemet", "Mage-tarminfeksjonar", "Kombinasjon", "Fordøyingssystemet"),
@@ -40,6 +42,12 @@ icpc2 <- rbindlist(list(
   data.table("H29", "h29", "Ear symptom/complaint other", "Symptoms/Complaints", "Ear", "Øre symptomer/plager IKA", "Symptomer", "Øre", "Øre symptom/plagar IKA", "Symptom", "Øre"),
   data.table("H71", "h71", "Acute otitis media/myringitis", "Infections", "Ear", "Mellomørebetennelse akutt", "Symptomer", "Øre", "Mellomørebetennelse akutt", "Symptom", "Øre"),
   data.table("H77", "h77", "Perforation ear drum", "Injuries", "Ear", "Perforert trommehinne IKA", "Skader", "Øre", "Perforert trommehinne IKA", "Skadar", "Øre"),
+  data.table("N16", "n16", "Disturbance of smell/taste", "Symptoms/Complaints", "Neurological", "Forstyrrelse i lukt/smak", "Symptomer", "Nevresystemet", "Forstyrrelse i lukt/smak", "Symptom", "Nevresystemet"), #
+  data.table("P02", "p02", "Acute stress reaction", "Symptoms/Complaints", "Psychological", "Psykisk ubalanse situasjonsbetinget", "Symptomer", "Psykisk", "Psykisk ubalanse situasjonsbetinget", "Symptom", "Psykisk"), #
+  data.table("P03", "p03", "Feeling depressed", "Symptoms/Complaints", "Psychological", "Depresjonsfølelse", "Symptomer", "Psykisk", "Depresjonsfølelse", "Symptom", "Psykisk"), #
+  data.table("P20", "p20", "Memory disturbance", "Symptoms/Complaints", "Psychological", "Hukommelsesforstyrrelse", "Symptomer", "Psykisk", "Hukommelsesforstyrrelse", "Symptom", "Psykisk"), #
+  data.table("P29", "p29", "Psychological symptom/complaint other", "Symptoms/Complaints", "Psychological", "Psykiske symptomer/plager IKA", "Symptomer", "Psykisk", "Psykiske symptomer/plager IKA", "Symptom", "Psykisk"), #
+  data.table("P81", "p81", "Hyperkinetic disorder", "Symptoms/Complaints", "Psychological", "Hyperkinetisk forstyrrelse", "Symptomer", "Psykisk", "Hyperkinetisk forstyrrelse", "Symptom", "Psykisk"), #
   data.table(list(c(
     "R01",
     "R02",
@@ -122,7 +130,17 @@ icpc2 <- rbindlist(list(
   data.table("S76", "s76", "Skin infection other", "Infections", "Skin", "Hudinfeksjon IKA", "Infeksjoner", "Hud", "Hudinfeksjon IKA", "Infeksjonar", "Hud"),
   data.table("S84", "s84", "Impetigo", "Infections", "Skin", "Brennkopper", "Infeksjoner", "Hud", "Brennkoppar", "Infeksjonar", "Hud"),
   data.table("S95", "s95", "Molluscum contagiosum", "Infections", "Skin", "Molluscum contagiosum", "Infeksjoner", "Hud", "Molluscum contagiosum", "Infeksjonar", "Hud"),
-  data.table("S99", "s99", "Skin disease, other", "Other diagnoses", "Skin", "Hud/underhud sykdom IKA", "Annet", "Hud", "Hud/underhud sjukdom IKA", "Anna", "Hud")
+  data.table("S99", "s99", "Skin disease, other", "Other diagnoses", "Skin", "Hud/underhud sykdom IKA", "Annet", "Hud", "Hud/underhud sjukdom IKA", "Anna", "Hud"),
+  data.table("U72", "u72", "Urethritis", "Infections", "Urological", "Uretritt", "Infeksjoner", "Urinveier", "Uretritt", "Infeksjonar", "Urinveier"), #
+  data.table("X14", "x14", "Vaginal discharge female", "Symptoms/Complaints", "Female genital", "Utflod fra skjeden kvinne", "Symptomer", "Kvinnelige kjønnsorganer", "Utflod fra skjeden kvinne", "Symptom", "Kvinnelege kjønnsorgan"), #
+  data.table("X23", "x23", "Fear sexually transmitted disease female", "Symptoms/Complaints", "Female genital", "Engstelig for kjønnssykdom kvinne", "Symptomer", "Kvinnelige kjønnsorganer", "Engstelig for kjønnssykdom kvinne", "Symptom", "Kvinnelege kjønnsorgan"), #
+  data.table("X90", "x90", "Genital herpes female", "Infections", "Female genital", "Genital herpesvirusinfeksjon kvinne", "Infeksjoner", "Kvinnelige kjønnsorganer", "Genital herpesvirusinfeksjon kvinne", "Infeksjonar", "Kvinnelege kjønnsorgan"), #
+  data.table("X91", "x91", "Condylomata acuminata female", "Infections", "Female genital", "Condylomata acuminata kvinne", "Infeksjoner", "Kvinnelige kjønnsorganer", "Condylomata acuminata kvinne", "Infeksjonar", "Kvinnelege kjønnsorgan"), #
+
+  data.table("Y03", "y03", "Urethral discharge male", "Symptoms/Complaints", "Male genital", "Utflod fra urinrør/penis mann", "Symptomer", "Mannlige kjønnsorganer", "Utflod fra urinrør/penis mann", "Symptom", "Mannelege kjønnsorgan"), #
+  data.table("Y25", "y25", "Fear sexually transmitted disease male", "Symptoms/Complaints", "Male genital", "Engstelig for kjønnssykdom mann", "Symptomer", "Mannlige kjønnsorganer", "Engstelig for kjønnssykdom mann", "Symptom", "Mannelege kjønnsorgan"), #
+  data.table("Y72", "y72", "Genital herpes male", "Infections", "Male genital", "Genital herpesvirusinfeksjon mann", "Infeksjoner", "Mannlige kjønnsorganer", "Genital herpesvirusinfeksjon mann", "Infeksjonar", "Mannelege kjønnsorgan"), #
+  data.table("Y76", "y76", "Condylomata acuminata male", "Infections", "Male genital", "Condylomata acuminata mann", "Infeksjoner", "Mannlige kjønnsorganer", "Condylomata acuminata mann", "Infeksjonar", "Mannelege kjønnsorgan")
 ))
 setnames(
   icpc2,
@@ -150,7 +168,12 @@ icpc2[, icpc2group_description_with_tag_nb := paste0(icpc2group_description_nb, 
 icpc2[, icpc2group_description_with_tag_nn := paste0(icpc2group_description_nn, " (", icpc2group_tag_formatted, ")")]
 
 icpc2[, includes_influenza_covid19 := icpc2group_tag %in% c("r80", "r991", "r992", "covid19", "respiratory_infections")]
-icpc2[, has_historical_data := !icpc2group_tag %in% c("r991", "r992", "covid19")]
+icpc2[, has_historical_data := !icpc2group_tag %in% c(
+  "r991",
+  "r992",
+  "covid19",
+  "x91", "x90", "x14", "x23", "y76", "y72", "y03", "y25", "a27", "b25", "u72", "p29", "p02", "p03", "p20", "p81", "n16"
+  )]
 icpc2[, outbreak_pattern := "unknown"]
 icpc2[icpc2group_tag %in% c("r991", "r992", "covid19"), outbreak_pattern := "valley_increase_decrease"]
 icpc2[, short_term_trend_include_decreasing := outbreak_pattern %in% c("unknown")]
@@ -219,6 +242,26 @@ reports$descriptions <- rbindlist(list(
     report_name_file_nn_ascii = "ore"
   ),
   data.table(
+    report_tag = "neurological",
+    report_name_en = "Neurological",
+    report_name_nb = "Nevresystemet",
+    report_name_file_nb_utf = "nevresystemet",
+    report_name_file_nb_ascii = "nevresystemet",
+    report_name_nn = "nevresystemet",
+    report_name_file_nn_utf = "nevresystemet",
+    report_name_file_nn_ascii = "nevresystemet"
+  ),
+  data.table(
+    report_tag = "psychological",
+    report_name_en = "Psychological",
+    report_name_nb = "Psykisk",
+    report_name_file_nb_utf = "psykisk",
+    report_name_file_nb_ascii = "psykisk",
+    report_name_nn = "Psykisk",
+    report_name_file_nn_utf = "psykisk",
+    report_name_file_nn_ascii = "psykisk"
+  ),
+  data.table(
     report_tag = "respiratory",
     report_name_en = "Respiratory",
     report_name_nb = "Luftveier",
@@ -239,6 +282,36 @@ reports$descriptions <- rbindlist(list(
     report_name_file_nn_ascii = "hud"
   ),
   data.table(
+    report_tag = "urological",
+    report_name_en = "Urological",
+    report_name_nb = "Urinveier",
+    report_name_file_nb_utf = "urinveier",
+    report_name_file_nb_ascii = "urinveier",
+    report_name_nn = "Urinveier",
+    report_name_file_nn_utf = "urinveier",
+    report_name_file_nn_ascii = "urinveier"
+  ),
+  data.table(
+    report_tag = "female_genital",
+    report_name_en = "Female genital",
+    report_name_nb = "Kvinnelige kjønnsorganer",
+    report_name_file_nb_utf = "kvinnelige_kjønnsorganer",
+    report_name_file_nb_ascii = "kvinnelige_kjonnsorganer",
+    report_name_nn = "Kvinnelege kjønnsorgan",
+    report_name_file_nn_utf = "kvinnelege_kjønnsorgan",
+    report_name_file_nn_ascii = "kvinnelege_kjonnsorgan"
+  ),
+  data.table(
+    report_tag = "male_genital",
+    report_name_en = "Male genital",
+    report_name_nb = "Mannlige kjønnsorganer",
+    report_name_file_nb_utf = "mannelige_kjønnsorganer",
+    report_name_file_nb_ascii = "mannelige_kjonnsorganer",
+    report_name_nn = "Mannelege kjønnsorgan",
+    report_name_file_nn_utf = "mannelege_kjønnsorgan",
+    report_name_file_nn_ascii = "mannelege_kjonnsorgan"
+  ),
+  data.table(
     report_tag = "all",
     report_name_en = "All",
     report_name_nb = "Alle",
@@ -256,8 +329,13 @@ reports$icpc2$blood_and_immune <- icpc2[bodysystem_en %in% c("Blood, blood formi
 reports$icpc2$digestive <- icpc2[bodysystem_en %in% c("Digestive")]$icpc2group_tag
 reports$icpc2$eye <- icpc2[bodysystem_en %in% c("Eye")]$icpc2group_tag
 reports$icpc2$ear <- icpc2[bodysystem_en %in% c("Ear")]$icpc2group_tag
+reports$icpc2$neurological <- icpc2[bodysystem_en %in% c("Neurological")]$icpc2group_tag
+reports$icpc2$psychology <- icpc2[bodysystem_en %in% c("Psychology")]$icpc2group_tag
 reports$icpc2$respiratory <- icpc2[bodysystem_en %in% c("Respiratory")]$icpc2group_tag
 reports$icpc2$skin <- icpc2[bodysystem_en %in% c("Skin")]$icpc2group_tag
+reports$icpc2$urological <- icpc2[bodysystem_en %in% c("Urological")]$icpc2group_tag
+reports$icpc2$female_genitcal <- icpc2[bodysystem_en %in% c("Female genital")]$icpc2group_tag
+reports$icpc2$male_genitcal <- icpc2[bodysystem_en %in% c("Male genital")]$icpc2group_tag
 reports$icpc2$all <- icpc2$icpc2group_tag
 
 #' @export

@@ -7,8 +7,11 @@ get_raw_data_nhn <- function(date_from, date_to){
     trusted_connection="yes"
   )
 
+  # command <- glue::glue(
+  #   "select Id,Diagnose,PasientAlder,PasientKjønn as sex,BehandlerKommune,Konsultasjonsdato as date,Takst from Konsultasjon join KonsultasjonDiagnose on Id=KonsultasjonId join KonsultasjonTakst on Id=KonsultasjonTakst.KonsultasjonId where Konsultasjonsdato >='{date_from}' AND Konsultasjonsdato<='{date_to}'"
+  # )
   command <- glue::glue(
-    "select Id,Diagnose,PasientAlder,PasientKjønn as sex,BehandlerKommune,Konsultasjonsdato as date,Takst from Konsultasjon join KonsultasjonDiagnose on Id=KonsultasjonId join KonsultasjonTakst on Id=KonsultasjonTakst.KonsultasjonId where Konsultasjonsdato >='{date_from}' AND Konsultasjonsdato<='{date_to}'"
+    "select Id,Diagnose,PasientAlder,PasientKjønn as sex,PasientKommune,Konsultasjonsdato as date,Takst from Konsultasjon join KonsultasjonDiagnose on Id=KonsultasjonId join KonsultasjonTakst on Id=KonsultasjonTakst.KonsultasjonId where Konsultasjonsdato >='{date_from}' AND Konsultasjonsdato<='{date_to}'"
   )
   d <- DBI::dbGetQuery(db, command)
 
@@ -30,8 +33,17 @@ get_raw_data_fida_pilot <- function(date_from, date_to){
     sslmode="require"
   )
 
+  # command <- glue::glue(
+  #   'SELECT "Id", "Diagnose", "PasientAlder", "PasientKjønn" AS sex, "BehandlerKommune", "Konsultasjonsdato" AS date, "Takst"
+  #   FROM raw_norsyss."Konsultasjon"
+  #   JOIN raw_norsyss."KonsultasjonDiagnose"
+  #   ON "Id"="KonsultasjonId"
+  #   JOIN raw_norsyss."KonsultasjonTakst"
+  #   ON "Id"="KonsultasjonTakst"."KonsultasjonId"
+  #   WHERE "Konsultasjonsdato" >=\'{date_from}\' AND "Konsultasjonsdato"<=\'{date_to}\''
+  # )
   command <- glue::glue(
-    'SELECT "Id", "Diagnose", "PasientAlder", "PasientKjønn" AS sex, "BehandlerKommune", "Konsultasjonsdato" AS date, "Takst"
+    'SELECT "Id", "Diagnose", "PasientAlder", "PasientKjønn" AS sex, "PasientKommune", "Konsultasjonsdato" AS date, "Takst"
     FROM raw_norsyss."Konsultasjon"
     JOIN raw_norsyss."KonsultasjonDiagnose"
     ON "Id"="KonsultasjonId"
@@ -68,7 +80,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
   setDT(d)
 
   # Fixing municipalities
-  d[, BehandlerKommune := formatC(as.numeric(BehandlerKommune), width = 4, flag = "0")]
+  d[, PasientKommune := formatC(as.numeric(PasientKommune), width = 4, flag = "0")]
 
   # Fixing covid
   d[Diagnose=="R270000", Diagnose := "R27"]
@@ -193,7 +205,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
   # consultations_all_n will be = 1 for the first observation per Id
   d[, consultations_all_n := as.integer(1:.N==1), by=.(
     Id,
-    BehandlerKommune,
+    PasientKommune,
     age,
     sex,
     date,
@@ -204,7 +216,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
   #        lapply(.SD, sum),
   #        keyby = .(
   #          Id,
-  #          BehandlerKommune,
+  #          PasientKommune,
   #          age,
   #          date,
   #          # practice_tag,
@@ -218,7 +230,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
   # Collapsing it down to 1 row per kommune/age/sex/day/tariff <- BEA
   d <- d[, lapply(.SD, sum), ,
          by = .(
-           BehandlerKommune,
+           PasientKommune,
            age,
            sex,
            date,
@@ -238,7 +250,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
          .SDcols = c(use_icpc2$icpc2group_tag, "consultations_all_n")
   ]
 
-  d[, location_code_original := paste0("municip_nor",BehandlerKommune)]
+  d[, location_code_original := paste0("municip_nor",PasientKommune)]
 
   # skeletons ----
   s_nation <- expand.grid(
@@ -481,7 +493,7 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
         "consults_all_n",
         "consults_without_influenza_covid19_n"
       )
-    ) 
+    )
   }
 
   data.table::shouldPrint(d_agg)
