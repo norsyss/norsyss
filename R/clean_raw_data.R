@@ -61,8 +61,7 @@ get_raw_data_fida_pilot <- function(date_from, date_to){
 
 #' @export
 get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, location="NHN"){
-  # isoyearweek_from <- "2022-52"
-  # isoyearweek_to <- "2022-52"
+  # x_isoyearweek <- "2024-39"
   date_from <- cstime::dates_by_isoyearweek[isoyearweek==x_isoyearweek]$mon %>% min()
   date_to <- cstime::dates_by_isoyearweek[isoyearweek==x_isoyearweek]$sun %>% max()
   #date_to <- date_from
