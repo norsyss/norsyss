@@ -11,7 +11,7 @@ get_raw_data_nhn <- function(date_from, date_to){
   #   "select Id,Diagnose,PasientAlder,PasientKjønn as sex,BehandlerKommune,Konsultasjonsdato as date,Takst from Konsultasjon join KonsultasjonDiagnose on Id=KonsultasjonId join KonsultasjonTakst on Id=KonsultasjonTakst.KonsultasjonId where Konsultasjonsdato >='{date_from}' AND Konsultasjonsdato<='{date_to}'"
   # )
   command <- glue::glue(
-    "select Id,Diagnose,PasientAlder,PasientKjønn as sex,PasientKommune,Konsultasjonsdato as date,Takst from Konsultasjon join KonsultasjonDiagnose on Id=KonsultasjonId join KonsultasjonTakst on Id=KonsultasjonTakst.KonsultasjonId where Konsultasjonsdato >='{date_from}' AND Konsultasjonsdato<='{date_to}'"
+    "select Id,Diagnose,PasientAlder,PasientKjønn as sex,PasientKommune,PasientBydel,Konsultasjonsdato as date,Takst from Konsultasjon join KonsultasjonDiagnose on Id=KonsultasjonId join KonsultasjonTakst on Id=KonsultasjonTakst.KonsultasjonId where Konsultasjonsdato >='{date_from}' AND Konsultasjonsdato<='{date_to}'"
   )
   d <- DBI::dbGetQuery(db, command)
 
@@ -80,6 +80,132 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
 
   # Fixing municipalities
   d[, PasientKommune := formatC(as.numeric(PasientKommune), width = 4, flag = "0")]
+  d[, PasientBydel := formatC(as.numeric(PasientBydel), width = 6, flag = "0")]
+
+  # Oslo
+  d[
+    PasientKommune %in% c(
+      "0301",
+      "0312",
+      "0313",
+      "0314",
+      "0315",
+      "0316",
+      "0318",
+      "0319",
+      "0321",
+      "0325",
+      "0326",
+      "0327",
+      "0328",
+      "0330",
+      "0331",
+      "0333",
+      "0334",
+      "0335"
+    ),
+    PasientKommune := "0301"
+  ]
+  d[
+    PasientBydel %in% c(
+      "030101",
+      "030102",
+      "030103",
+      "030104",
+      "030105",
+      "030106",
+      "030107",
+      "030108",
+      "030109",
+      "030110",
+      "030111",
+      "030112",
+      "030113",
+      "030114",
+      "030115",
+      "030116",
+      "030117"
+    ),
+    PasientKommune := "0301"
+  ]
+
+  # Stavanger
+  d[
+    PasientKommune %in% c(
+      "1103",
+      "1161",
+      "1162",
+      "1163",
+      "1164",
+      "1165",
+      "1166",
+      "1167"
+    ),
+    PasientKommune := "1103"
+  ]
+  d[
+    PasientBydel %in% c(
+      "110301",
+      "110302",
+      "110303",
+      "110304",
+      "110305",
+      "110306",
+      "110307",
+      "110308",
+      "110309"
+    ),
+    PasientKommune := "1103"
+  ]
+
+  # Bergen
+  d[
+    date < "2020-01-01" &
+      PasientKommune %in% c(
+        "1201",
+        "1202",
+        "1203",
+        "1204",
+        "1205",
+        "1206",
+        "1207",
+        "1208",
+        "1209",
+        "1210"
+      ),
+    PasientKommune := "1201"
+  ]
+  d[
+    date >= "2020-01-01" &
+      PasientKommune %in% c(
+        "1201",
+        "1202",
+        "1203",
+        "1204",
+        "1205",
+        "1206",
+        "1207",
+        "1208",
+        "1209",
+        "1210"
+      ),
+    PasientKommune := "4601"
+  ]
+  d[
+    date >= "2020-01-01" &
+      PasientBydel %in% c(
+        "460101",
+        "460102",
+        "460103",
+        "460104",
+        "460105",
+        "460106",
+        "460107"
+      ),
+    PasientKommune := "4601"
+  ]
+
+  # Tromso
 
   # Fixing covid
   d[Diagnose=="R270000", Diagnose := "R27"]
