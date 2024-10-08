@@ -330,12 +330,12 @@ reports$icpc2$digestive <- icpc2[bodysystem_en %in% c("Digestive")]$icpc2group_t
 reports$icpc2$eye <- icpc2[bodysystem_en %in% c("Eye")]$icpc2group_tag
 reports$icpc2$ear <- icpc2[bodysystem_en %in% c("Ear")]$icpc2group_tag
 reports$icpc2$neurological <- icpc2[bodysystem_en %in% c("Neurological")]$icpc2group_tag
-reports$icpc2$psychology <- icpc2[bodysystem_en %in% c("Psychology")]$icpc2group_tag
+reports$icpc2$psychological <- icpc2[bodysystem_en %in% c("Psychological")]$icpc2group_tag
 reports$icpc2$respiratory <- icpc2[bodysystem_en %in% c("Respiratory")]$icpc2group_tag
 reports$icpc2$skin <- icpc2[bodysystem_en %in% c("Skin")]$icpc2group_tag
 reports$icpc2$urological <- icpc2[bodysystem_en %in% c("Urological")]$icpc2group_tag
-reports$icpc2$female_genitcal <- icpc2[bodysystem_en %in% c("Female genital")]$icpc2group_tag
-reports$icpc2$male_genitcal <- icpc2[bodysystem_en %in% c("Male genital")]$icpc2group_tag
+reports$icpc2$female_genital <- icpc2[bodysystem_en %in% c("Female genital")]$icpc2group_tag
+reports$icpc2$male_genital <- icpc2[bodysystem_en %in% c("Male genital")]$icpc2group_tag
 reports$icpc2$all <- icpc2$icpc2group_tag
 
 #' @export
