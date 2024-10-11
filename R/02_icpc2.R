@@ -340,4 +340,4 @@ reports$icpc2$all <- icpc2$icpc2group_tag
 
 #' @export
 fida_pilot <- list()
-fida_pilot$icpc2 <- icpc2[icpc2group_tag %in% c("r71", "r80", "covid19")]
+fida_pilot$icpc2 <- icpc2[icpc2group_tag %in% c("a04", "r71", "r80", "covid19")]
