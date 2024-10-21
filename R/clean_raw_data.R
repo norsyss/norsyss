@@ -352,9 +352,10 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
   # d[, consultations_all_n := 1]
   # #gc()
   
-  # Collapsing it down to 1 row per consultation
+  # Collapsing it down to 1 row per consultation (remember there can by multiple rows per consultation due to multidiagnoses)
   d <- d[, lapply(.SD, max), 
          by = .(
+           Id,
            PasientKommune,
            age,
            sex,
