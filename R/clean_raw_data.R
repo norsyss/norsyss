@@ -351,9 +351,20 @@ get_and_process_raw_data <- function(x_isoyearweek = "2021-02", border = 2024, l
   # ]
   # d[, consultations_all_n := 1]
   # #gc()
-
+  
+  # Collapsing it down to 1 row per consultation
+  d <- d[, lapply(.SD, max), 
+         by = .(
+           PasientKommune,
+           age,
+           sex,
+           date,
+           tariffgroup_tag
+         ),
+         .SDcols = c(use_icpc2$icpc2group_tag, "consultations_all_n")
+  ]
   # Collapsing it down to 1 row per kommune/age/sex/day/tariff <- BEA
-  d <- d[, lapply(.SD, sum), ,
+  d <- d[, lapply(.SD, sum), 
          by = .(
            PasientKommune,
            age,
