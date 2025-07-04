@@ -12,7 +12,7 @@ tariff$raw <- rbindlist(list(
   data.table("2fk", "f", "Consultation and supplement for being called to the office for immediate help during the emergency room when an ambulance has been used, for the first patient. Travel allowances and transport allowances can also be calculated. The tariff cannot be used for on-call duty.", "Konsultasjon og tillegg for utrykning til kontor ved øyeblikkelig hjelp under legevakt når skyssmiddel er benyttet, for første pasient. Det kan i tillegg beregnes reisetillegg og skyssgodtgjørelse. Taksten kan ikke benyttes ved tilstedevakt."),
 
   data.table("2ae", "e", "E-consultation with a GP and at the emergency room (day).", "E-konsultasjon hos fastlege og på legevakt (dag)."),
-  data.table("2aek", "e", "E-consultation with a GP and at the emergency room (night).", "E-konsultasjon hos fastlege og på legevakt (kveld)."),
+  data.table("2aek", "ex", "E-consultation with a GP and at the emergency room (night).", "E-konsultasjon hos fastlege og på legevakt (kveld)."),
 
   data.table("1ad", "s", "Simple patient contact by personal attendance or by delivery. The rate assumes that advice/guidance is given. Also applies when the contact/request results in the writing of a prescription, sick leave, requisition or referral (day).", "Enkel pasientkontakt ved personlig frammøte eller ved bud. Taksten forutsetter at det gis råd/veiledning. Gjelder også når kontakten/forespørselen resulterer i skriving av resept, sykmelding, rekvisisjon eller henvisning (dag)."),
   data.table("1ak", "s", "Simple patient contact by personal attendance or by delivery. The rate assumes that advice/guidance is given. Also applies when the contact/request results in the writing of a prescription, sick leave, requisition or referral (night).", "Enkel pasientkontakt ved personlig frammøte eller ved bud. Taksten forutsetter at det gis råd/veiledning. Gjelder også når kontakten/forespørselen resulterer i skriving av resept, sykmelding, rekvisisjon eller henvisning (kveld)."),
@@ -29,6 +29,7 @@ setnames(tariff$raw, c("tariffraw_tag", "tariffgroup_tag", "tariffraw_descriptio
 tariff$group <- rbindlist(list(
   data.table("f", "Consultation/visit (face-to-face)", "Konsultasjon/sykebesøk (tilstede)"),
   data.table("e", "E-Consultation", "E-konsultasjon"),
+  data.table("ex", "E-Consultation that is no longer in use (now 2af)", "Enkelt kontakt"),
   data.table("s", "Simple contact", "Enkelt kontakt")
 ))
 setnames(tariff$group, c("tariffgroup_tag", "tariffgroup_description_en", "tariffgroup_description_nb"))
